@@ -18,4 +18,12 @@ class Home extends BaseController
         ];
         echo view('layout/v_wrapper', $data);
     }
+
+    public function buat()
+    {
+        $data = [
+            'content' => 'surat/suratbuat'
+        ];
+        echo view('layout/v_wrapper', $data);
+    }
 }

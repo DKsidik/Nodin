@@ -48,8 +48,76 @@
 <script src="<?= base_url(); ?>/template/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="<?= base_url(); ?>/template/dist/js/pages/dashboard.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+<!-- date-range-picker -->
+<script src="<?= base_url(); ?>/template/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- InputMask -->
+<script src="<?= base_url(); ?>/template/plugins/moment/moment.min.js"></script>
+<script src="<?= base_url(); ?>/template/plugins/inputmask/jquery.inputmask.min.js"></script>
+
+<!-- Select2 -->
+<script src="<?= base_url(); ?>/template/plugins/select2/js/select2.full.min.js"></script>
+<script>
+    $(function() {
+        //Initialize Select2 Elements
+        $('.select2').select2()
+
+        //Initialize Select2 Elements
+        $('.select2bs4').select2({
+            theme: 'bootstrap4'
+        })
+
+    })
+
+    //Datemask dd/mm/yyyy
+    $('#datemask').inputmask('dd/mm/yyyy', {
+        'placeholder': 'dd/mm/yyyy'
+    })
+    //Datemask2 mm/dd/yyyy
+    $('#datemask2').inputmask('mm/dd/yyyy', {
+        'placeholder': 'mm/dd/yyyy'
+    })
+    //Money Euro
+    $('[data-mask]').inputmask()
+
+    //Date picker
+    $('#reservationdate').datetimepicker({
+        format: 'L'
+    });
+    //Date and time picker
+    $('#reservationdatetime').datetimepicker({
+        icons: {
+            time: 'far fa-clock'
+        }
+    });
+
+    //Date range picker
+    $('#reservation').daterangepicker()
+    //Date range picker with time picker
+    $('#reservationtime').daterangepicker({
+        timePicker: true,
+        timePickerIncrement: 30,
+        locale: {
+            format: 'MM/DD/YYYY hh:mm A'
+        }
+    })
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('#compose-textarea').summernote({
+            height: 300, // Atur tinggi editor
+            placeholder: 'Mulailah menulis di sini...',
+            toolbar: [
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['font', ['strikethrough', 'superscript', 'subscript']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', ['fullscreen', 'codeview', 'help']]
+            ]
+        });
+    });
+</script>
+
 
 </body>
 
