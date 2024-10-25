@@ -23,7 +23,7 @@
                             <option selected="selected" disabled>--ketik/Pilih--</option>
                             <option>Kepala Suku Dinas Komunikasi, Informatika dan Statistik
                                 Kota Administrasi Jakarta Selatan
-                                /option>
+                            </option>
                         </select>
                     </div>
                     <!-- /.form-group -->
@@ -39,8 +39,8 @@
                     <div class="form-group">
                         <label>Sifat</label>
                         <select class="form-control select2bs4" style="width: 100%;">
-                            <option>....</option>
-                            <option>....</option>
+                            <option selected="selected" disabled>--Pilih--</option>
+                            <option>Penting</option>
                             <option>....</option>
 
                         </select>
@@ -48,42 +48,52 @@
                     <!-- /.form-group -->
                 </div>
                 <!-- /.col -->
-                <div class="col-md-6">
-                    <div class="form-group" style="margin-left: 0.5rem;">
-                        <label>Hal</label>
-                        <select class="form-control select2bs4 " style="width: 100%;">
+                <div class="card-body" style="margin-top: -1.3rem;">
+                    <div class="form-group">
+                        <label> Hal </label>
+                        <input class="form-control" type="text" placeholder="">
+                    </div>
+                    <!-- <div class="card-body" style="margin-top: -1.3rem;"> -->
+                    <div class="form-group">
+                        <label> Tembusan </label>
+                        <input class="form-control" type="text" placeholder="Optional">
+                    </div>
 
+                    <div class="form-group">
+                        <label>Lampiran</label>
+                        <select class="form-control select2bs4 " style="width: 100%;">
                         </select>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Lampiran</label>
-                            <select class="form-control select2bs4 " style="width: 100%;">
-                            </select>
-                        </div>
-                        <!-- Date -->
-                        <div class="form-group">
-                            <label>Date:</label>
-                            <div class="input-group date" id="reservationdate" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate" />
-                                <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
-                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                </div>
+                    <!-- Date -->
+                    <div class="form-group">
+                        <label>Date:</label>
+                        <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                            <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate" />
+                            <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                             </div>
                         </div>
                     </div>
-                    <!-- /.col -->
                 </div>
-                <!-- /.row -->
+                <!-- /.col -->
             </div>
-            <div class="form-group">
-                <textarea id="compose-textarea" class="form-control" style="height: 500px">
+            <!-- /.row -->
+        </div>
+        <div class="form-group" style="margin-left: 1rem; margin-right:2rem; margin-top:-2rem">
+            <textarea id="compose-textarea" class="form-control ">
 
                 </textarea>
-            </div>
-            <!-- /.col -->
         </div>
-        <!-- /.row -->
+        <div class="card-footer">
+            <div class="float-right">
+                <button type="button" class="btn btn-default">Draft</button>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+            <button type="reset" class="btn btn-default">Cancel</button>
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
     </div>
     </div>
 </section>

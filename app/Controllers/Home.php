@@ -4,6 +4,17 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
+    public function login()
+    {
+        $data = [
+            'content' => 'loginpage/login' // pastikan file login.php ada di folder Views/loginpage/
+        ];
+
+        // Memuat template AdminLTE dengan loginpage/login sebagai kontennya
+        echo view('layout/v_header');
+        echo view($data['content']);
+    }
+
     public function index()
     {
         $data = [
