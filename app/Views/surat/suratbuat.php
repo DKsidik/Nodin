@@ -1,16 +1,16 @@
-<section>
+.,mnb<section>
 
     <div class="card card-default" style="margin-left:20em; margin-top: 1em; width:70%;">
         <div class="card-header">
             <h3 class="card-title">Buat Surat</h3>
 
             <div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                <!-- <button type="button" class="btn btn-tool" data-card-widget="collapse">
                     <i class="fas fa-minus"></i>
                 </button>
                 <button type="button" class="btn btn-tool" data-card-widget="remove">
                     <i class="fas fa-times"></i>
-                </button>
+                </button> -->
             </div>
         </div>
         <!-- /.card-header -->
@@ -78,18 +78,18 @@
                 <!-- /.col -->
             </div>
             <!-- /.row -->
-        </div>
-        <div class="form-group" style="margin-left: 1rem; margin-right:2rem; margin-top:-2rem">
-            <textarea id="compose-textarea" class="form-control ">
+            <div class="form-group">
+                <textarea id="compose-textarea" class="form-control">
 
-                </textarea>
-        </div>
-        <div class="card-footer">
-            <div class="float-right">
-                <button type="button" class="btn btn-default">Draft</button>
-                <button type="submit" class="btn btn-primary">Send</button>
+                    </textarea>
             </div>
-            <button type="reset" class="btn btn-default">Cancel</button>
+            <div class="card-footer">
+                <div class="float-right">
+                    <!-- <button type="button" class="btn btn-default">Draft</button> -->
+                    <button type="submit" class="btn btn-primary">Print</button>
+                </div>
+                <button type="reset" class="btn btn-default">Cancel</button>
+            </div>
         </div>
         <!-- /.col -->
     </div>

@@ -1,5 +1,5 @@
 <body>
-    <section style="width: 100vw; height: 100vh;display: flex; justify-content: center; align-items: center; background-image: url('public/assetimg/jkt.png'); background-size: cover; background-position: center;">
+    <section style="width: 100vw; height: 100vh;display: flex; justify-content: center; align-items: center; background-color:aliceblue;">
         <div class="login-box">
             <div class="login-logo">
                 <a href="../../index2.html"><b>E</b>Office</a>

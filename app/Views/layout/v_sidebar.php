@@ -38,7 +38,7 @@
                      <li class="nav-item">
                          <a href="http://localhost/Nodin/public/home" class="nav-link">
                              <i class="fa-solid fa-house" style="margin-right: 10px;"></i>
-                             <p>Home</p>
+                             <p>Dashboard</p>
                          </a>
                      </li>
 
@@ -51,6 +51,22 @@
                                  <i class="right fas fa-angle-left"></i>
                              </p>
                          </a>
+                         <ul class="nav nav-treeview">
+                             <li class="nav-item">
+                                 <a href="http://localhost/Nodin/public/home/buat" class="nav-link">
+                                     <i class="fa-solid fa-pen-to-square" style=" margin-right: 1rem; "></i>
+                                     <p>Buat Surat</p>
+                                 </a>
+                             </li>
+                         </ul>
+                         <ul class="nav nav-treeview">
+                             <li class="nav-item">
+                                 <a href="http://localhost/Nodin/public/home/buat" class="nav-link">
+                                     <i class="far fa-circle nav-icon"></i>
+                                     <p>Buat Surat</p>
+                                 </a>
+                             </li>
+                         </ul>
                          <ul class="nav nav-treeview">
                              <li class="nav-item">
                                  <a href="http://localhost/Nodin/public/home/buat" class="nav-link">
