@@ -1,0 +1,406 @@
+CRITICAL - 2024-10-30 02:19:24 --> Error: Call to undefined function form_open()
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 12.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 4 APPPATH\Controllers\auth.php(15): view('loginpage/v_register')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:06:32 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App/Controllers\Auth::register"
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\Router.php on line 492.
+ 1 SYSTEMPATH\Router\Router.php(492): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App/Controllers\\Auth::register')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->checkRoutes('/')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('/')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-30 03:07:16 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App/Controllers\Auth::register"
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\Router.php on line 492.
+ 1 SYSTEMPATH\Router\Router.php(492): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App/Controllers\\Auth::register')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->checkRoutes('/')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('/')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:07:46 --> ErrorException: Undefined variable $errors
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:09:07 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:09:08 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:11:09 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:11:10 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:11:10 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:11:11 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:11:11 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:11:28 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:12:54 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:12:55 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:14:38 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:15:07 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:15:08 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:16:34 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 03:16:35 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: /]
+in APPPATH\Views\loginpage\v_register.php on line 13.
+ 1 APPPATH\Views\loginpage\v_register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\loginpage\\v_register.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loginpage/v_register', [], true)
+ 5 APPPATH\Controllers\auth.php(19): view('loginpage/v_register')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 03:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 03:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 04:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 04:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 04:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-30 04:03:14 --> mysqli_sql_exception: Table 'nodin.tbl_user' doesn't exist in C:\xampp\htdocs\Nodin\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Nodin\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\Nodin\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\Nodin\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\Nodin\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\Nodin\app\Models\M_Auth.php(11): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Nodin\app\Controllers\auth.php(79): App\models\M_Auth->sv_register(Array)
+#6 C:\xampp\htdocs\Nodin\system\CodeIgniter.php(933): App\Controllers\Auth->sv_register()
+#7 C:\xampp\htdocs\Nodin\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\Nodin\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Nodin\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Nodin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Nodin\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-10-30 04:03:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'nodin.tbl_user' doesn't exist
+[Method: POST, Route: auth/sv_register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_user` (`nama_user`, `email`, `no_hp`, `password`, `level`) VALUES (:nama_user:, :email:, :no_hp:, :password:, :level:)', [...], false)
+ 2 APPPATH\Models\M_Auth.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\auth.php(79): App\models\M_Auth->sv_register([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->sv_register()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-30 04:03:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'nodin.tbl_user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_user` (`nama_user`, `email`, `no_hp`, `password`, `level`) VALUES (\'sidikraya96@gmail.com\', \'sidikraya96@gmail.com\', \'082134\', \'12345\', 3)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_user` (`nama_user`, `email`, `no_hp`, `password`, `level`) VALUES (\'sidikraya96@gmail.com\', \'sidikraya96@gmail.com\', \'082134\', \'12345\', 3)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_user` (`nama_user`, `email`, `no_hp`, `password`, `level`) VALUES (:nama_user:, :email:, :no_hp:, :password:, :level:)', [...], false)
+ 4 APPPATH\Models\M_Auth.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\auth.php(79): App\models\M_Auth->sv_register([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->sv_register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-30 04:03:14 --> [Caused by] mysqli_sql_exception: Table 'nodin.tbl_user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `tbl_user` (`nama_user`, `email`, `no_hp`, `password`, `level`) VALUES (\'sidikraya96@gmail.com\', \'sidikraya96@gmail.com\', \'082134\', \'12345\', 3)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_user` (`nama_user`, `email`, `no_hp`, `password`, `level`) VALUES (\'sidikraya96@gmail.com\', \'sidikraya96@gmail.com\', \'082134\', \'12345\', 3)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_user` (`nama_user`, `email`, `no_hp`, `password`, `level`) VALUES (\'sidikraya96@gmail.com\', \'sidikraya96@gmail.com\', \'082134\', \'12345\', 3)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_user` (`nama_user`, `email`, `no_hp`, `password`, `level`) VALUES (:nama_user:, :email:, :no_hp:, :password:, :level:)', [...], false)
+ 5 APPPATH\Models\M_Auth.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\auth.php(79): App\models\M_Auth->sv_register([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->sv_register()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 04:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 04:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 04:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-30 07:20:32 --> ErrorException: Undefined property: App\Controllers\Auth::$model_auth
+[Method: POST, Route: auth/sv_register]
+in APPPATH\Controllers\auth.php on line 79.
+ 1 APPPATH\Controllers\auth.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$model_auth', 'C:\\xampp\\htdocs\\Nodin\\app\\Controllers\\auth.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->sv_register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-30 07:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-30 07:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

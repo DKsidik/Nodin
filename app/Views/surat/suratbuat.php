@@ -1,51 +1,46 @@
-.,mnb<section>
+<section>
 
     <div class="card card-default" style="margin-left:20em; margin-top: 1em; width:70%;">
         <div class="card-header">
             <h3 class="card-title">Buat Surat</h3>
 
             <div class="card-tools">
-                <!-- <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-tool" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                </button> -->
             </div>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="form-group">
-                        <label>Kepada</label>
-                        <select class="form-control select2bs4 " style="width: 100%;">
-                            <option selected="selected" disabled>--ketik/Pilih--</option>
-                            <option>Kepala Suku Dinas Komunikasi, Informatika dan Statistik
-                                Kota Administrasi Jakarta Selatan
-                            </option>
-                        </select>
-                    </div>
-                    <!-- /.form-group -->
-                    <div class="form-group">
-                        <label>Pembuat Laporan</label>
-                        <select class="form-control select2bs4" style="width: 100%;">
-                            <option>....</option>
-                            <option>....</option>
-                            <option>....</option>
+                    <form action="cetaKk_surat.php" method="POST">
+                        <div class="form-group">
+                            <label>Kepada</label>
+                            <select class="form-control select2bs4 " style="width: 100%;">
+                                <option selected="selected" disabled>--ketik/Pilih--</option>
+                                <option>Kepala Suku Dinas Komunikasi, Informatika dan Statistik
+                                    Kota Administrasi Jakarta Selatan
+                                </option>
+                            </select>
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label>Pembuat Laporan</label>
+                            <select class="form-control select2bs4" style="width: 100%;">
+                                <option>....</option>
+                                <option>....</option>
+                                <option>....</option>
 
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Sifat</label>
-                        <select class="form-control select2bs4" style="width: 100%;">
-                            <option selected="selected" disabled>--Pilih--</option>
-                            <option>Penting</option>
-                            <option>....</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Sifat</label>
+                            <select class="form-control select2bs4" style="width: 100%;">
+                                <option selected="selected" disabled>--Pilih--</option>
+                                <option>Penting</option>
+                                <option>....</option>
 
-                        </select>
-                    </div>
-                    <!-- /.form-group -->
+                            </select>
+                        </div>
+                        <!-- /.form-group -->
                 </div>
                 <!-- /.col -->
                 <div class="card-body" style="margin-top: -1.3rem;">
@@ -90,9 +85,11 @@
                 </div>
                 <button type="reset" class="btn btn-default">Cancel</button>
             </div>
+            </form>
         </div>
         <!-- /.col -->
     </div>
+
     <!-- /.row -->
     </div>
     </div>
