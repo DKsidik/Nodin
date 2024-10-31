@@ -13,7 +13,7 @@ $routes->setAutoRoute(true);
 
 
 $routes->get('/', 'Auth::register');
-$routes->get('login', 'Home::login');
+$routes->get('login', 'Auth::login');
 $routes->get('home', 'Home::index');
 $routes->get('home/surat', 'Home::surat');
 $routes->get('home/buat', 'Home::buat');

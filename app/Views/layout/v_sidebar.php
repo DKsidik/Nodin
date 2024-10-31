@@ -1,3 +1,17 @@
+ <style>
+     .sidebar {
+         display: flex;
+         flex-direction: column;
+         height: 100vh;
+         /* background-color: blue; */
+         /* Memenuhi tinggi layar */
+     }
+
+     .logout-item {
+         margin-top: 0;
+         /* Memposisikan logout di bagian bawah */
+     }
+ </style>l
  <section>
 
      <!-- Main Sidebar Container -->
@@ -16,7 +30,7 @@
                      <img src="http://localhost/Nodin/public/template/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                  </div>
                  <div class="info">
-                     <a href="#" class="d-block">Admin</a>
+                     <a href="#" class="d-block"><?= $nama ?></a>
                  </div>
              </div>
 
@@ -75,8 +89,16 @@
                                  </a>
                              </li>
                          </ul>
+                     </li>
+                     <li class="nav-item logout-item">
+                         <a href="http://localhost/Nodin/public/auth/logout" class="nav-link">
+                             <i class="mr-3 fa-solid fa-right-from-bracket"></i>
+                             <p>Logout</p>
+                         </a>
+                     </li>
              </nav>
              <!-- /.sidebar-menu -->
+
          </div>
          <!-- /.sidebar -->
 

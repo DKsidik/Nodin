@@ -64,7 +64,7 @@
                     <input type="password" name="repassword" class="form-control" placeholder="Retype password">
                     <div class="input-group-append">
                         <div class="input-group-text">
-                            <span class="fas fa-lock"></span>
+                            <span class="fa-solid fa-repeat"></span>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                 echo form_close();
                 ?>
 
-                <a href="http://localhost/Nodin/public/home/login" class="text-center">I already have an account</a>
+                <a href="http://localhost/Nodin/public/Auth/login" class="text-center">I already have an account</a>
             </div>
             <!-- /.form-box -->
         </div><!-- /.card -->

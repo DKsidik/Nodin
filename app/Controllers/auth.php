@@ -63,7 +63,7 @@ class Auth extends BaseController
                 'rules' => 'required|matches[password]',
                 'errors' => [
                     'required' => '{field} Wajib Diisi !!',
-                    'matches' => '{field} Password Tidak Sama !!'
+                    'matches' => '{field} Password Tidak Sesuai'
                 ]
             ],
 
@@ -83,5 +83,47 @@ class Auth extends BaseController
             session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
             return redirect()->to(base_url('Auth/register'))->withInput();
         }
+    }
+
+    public function login()
+    {
+        $data = [
+            'content' => 'loginpage/login' // pastikan file login.php ada di folder Views/loginpage/
+        ];
+
+        // Memuat template AdminLTE dengan loginpage/login sebagai kontennya
+        echo view('layout/v_header');
+        echo view($data['content']);
+    }
+
+    public function ceklogin()
+    {
+        // Logika login
+        $email = $this->request->getPost('email');
+        $password = $this->request->getPost('password');
+        $cek = $this->M_auth->login($email, $password);
+
+        if ($cek) {
+            // Login berhasil
+            session()->set('log', true);
+            session()->set('nama_user', $cek['nama_user']);
+            session()->set('email', $cek['email']);
+            session()->set('level', $cek['level']);
+            session()->set('no_hp', $cek['no_hp']);
+            return redirect()->to(base_url('home'));
+        } else {
+            // Login gagal
+            session()->setFlashdata('pesan', 'Login Gagal, Email atau Password Tidak Sesuai');
+            return redirect()->to(base_url('Auth/login'));
+        }
+    }
+
+    public function logout()
+    {
+        // Hapus semua data session
+        session()->destroy();
+
+        // Redirect ke halaman login
+        return redirect()->to(base_url('auth/login'));
     }
 }
