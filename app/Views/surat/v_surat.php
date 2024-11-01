@@ -122,10 +122,10 @@
             <td>
               <ul class="list-inline">
                 <li class="list-inline-item">
-                  <img alt="Avatar" class="table-avatar" src="../../dist/img/avatar.png">
+                  <img alt="Avatar" class="table-avatar" src=<?= base_url("template/dist/img/avatar.png"); ?>>
                 </li>
                 <li class="list-inline-item">
-                  <img alt="Avatar" class="table-avatar" src="../../dist/img/avatar2.png">
+                  <img alt="Avatar" class="table-avatar" src=<?= base_url("template/dist/img/avatar.png"); ?>>
                 </li>
               </ul>
             </td>
