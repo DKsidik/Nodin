@@ -50,6 +50,13 @@ class Auth extends BaseController
                     'required' => '{field} Wajib Diisi'
                 ]
             ],
+            'level' => [
+                'label' => 'Role Akun',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Wajib Diisi'
+                ]
+            ],
 
             'password' => [
                 'label' => 'Password',
@@ -73,8 +80,8 @@ class Auth extends BaseController
                 'nama_user' => $this->request->getPost('nama_user'),
                 'email' => $this->request->getPost('email'),
                 'no_hp' => $this->request->getPost('no_hp'),
+                'level' => $this->request->getPost('level'),
                 'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
-                'level' => 3
             ];
             $this->M_auth->sv_register($data);
             session()->setFlashdata('pesan', 'Register Telah Berhasil');
@@ -110,7 +117,15 @@ class Auth extends BaseController
             session()->set('email', $cek['email']);
             session()->set('level', $cek['level']);
             session()->set('no_hp', $cek['no_hp']);
-            return redirect()->to(base_url('home'));
+            if ($cek['level'] == 1) {
+                return redirect()->to(base_url('home'));
+            } elseif ($cek['level'] == 2) {
+                echo "Ini Halaman buat yang role id nya 2 atau halaman TU";
+            } elseif ($cek['level'] == 3) {
+                echo "Ini Halaman buat yang roleID adalah 3 atau halaman User";
+            } else {
+                echo "role id lu ga kedaftar kocak";
+            }
         } else {
             // Login gagal
             session()->setFlashdata('pesan', 'Login Gagal, Email atau Password Tidak Sesuai');
