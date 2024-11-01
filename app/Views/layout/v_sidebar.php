@@ -3,7 +3,7 @@
          display: flex;
          flex-direction: column;
          height: 100vh;
-         /* background-color: blue; */
+         /* background-color: rgba(0, 0, 33, 0.3) */
          /* Memenuhi tinggi layar */
      }
 
@@ -51,7 +51,7 @@
                  <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                      <li class="nav-item">
                          <a href="http://localhost/Nodin/public/home" class="nav-link">
-                             <i class="fa-solid fa-house" style="margin-right: 10px;"></i>
+                             <i class="mr-4 fa-solid fa-house" style="margin-right: 10px;"></i>
                              <p>Dashboard</p>
                          </a>
                      </li>
@@ -59,40 +59,41 @@
 
                      <li class="nav-item">
                          <a href="#" class="nav-link">
-                             <i class="nav-icon fas fa-circle"></i>
+                             <i class="mr-4 fa-solid fa-pen"></i>
                              <p>
                                  Surat
                                  <i class="right fas fa-angle-left"></i>
                              </p>
                          </a>
-                         <ul class="nav nav-treeview">
+                         <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
+                             <li class="nav-item">
+                                 <a href="http://localhost/Nodin/public/surat/infosurat" class="nav-link">
+                                     <i class="mr-3 fa-regular fa-envelope"></i>
+                                     <p>Surat</p>
+                                 </a>
+                             </li>
+                         </ul>
+                         <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
                              <li class="nav-item">
                                  <a href="http://localhost/Nodin/public/home/buat" class="nav-link">
-                                     <i class="fa-solid fa-pen-to-square" style=" margin-right: 1rem; "></i>
+                                     <i class="mr-3 fas fa-inbox"></i>
+                                     <p>Surat Masuk</p>
+                                 </a>
+                             </li>
+                         </ul>
+
+
+                         <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
+                             <li class="nav-item">
+                                 <a href="http://localhost/Nodin/public/home/buat" class="nav-link">
+                                     <i class="mr-3 fa-solid fa-pen-to-square"></i>
                                      <p>Buat Surat</p>
                                  </a>
                              </li>
                          </ul>
-                         <ul class="nav nav-treeview">
-                             <li class="nav-item">
-                                 <a href="http://localhost/Nodin/public/home/buat" class="nav-link">
-                                     <i class="far fa-circle nav-icon"></i>
-                                     <p>Buat Surat</p>
-                                 </a>
-                             </li>
-                         </ul>
-                         <ul class="nav nav-treeview">
-                             <li class="nav-item">
-                                 <a href="http://localhost/Nodin/public/home/buat" class="nav-link">
-                                     <i class="far fa-circle nav-icon"></i>
-                                     <p>Buat Surat</p>
-                                 </a>
-                             </li>
-                         </ul>
-                     </li>
                      <li class="nav-item logout-item">
                          <a href="http://localhost/Nodin/public/auth/logout" class="nav-link">
-                             <i class="mr-3 fa-solid fa-right-from-bracket"></i>
+                             <i class="mr-4 fa-solid fa-right-from-bracket"></i>
                              <p>Logout</p>
                          </a>
                      </li>

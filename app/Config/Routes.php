@@ -15,5 +15,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Auth::register');
 $routes->get('login', 'Auth::login');
 $routes->get('home', 'Home::index');
-$routes->get('home/surat', 'Home::surat');
-$routes->get('home/buat', 'Home::buat');
+$routes->get('home/surat', 'surat::surat');
+$routes->get('surat/infosurat', 'Surat::infosurat');
+
+// $routes->get('home/buat', 'Home::buat');
