@@ -31,16 +31,16 @@
               #
             </th>
             <th style="width: 20%">
-              Project Name
+              Perihal
             </th>
             <th style="width: 30%">
-              Team Members
+              Tanggal Surat
             </th>
             <th>
-              Project Progress
+              Status
             </th>
             <th style="width: 8%" class="text-center">
-              Status
+              Sifat
             </th>
             <th style="width: 20%">
             </th>
@@ -77,13 +77,7 @@
               </ul>
             </td>
             <td class="project_progress">
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%">
-                </div>
-              </div>
-              <small>
-                57% Complete
-              </small>
+              <p>Disposisi</p>
             </td>
             <td class="project-state">
               <span class="badge badge-success">Success</span>
@@ -130,13 +124,8 @@
               </ul>
             </td>
             <td class="project_progress">
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100" style="width: 47%">
-                </div>
-              </div>
-              <small>
-                47% Complete
-              </small>
+              <p>Disposisi</p>
+            </td>
             </td>
             <td class="project-state">
               <span class="badge badge-success">Success</span>
@@ -185,14 +174,10 @@
                 </li>
               </ul>
             </td>
+
             <td class="project_progress">
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%">
-                </div>
-              </div>
-              <small>
-                77% Complete
-              </small>
+              <p>Disposisi</p>
+            </td>
             </td>
             <td class="project-state">
               <span class="badge badge-success">Success</span>
@@ -245,13 +230,8 @@
               </ul>
             </td>
             <td class="project_progress">
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                </div>
-              </div>
-              <small>
-                60% Complete
-              </small>
+              <p>Disposisi</p>
+            </td>
             </td>
             <td class="project-state">
               <span class="badge badge-success">Success</span>
@@ -301,13 +281,8 @@
               </ul>
             </td>
             <td class="project_progress">
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%">
-                </div>
-              </div>
-              <small>
-                12% Complete
-              </small>
+              <p>Disposisi</p>
+            </td>
             </td>
             <td class="project-state">
               <span class="badge badge-success">Success</span>
@@ -360,13 +335,8 @@
               </ul>
             </td>
             <td class="project_progress">
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
-                </div>
-              </div>
-              <small>
-                35% Complete
-              </small>
+              <p>Disposisi</p>
+            </td>
             </td>
             <td class="project-state">
               <span class="badge badge-success">Success</span>
@@ -413,13 +383,8 @@
               </ul>
             </td>
             <td class="project_progress">
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%">
-                </div>
-              </div>
-              <small>
-                87% Complete
-              </small>
+              <p>Disposisi</p>
+            </td>
             </td>
             <td class="project-state">
               <span class="badge badge-success">Success</span>
@@ -469,13 +434,8 @@
               </ul>
             </td>
             <td class="project_progress">
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%">
-                </div>
-              </div>
-              <small>
-                77% Complete
-              </small>
+              <p>Disposisi</p>
+            </td>
             </td>
             <td class="project-state">
               <span class="badge badge-success">Success</span>
@@ -528,13 +488,8 @@
               </ul>
             </td>
             <td class="project_progress">
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%">
-                </div>
-              </div>
-              <small>
-                77% Complete
-              </small>
+              <p>Disposisi</p>
+            </td>
             </td>
             <td class="project-state">
               <span class="badge badge-success">Success</span>
