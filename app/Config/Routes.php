@@ -8,12 +8,12 @@ use CodeIgniter\Router\RouteCollection;
 
 // $routes->setDefaultNamespace('App/Controllers');
 $routes->setDefaultController('Auth');
-$routes->setDefaultMethod('register');
+$routes->setDefaultMethod('login');
 $routes->setAutoRoute(true);
 
 
-$routes->get('/', 'Auth::register');
-$routes->get('login', 'Auth::login');
+$routes->get('/', 'Auth::login');
+$routes->get('register', 'Auth::register');
 $routes->get('home', 'Home::index');
 $routes->get('home/surat', 'surat::surat');
 $routes->get('surat/infosurat', 'Surat::infosurat');

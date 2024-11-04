@@ -1,6 +1,8 @@
 <style>
     body {
-        background-image: url('http://localhost/Nodin/public/template/dist/img/photo1.png');
+        background-image: url('http://localhost/Nodin/public/template/dist/img/photo4.jp    g');
+        background-size: cover;
+
     }
 
     .card {
@@ -80,9 +82,9 @@
                     <!-- <p class="mb-1">
                         <a href="forgot-password.html">I forgot my password</a>
                     </p> -->
-                    <p class="mb-0">
+                    <!-- <p class="mb-0">
                         <a href="http://localhost/Nodin/public/" class="text-center">Register</a>
-                    </p>
+                    </p> -->
                 </div>
                 <!-- /.login-card-body -->
             </div>
