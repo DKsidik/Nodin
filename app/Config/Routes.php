@@ -19,3 +19,4 @@ $routes->get('home/surat', 'surat::surat');
 $routes->get('surat/infosurat', 'Surat::infosurat');
 
 // $routes->get('home/buat', 'Home::buat');
+

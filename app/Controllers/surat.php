@@ -22,3 +22,5 @@ class surat extends BaseController
         echo view('layout/v_wrapper', $data);
     }
 }
+
+
