@@ -1,6 +1,6 @@
 <style>
     body {
-        background-image: url('http://localhost/Nodin/public/template/dist/img/photo4.jp    g');
+        background-image: url('http://localhost/Nodin/public/template/dist/img/photo5.jpg');
         background-size: cover;
 
     }

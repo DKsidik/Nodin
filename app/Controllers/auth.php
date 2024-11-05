@@ -85,10 +85,10 @@ class Auth extends BaseController
             ];
             $this->M_auth->sv_register($data);
             session()->setFlashdata('pesan', 'Register Telah Berhasil');
-            return redirect()->to(base_url('Auth/register'))->withInput();
+            return redirect()->to(base_url('Home/infouser'))->withInput();
         } else {
             session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
-            return redirect()->to(base_url('Auth/register'))->withInput();
+            return redirect()->to(base_url('Home/infouser'))->withInput();
         }
     }
 
@@ -118,7 +118,7 @@ class Auth extends BaseController
             session()->set('level', $cek['level']);
             session()->set('no_hp', $cek['no_hp']);
             if ($cek['level'] == 1) {
-                return redirect()->to(base_url('home'));
+                return redirect()->to(base_url('home/home1'));
             } elseif ($cek['level'] == 2) {
                 return redirect()->to(base_url('home'));
             } elseif ($cek['level'] == 3) {

@@ -7,7 +7,7 @@
              <div class="container-fluid">
                  <div class="row mb-2">
                      <div class="col-sm-6">
-                         <h1 class="m-0">Dashboard </h1>
+                         <h1 class="m-0">Dashboard / <?= $role ?> </h1>
                      </div><!-- /.col -->
                      <div class="col-sm-6">
                          <ol class="breadcrumb float-sm-right">
@@ -31,6 +31,7 @@
 
                              <div class="info-box-content">
                                  <span class="info-box-text">Surat Masuk</span>
+                                 <span class="info-box-number">700</span>
                                  <!-- <span class="info-box-number">
                                      10
                                      <small>%</small> -->
@@ -47,6 +48,7 @@
 
                              <div class="info-box-content">
                                  <span class="info-box-text">Surat</span>
+                                 <span class="badge badge-info float-right" style="width: 20%;"><?= $jumlah_surat ?></span>
                                  <!-- <span class="info-box-number">41,410</span> -->
                              </div>
                              <!-- /.info-box-content -->
