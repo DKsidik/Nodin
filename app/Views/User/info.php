@@ -52,22 +52,22 @@
                                              <h2 class="lead"><b><?= $key['nama_user'] ?></b></h2>
                                              <p class="text-muted text-sm"><b>About: </b> </p>
                                              <ul class="ml-4 mb-0 fa-ul text-muted">
-                                                 <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> <?= $key['email'] ?></li>
+                                                 <li class="small"><span class="fa-li"><i class="fa-solid fa-envelope"></i></span> <?= $key['email'] ?></li>
                                                  <li class="small mt-3"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> <?= $key['no_hp'] ?></li>
                                              </ul>
                                          </div>
                                          <div class="col-5 text-center">
-                                             <img src="http://localhost/Nodin/public/template/dist/img/user2-160x160.jpg" alt="user-avatar" class="img-circle img-fluid">
+                                             <img src="http://localhost/Nodin/public/template/dist/img/avatar.png" alt="user-avatar" class="img-circle img-fluid">
                                          </div>
                                      </div>
                                  </div>
                                  <div class="card-footer">
                                      <div class="text-right">
-                                         <a href="#" class="btn btn-sm bg-teal">
-                                             <i class="fas fa-comments"></i> Edit Profile
+                                         <a href="http://localhost/Nodin/public/Home/edit_akun" class="btn btn-sm bg-teal">
+                                             <i class=" mr-1 fa-solid fa-user-pen"></i> Edit Profile
                                          </a>
-                                         <a href="#" class="btn btn-sm btn-primary">
-                                             <i class="fas fa-user"></i> View Profile
+                                         <a href="http://localhost/Nodin/public/Home/v_profile" class="btn btn-sm btn-primary">
+                                             <i class="mr-2 fas fa-user"></i> View Profile
                                          </a>
                                      </div>
                                  </div>

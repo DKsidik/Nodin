@@ -61,8 +61,8 @@
                         <div class="info-box mb-3">
                             <span class="info-box-icon bg-success elevation-1"><i class="fa-solid fa-pen-to-square"></i></span>
                             <div class="info-box-content">
-                                <a href="http://localhost/Nodin/public/home/buat" class="info-box-link" style="text-decoration: none; color: inherit;">
-                                    <span class="info-box-text">Buat Surat</span>
+                                <a href="http://localhost/Nodin/public/home/buat_akun" class="info-box-link" style="text-decoration: none; color: inherit;">
+                                    <span class="info-box-text">Buat User</span>
                                 </a>
                                 <!-- <span class="info-box-number">760</span> -->
                             </div>
@@ -76,7 +76,7 @@
                             <span class="info-box-icon bg-warning elevation-1"><i class="fa-solid fa-box-archive"></i></span>
 
                             <div class="info-box-content">
-                                <span class="info-box-text">Arsip Surat</span>
+                                <span class="info-box-text"></span>
                                 <!-- <span class="info-box-number">2,000</span> -->
                             </div>
                             <!-- /.info-box-content -->
@@ -87,4 +87,6 @@
                 </div>
                 <!-- /.row -->
 
+
+            </div>
         </section>

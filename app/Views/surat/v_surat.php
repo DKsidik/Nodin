@@ -106,7 +106,7 @@
                 </ul>
               </td>
               <td class="project_progress">
-                <span class="badge badge-success">Success</span>
+                <span class="badge badge-success">Disposisi</span>
               </td>
               <td>
                 <a>

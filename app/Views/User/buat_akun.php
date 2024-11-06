@@ -5,7 +5,7 @@
          <div class="container-fluid">
              <div class="row mb-2">
                  <div class="col-sm-6">
-                     <h1>Buat Akun</h1>
+                     <h1>Tambah User</h1>
                  </div>
                  <div class="col-sm-6">
                      <ol class="breadcrumb float-sm-right">
@@ -25,8 +25,8 @@
                     ?>
                  <div><label for="">Username</label></div>
                  <div class="input-group mb-3">
-                     <input name="nama_user" class="form-control" placeholder="Username">
-                     <div class="input-group-append">
+                     <input name="nama_user" class="form-control" placeholder=>
+                     <div class=" input-group-append">
                          <div class="input-group-text">
                              <span class="fas fa-user"></span>
                          </div>
@@ -43,7 +43,7 @@
                  </div>
                  <div><label for="">No WhatsApp</label></div>
                  <div class="input-group mb-3">
-                     <input name="no_hp" class="form-control" placeholder="No.Handphone">
+                     <input name="no_hp" class="form-control" placeholder="No.">
                      <div class="input-group-append">
                          <div class="input-group-text">
                              <span class="fa-solid fa-phone"></span>
@@ -84,7 +84,7 @@
                  </div>
                  <div class="col-md-2 d-flex">
                      <div class="mr-2">
-                         <button type="submit" class="btn btn-primary btn-block">Buat</button>
+                         <button type="submit" class="btn btn-primary btn-block">Tambah</button>
                      </div>
                      <div>
                          <button type="cancel" class="btn btn-danger btn-block">Batal</button>

@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\Searchmodel;
 use App\Models\UserModel;
 use App\Models\SuratModel;
 
@@ -22,6 +23,8 @@ class Home extends BaseController
         ];
         echo view('layout/v_wrapper', $data);
     }
+
+
     public function surat()
     {
         $data = [
@@ -111,10 +114,23 @@ class Home extends BaseController
 
     public function edit_akun()
     {
-
         $data = [
+
             'content' => 'user/edit_akun',
             'nama' => session()->get('nama_user'),
+
+
+        ];
+        echo view('layout_sa/sa_wrapper', $data);
+    }
+
+    public function v_profile()
+    {
+        $data = [
+
+            'content' => 'user/v_profile',
+            'nama' => session()->get('nama_user'),
+
 
         ];
         echo view('layout_sa/sa_wrapper', $data);

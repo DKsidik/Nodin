@@ -28,6 +28,8 @@
 <script src="<?= base_url(); ?>/template/plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
 <script src="<?= base_url(); ?>/template/plugins/sparklines/sparkline.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="<?= base_url(); ?>/template/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- JQVMap -->
 <script src="<?= base_url(); ?>/template/plugins/jqvmap/jquery.vmap.min.js"></script>
 <script src="<?= base_url(); ?>/template/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
@@ -104,6 +106,17 @@
 
 <script>
     $(document).ready(function() {
+        // Inisialisasi kalender
+        $('#calendar').daterangepicker({
+            format: 'mm/dd/yyyy', // Tentukan format tanggal yang diinginkan
+            todayHighlight: true, // Menyoroti tanggal hari ini
+            autoclose: true // Menutup kalender setelah memilih tanggal
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
         $('#compose-textarea').summernote({
             height: 300, // Atur tinggi editor
             placeholder: 'Mulailah menulis di sini...',
@@ -117,6 +130,12 @@
         });
     });
 </script>
+
+<script>
+    $.widget.bridge('uibutton', $.ui.button)
+</script>
+
+
 
 
 </body>
