@@ -77,7 +77,9 @@
                              <li class="nav-item">
                                  <a href="http://localhost/Nodin/public/home/buat" class="nav-link">
                                      <i class="mr-3 fas fa-inbox"></i>
-                                     <p>Surat Masuk</p>
+                                     <p>Surat Masuk
+                                         <span class="badge badge-info right"><?= $jumlah_surat ?></span>
+                                     </p>
                                  </a>
                              </li>
                          </ul>

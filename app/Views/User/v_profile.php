@@ -19,7 +19,7 @@
     <section class="content">
 
         <!-- Default box -->
-        <div class="card ml-4 mt-4" style="width:95%">
+        <div class="card ml-5 mt-4" style="width:90%">
             <div class="card-body row">
                 <div class="col-5 text-center d-flex align-items-center justify-content-center">
                     <div class="">
@@ -45,14 +45,6 @@
                     <div class="form-group">
                         <label for="inputMessage">Role Akun</label>
                         <input type="text" id="inputSubject" class="form-control" placeholder="User" disabled>
-                    </div>
-                    <div class="col-md-4 d-flex">
-                        <div class="form-group mr-2">
-                            <input type="submit" class="btn btn-primary" value="Ubah">
-                        </div>
-                        <div class="form-group">
-                            <button type="cancel" class="btn btn-danger btn  ">Batal</button>
-                        </div>
                     </div>
                 </div>
             </div>

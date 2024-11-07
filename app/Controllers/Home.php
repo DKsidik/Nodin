@@ -135,4 +135,25 @@ class Home extends BaseController
         ];
         echo view('layout_sa/sa_wrapper', $data);
     }
+
+    public function home3()
+    {
+        // print_r(session()->get());
+        // $nama = session()->get('nama_user');
+        // $userModel = new UserModel();
+        // $user = $userModel->find();
+        // $UserModel = new UserModel();
+        // $jumlahUser = $UserModel->jumlahUser();
+        $data = [
+            'content' => 'admin/u_dashboard',
+            'role' => 'User',
+            'nama' => session()->get('nama_user'),
+
+            // 'jumlah_user' => $jumlahUser,
+            // 'user' => $user,
+            // 'jumlah_user' => $jumlahUser,
+        ];
+        // print_r($user);
+        echo view('layout_u/u_wrapper', $data);
+    }
 }

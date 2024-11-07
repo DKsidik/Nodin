@@ -122,7 +122,7 @@ class Auth extends BaseController
             } elseif ($cek['level'] == 2) {
                 return redirect()->to(base_url('home'));
             } elseif ($cek['level'] == 3) {
-                echo "Ini Halaman buat yang roleID adalah 3 atau halaman User";
+                return redirect()->to(base_url('home/home3'));
             } else {
                 echo "role id lu ga kedaftar kocak";
             }

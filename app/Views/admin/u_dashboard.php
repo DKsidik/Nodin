@@ -48,7 +48,7 @@
 
                              <div class="info-box-content">
                                  <span class="info-box-text">Surat</span>
-                                 <span class="badge badge-info float-right" style="width: 20%;"><?= $jumlah_surat ?></span>
+                                 <span class="badge badge-info float-right" style="width: 20%;"></span>
                                  <!-- <span class="info-box-number">41,410</span> -->
                              </div>
                              <!-- /.info-box-content -->
@@ -64,7 +64,7 @@
                              <span class="info-box-icon bg-success elevation-1"><i class="fa-solid fa-pen-to-square"></i></span>
                              <div class="info-box-content">
                                  <a href="http://localhost/Nodin/public/home/buat" class="info-box-link" style="text-decoration: none; color: inherit;">
-                                     <span class="info-box-text">Edit Surat</span>
+                                     <span class="info-box-text">Buat Surat</span>
                                  </a>
                                  <!-- <span class="info-box-number">760</span> -->
                              </div>
