@@ -4,13 +4,41 @@
   margin-top: 2em;
   width: 80%;
 }
+
+.card {
+  margin-left: 17em;
+  margin-top: 2em;
+  width: 80%;
+}
+
+.alert {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  /* Smooth transition for fade in/out */
+}
+
+.alert.show {
+  opacity: 1;
+}
 </style>
 
 
 <section class="content">
 
+
+
   <!-- Default box -->
   <div class="card">
+    <div class="pesan" id="pesan">
+      <?php
+      if (session()->getFlashdata('pesan')) {
+        echo ' <div class="alert alert-success" role="alert">';
+        echo   session()->getFlashdata('pesan');
+        echo '</div>';
+      }
+      ?>
+    </div>
+
     <div class="card-header">
       <h3 class="card-title">Info Surat</h3>
 
@@ -25,40 +53,44 @@
         <thead>
           <tr>
             <th style="width: 1%">
-              #
+              No
             </th>
             <th style="width: 20%">
-              Project Name
+              Perihal
             </th>
-            <th style="width: 30%">
-              Team Members
+            <th style="width: 20%">
+              Pembuat
             </th>
-            <th>
-              Project Progress
-            </th>
-            <th style="width: 8%" class="text-center">
+            <th style="width: 20%">
               Status
             </th>
             <th style="width: 20%">
+              Sifat
+            </th>
+            <th style="width: 20%">
+              tombol
             </th>
           </tr>
         </thead>
         <tbody>
+          <?php $no = 1 ?>
+          <?php foreach ($surat as $key) { ?>
           <tr>
             <td>
-              #
+
+              <a><?= $no++ ?></a>
             </td>
             <td>
               <a>
-                AdminLTE v3
+                <?= $key['hal'] ?>
               </a>
               <br />
               <small>
-                Created 01.01.2019
+                Created <?= $key['tanggal'] ?>
               </small>
             </td>
             <td>
-              <ul class="list-inline">
+              <!-- <ul class="list-inline">
                 <li class="list-inline-item">
                   <img alt="Avatar" class="table-avatar" src=<?= base_url("template/dist/img/avatar.png"); ?>>
                 </li>
@@ -70,6 +102,7 @@
                 </li>
                 <li class="list-inline-item">
                   <img alt="Avatar" class="table-avatar" src=<?= base_url("template/dist/img/avatar4.png"); ?>>
+<<<<<<< HEAD
                 </li>
               </ul>
             </td>
@@ -563,6 +596,42 @@
               </a>
             </td>
           </tr>
+=======
+                </li> -->
+              <a>
+                <?= $key['pembuat'] ?>
+              </a>
+              </ul>
+            </td>
+            <td class="project_progress">
+              <span class="badge badge-success">Disposisi</span>
+            </td>
+            <td>
+              <a>
+                <?= $key['sifat'] ?>
+              </a>
+            </td>
+            <td class="project-actions text-center d-flex">
+              <a class="btn btn-primary btn-sm mr-1" href="#">
+                <i class="fas fa-folder">
+                </i>
+                View
+              </a>
+              <a class="btn btn-info btn-sm mr-1" href="#">
+                <i class="fas fa-pencil-alt">
+                </i>
+                Edit
+              </a>
+              <a class="btn btn-danger btn-sm" href="#">
+                <i class="fas fa-trash">
+                </i>
+                Delete
+              </a>
+            </td>
+          </tr>
+          <?php } ?>
+
+          >>>>>>> fde36dd240cc8afad1f503ff580ecfdb9a0b33eb
         </tbody>
       </table>
     </div>
@@ -574,3 +643,20 @@
 <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const alertBox = document.querySelector(".alert"); // Select the .alert div directly
+  if (alertBox) {
+    // Show the alert with a smooth effect
+    setTimeout(() => {
+      alertBox.classList.add("show");
+    }, 100); // Small delay to ensure DOM is ready
+
+    // Set timeout for 5 seconds, then fade out smoothly
+    setTimeout(() => {
+      alertBox.classList.remove("show");
+    }, 5000);
+  }
+});
+</script>

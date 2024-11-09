@@ -14,7 +14,7 @@
                     <form action="cetaKk_surat.php" method="POST">
                         <div class="form-group">
                             <label>Kepada</label>
-                            <select class="form-control select2bs4 " style="width: 100%;">
+                            <select name="kepada" class="form-control select2bs4 " style="width: 100%;">
                                 <option selected="selected" disabled>--ketik/Pilih--</option>
                                 <option>Kepala Suku Dinas Komunikasi, Informatika dan Statistik
                                     Kota Administrasi Jakarta Selatan
@@ -24,19 +24,20 @@
                         <!-- /.form-group -->
                         <div class="form-group">
                             <label>Pembuat Laporan</label>
-                            <select class="form-control select2bs4" style="width: 100%;">
-                                <option>....</option>
-                                <option>....</option>
-                                <option>....</option>
+                            <!-- <input type="text" name="pembuat" class="form-control" value="<?= $nama ?>" readonly> -->
+                            <select name="pembuat" class="form-control select2bs4" style="width: 100%;">
+                                <?php foreach ($user as $pembuat) { ?>
+                                    <option value="<?= $pembuat['nama_user'] ?>"><?= $pembuat['nama_user'] ?></option>
+                                <?php } ?>
 
                             </select>
                         </div>
                         <div class="form-group">
                             <label>Sifat</label>
-                            <select class="form-control select2bs4" style="width: 100%;">
+                            <select name="sifat" class="form-control select2bs4" style="width: 100%;">
                                 <option selected="selected" disabled>--Pilih--</option>
                                 <option>Penting</option>
-                                <option>....</option>
+                                <option>diperlukan</option>
 
                             </select>
                         </div>
@@ -46,27 +47,24 @@
                 <div class="card-body" style="margin-top: -1.3rem;">
                     <div class="form-group">
                         <label> Hal </label>
-                        <input class="form-control" type="text" placeholder="">
+                        <input name="hal" class="form-control" type="text" placeholder="">
                     </div>
                     <!-- <div class="card-body" style="margin-top: -1.3rem;"> -->
                     <div class="form-group">
                         <label> Tembusan </label>
-                        <input class="form-control" type="text" placeholder="Optional">
+                        <input name="tembusan" class="form-control" type="text" placeholder="Optional">
                     </div>
 
                     <div class="form-group">
                         <label>Lampiran</label>
-                        <select class="form-control select2bs4 " style="width: 100%;">
+                        <select name="Lampiran" class="form-control select2bs4 " style="width: 100%;">
                         </select>
                     </div>
                     <!-- Date -->
                     <div class="form-group">
                         <label>Date:</label>
-                        <div class="input-group date" id="reservationdate" data-target-input="nearest">
-                            <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate" />
-                            <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
-                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                            </div>
+                        <div class="input-group date">
+                            <input name="tanggal" type="date" class="form-control " />
                         </div>
                     </div>
                 </div>
@@ -74,14 +72,14 @@
             </div>
             <!-- /.row -->
             <div class="form-group">
-                <textarea id="compose-textarea" class="form-control">
+                <textarea name="isi" id="compose-textarea" class="form-control">
 
                     </textarea>
             </div>
             <div class="card-footer">
                 <div class="float-right">
-                    <!-- <button type="button" class="btn btn-default">Draft</button> -->
-                    <button type="submit" class="btn btn-primary">Print</button>
+                    <button type="submit" class="btn btn-primary" formaction="<?= site_url('surat/cetak_surat') ?>">Print</button>
+
                 </div>
                 <button type="reset" class="btn btn-default">Cancel</button>
             </div>
