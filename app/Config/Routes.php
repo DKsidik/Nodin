@@ -17,5 +17,6 @@ $routes->get('login', 'Auth::login');
 $routes->get('home', 'Home::index');
 $routes->get('home/surat', 'surat::surat');
 $routes->get('surat/infosurat', 'Surat::infosurat');
+$routes->get('home/profile', 'Home::profile');
 
 // $routes->get('home/buat', 'Home::buat');
