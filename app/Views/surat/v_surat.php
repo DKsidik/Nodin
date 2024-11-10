@@ -102,7 +102,7 @@
                 </li>
                 <li class="list-inline-item">
                   <img alt="Avatar" class="table-avatar" src=<?= base_url("template/dist/img/avatar4.png"); ?>>
-<<<<<<< HEAD
+
                 </li>
               </ul>
             </td>
@@ -596,7 +596,7 @@
               </a>
             </td>
           </tr>
-=======
+
                 </li> -->
               <a>
                 <?= $key['pembuat'] ?>
@@ -631,7 +631,6 @@
           </tr>
           <?php } ?>
 
-          >>>>>>> fde36dd240cc8afad1f503ff580ecfdb9a0b33eb
         </tbody>
       </table>
     </div>

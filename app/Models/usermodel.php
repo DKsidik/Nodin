@@ -7,13 +7,14 @@ use CodeIgniter\Model;
 class UserModel extends Model
 {
     protected $table = 'tbl_user'; // Nama tabel di database
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'id_user';
     protected $allowedFields = [
         'nama_user',
         'email',
         'no_hp',
         'password',
-        'level'
+        'level',
+        'image'
     ];
 
     public function jumlahUser()

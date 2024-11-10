@@ -9,9 +9,12 @@ class surat extends BaseController
 {
     public function surat()
     {
+        $suratModel = new SuratModel();
+        $jumlahSurat = $suratModel->jumlahsurat();
         $data = [
             'content' => 'surat/buat-surat',
             'nama' => session()->get('nama_user'),
+            'jumlah_surat' => $jumlahSurat
 
         ];
         echo view('layout/v_wrapper', $data);
@@ -19,6 +22,8 @@ class surat extends BaseController
 
     public function infosurat()
     {
+        $suratModel = new SuratModel();
+        $jumlahSurat = $suratModel->jumlahsurat();
         $suratModel = new SuratModel();
         $surat = $suratModel->find();
         $userModel = new UserModel();
@@ -28,6 +33,7 @@ class surat extends BaseController
             'content' => 'surat/v_surat',
             'nama' => session()->get('nama_user'),
             'surat' => $surat,
+            'jumlah_surat' => $jumlahSurat,
             'user' => $user
         ];
         echo view('layout/v_wrapper', $data);

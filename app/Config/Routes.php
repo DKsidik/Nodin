@@ -21,7 +21,11 @@ $routes->get('home/profile', 'Home::profile');
 $routes->get('surat/cetak_surat', 'surat::cetak_surat');
 $routes->get('surat/preview', 'Cetaksurat::preview');
 $routes->get('home/infouser', 'Home::infouser');
-$routes->get('home/profile_User', 'Home::v_profile');
+$routes->get('home/profile_User/(:num)', 'Home::v_profile/$1');
+$routes->get('home/edit_User/(:num)', 'Home::edit_akun/$1');
+$routes->get('auth/edit_User/(:num)', 'Auth::edit_akun/$1');
+// $routes->get('user/profile/(:num)', 'UserController::profile/$1');
+
 
 
 // $routes->get('home/buat', 'Home::buat');

@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\UserModel;
 use App\Models\M_Auth;
 
 class Auth extends BaseController
@@ -82,6 +83,7 @@ class Auth extends BaseController
                 'no_hp' => $this->request->getPost('no_hp'),
                 'level' => $this->request->getPost('level'),
                 'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+                'image'=> "avatar.png",
             ];
             $this->M_auth->sv_register($data);
             session()->setFlashdata('pesan', 'Register Telah Berhasil');
@@ -141,4 +143,29 @@ class Auth extends BaseController
         // Redirect ke halaman login
         return redirect()->to(base_url('auth/login'));
     }
+
+    public function edit_akun($id)
+    {
+        helper('form');
+
+        $userModel = new UserModel();
+
+        // Data untuk update
+        $data = [
+            'nama_user' => $this->request->getPost('user_name'),
+            'email' => $this->request->getPost('email'),
+            'no_hp' => $this->request->getPost('no_hp'),
+            'level' => $this->request->getPost('level'),
+        ];
+
+        // Update data berdasarkan ID
+        $userModel->update($id, $data);
+
+
+        // Redirect kembali ke halaman profil atau halaman lainnya dengan pesan sukses
+        // return redirect()->to('/user/profile/' . $id)->with('pesan', 'Data berhasil diperbarui.');
+        session()->setFlashdata('pesan', 'Data Berhasil Di Ubah');
+        return redirect()->to(base_url('Home/edit_akun/' . $id));
+    }
+
 }

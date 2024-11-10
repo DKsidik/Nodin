@@ -1,4 +1,4 @@
- <?php
+<?php
 
 namespace App\Controllers;
 
@@ -27,9 +27,12 @@ class Home extends BaseController
 
     public function surat()
     {
+        $suratModel = new SuratModel();
+        $jumlahSurat = $suratModel->jumlahsurat();
         $data = [
             'content' => 'surat/buat-surat',
-            'nama' => session()->get('nama_user')
+            'nama' => session()->get('nama_user'), 
+            'jumlah_surat' => $jumlahSurat
         ];
         echo view('layout/v_wrapper', $data);
     }
@@ -38,11 +41,14 @@ class Home extends BaseController
     {
         $userModel = new UserModel();
         $user = $userModel->find();
+        $suratModel = new SuratModel();
+        $jumlahSurat = $suratModel->jumlahsurat();
 
         $data = [
             'content' => 'surat/suratbuat',
             'nama' => session()->get('nama_user'),
-            'user' => $user
+            'user' => $user,
+            'jumlah_surat' => $jumlahSurat
         ];
         echo view('layout/v_wrapper', $data);
     }
@@ -122,27 +128,36 @@ class Home extends BaseController
     }
 
 
-    public function edit_akun()
+    public function edit_akun($id)
     {
+        helper('form');
+        $userModel = new UserModel();
         $data = [
 
             'content' => 'user/edit_akun',
             'nama' => session()->get('nama_user'),
-
-
+            'user' => $userModel->where('id_user', $id)->first()
         ];
+        if (!$data['user']) {
+            // Jika ID tidak ditemukan, tampilkan pesan error atau redirect
+            return redirect()->to('/user')->with('error', 'User not found');
+        }
         echo view('layout_sa/sa_wrapper', $data);
     }
 
-    public function v_profile()
+    public function v_profile($id)
     {
+        $userModel = new UserModel();
         $data = [
 
             'content' => 'user/v_profile',
             'nama' => session()->get('nama_user'),
-
-
+            'user' => $userModel->where('id_user', $id)->first()
         ];
+        if (!$data['user']) {
+            // Jika ID tidak ditemukan, tampilkan pesan error atau redirect
+            return redirect()->to('/user')->with('error', 'User not found');
+        }
         echo view('layout_sa/sa_wrapper', $data);
     }
 
