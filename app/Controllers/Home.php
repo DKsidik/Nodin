@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\Searchmodel;
 use App\Models\UserModel;
 use App\Models\SuratModel;
 
@@ -22,6 +23,8 @@ class Home extends BaseController
         ];
         echo view('layout/v_wrapper', $data);
     }
+
+
     public function surat()
     {
         $data = [
@@ -40,6 +43,16 @@ class Home extends BaseController
             'content' => 'surat/suratbuat',
             'nama' => session()->get('nama_user'),
             'user' => $user
+        ];
+        echo view('layout/v_wrapper', $data);
+    }
+    public function profile()
+    {
+        // print_r(session()->get());
+        // $nama = session()->get('nama_user');
+        $data = [
+            'content' => 'admin/v_profile',
+            'nama' => session()->get('nama_user')
         ];
         echo view('layout/v_wrapper', $data);
     }
@@ -111,12 +124,46 @@ class Home extends BaseController
 
     public function edit_akun()
     {
-
         $data = [
+
             'content' => 'user/edit_akun',
             'nama' => session()->get('nama_user'),
 
+
         ];
         echo view('layout_sa/sa_wrapper', $data);
+    }
+
+    public function v_profile()
+    {
+        $data = [
+
+            'content' => 'user/v_profile',
+            'nama' => session()->get('nama_user'),
+
+
+        ];
+        echo view('layout_sa/sa_wrapper', $data);
+    }
+
+    public function home3()
+    {
+        // print_r(session()->get());
+        // $nama = session()->get('nama_user');
+        // $userModel = new UserModel();
+        // $user = $userModel->find();
+        // $UserModel = new UserModel();
+        // $jumlahUser = $UserModel->jumlahUser();
+        $data = [
+            'content' => 'admin/u_dashboard',
+            'role' => 'User',
+            'nama' => session()->get('nama_user'),
+
+            // 'jumlah_user' => $jumlahUser,
+            // 'user' => $user,
+            // 'jumlah_user' => $jumlahUser,
+        ];
+        // print_r($user);
+        echo view('layout_u/u_wrapper', $data);
     }
 }

@@ -28,6 +28,8 @@
 <script src="<?= base_url(); ?>/template/plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
 <script src="<?= base_url(); ?>/template/plugins/sparklines/sparkline.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="<?= base_url(); ?>/template/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- JQVMap -->
 <script src="<?= base_url(); ?>/template/plugins/jqvmap/jquery.vmap.min.js"></script>
 <script src="<?= base_url(); ?>/template/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
@@ -102,6 +104,16 @@
     })
 </script>
 
+
+<script>
+    $(function() {
+        $('#calendar').datetimepicker({
+            format: 'L'
+        });
+    });
+</script>
+
+
 <script>
     $(document).ready(function() {
         $('#compose-textarea').summernote({
@@ -117,6 +129,10 @@
         });
     });
 </script>
+
+
+
+
 
 
 </body>

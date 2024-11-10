@@ -38,6 +38,7 @@
 <script src="<?= base_url(); ?>/template/plugins/daterangepicker/daterangepicker.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
 <script src="<?= base_url(); ?>/template/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+
 <!-- Summernote -->
 <script src="<?= base_url(); ?>/template/plugins/summernote/summernote-bs4.min.js"></script>
 <!-- overlayScrollbars -->
@@ -50,9 +51,16 @@
 <script src="<?= base_url(); ?>/template/dist/js/pages/dashboard.js"></script>
 <!-- date-range-picker -->
 <script src="<?= base_url(); ?>/template/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="<?= base_url(); ?>/template/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script>
+    $.widget.bridge('uibutton', $.ui.button);
+</script>
+
 <!-- InputMask -->
 <script src="<?= base_url(); ?>/template/plugins/moment/moment.min.js"></script>
 <script src="<?= base_url(); ?>/template/plugins/inputmask/jquery.inputmask.min.js"></script>
+
 
 <!-- Select2 -->
 <script src="<?= base_url(); ?>/template/plugins/select2/js/select2.full.min.js"></script>
@@ -117,6 +125,7 @@
         });
     });
 </script>
+
 
 
 </body>
