@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 namespace App\Controllers;
 
@@ -43,6 +43,16 @@ class Home extends BaseController
             'content' => 'surat/suratbuat',
             'nama' => session()->get('nama_user'),
             'user' => $user
+        ];
+        echo view('layout/v_wrapper', $data);
+    }
+    public function profile()
+    {
+        // print_r(session()->get());
+        // $nama = session()->get('nama_user');
+        $data = [
+            'content' => 'admin/v_profile',
+            'nama' => session()->get('nama_user')
         ];
         echo view('layout/v_wrapper', $data);
     }
