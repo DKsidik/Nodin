@@ -126,5 +126,4 @@
                      <!-- /.card-body -->
                  </div>
              </div>
-
-         </section>
+ </section>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 10, 2024 at 01:37 PM
+-- Generation Time: Nov 13, 2024 at 02:23 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.1.17
 
@@ -81,7 +81,7 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`id_user`, `nama_user`, `email`, `no_hp`, `password`, `level`, `image`) VALUES
-(5, 'mall', 'mall@gmail.com', '5677888800', '$2y$10$oTVS1hATxJ5fmV2y.n', 1, 'avatar.png'),
+(5, 'likk', 'malee@gmail.com', '098765', '$2y$10$oTVS1hATxJ5fmV2y.n', 3, 'avatar.png'),
 (6, 'malik', 'bgsidik99@gmail.com', '0232323232323', '$2y$10$17JNOFZLcmd67jbylAhjM.hnxMocDm1iO6vXlE3X8GZ7tm4yl7d7u', 3, 'avatar.png'),
 (7, 'rijalpikri', 'rijal@gmail.com', '8888', '$2y$10$qlOGFKnX5LeMJHSrW/vg/OwizkPldHEPqBCm7fySS/a5fyMLSRGv.', 3, 'avatar.png'),
 (8, 'rizal', 'jal@gmail.com', '123456789', '$2y$10$hxw8m7IoLrxIjofvw50bCe5ONjtIvOXVbowwQINVRBbshBP2Igjai', 3, 'avatar.png'),
