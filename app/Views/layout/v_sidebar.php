@@ -1,16 +1,16 @@
  <style>
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  /* background-color: rgba(0, 0, 33, 0.3) */
-  /* Memenuhi tinggi layar */
-}
+   .sidebar {
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+     /* background-color: rgba(0, 0, 33, 0.3) */
+     /* Memenuhi tinggi layar */
+   }
 
-.logout-item {
-  margin-top: 0;
-  /* Memposisikan logout di bagian bawah */
-}
+   .logout-item {
+     margin-top: 0;
+     /* Memposisikan logout di bagian bawah */
+   }
  </style>l
  <section>
 
@@ -87,10 +87,10 @@
                </ul>
                <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
                  <li class="nav-item">
-                   <a href="http://localhost/Nodin/public/home/buat" class="nav-link">
+                   <a href="http://localhost/Nodin/public/surat/masuk" class="nav-link">
                      <i class="mr-3 fas fa-inbox"></i>
                      <p>Surat Masuk
-                       <span class="badge badge-info right"><?=$jumlah_surat?></span>
+                       <span class="badge badge-info right"><?= $jumlah_surat ?></span>
                      </p>
                    </a>
                  </li>

@@ -31,7 +31,7 @@ class Home extends BaseController
         $jumlahSurat = $suratModel->jumlahsurat();
         $data = [
             'content' => 'surat/buat-surat',
-            'nama' => session()->get('nama_user'), 
+            'nama' => session()->get('nama_user'),
             'jumlah_surat' => $jumlahSurat
         ];
         echo view('layout/v_wrapper', $data);

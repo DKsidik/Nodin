@@ -87,4 +87,23 @@ class surat extends BaseController
 
         return view('surat/cetak_surat', ['surat' => $suratModel]);
     }
+
+    public function masuk()
+    {
+        $suratModel = new SuratModel();
+        $jumlahSurat = $suratModel->jumlahsurat();
+        $suratModel = new SuratModel();
+        $surat = $suratModel->find();
+        $userModel = new UserModel();
+        $user = $userModel->find();
+        // print_r($surat);
+        $data = [
+            'content' => 'surat/suratmasuk',
+            'nama' => session()->get('nama_user'),
+            'surat' => $surat,
+            'jumlah_surat' => $jumlahSurat,
+            'user' => $user
+        ];
+        echo view('layout/v_wrapper', $data);
+    }
 }
