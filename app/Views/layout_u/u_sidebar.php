@@ -67,7 +67,7 @@
                          </a>
                          <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
                              <li class="nav-item">
-                                 <a href="http://localhost/Nodin/public/Home/" class="nav-link">
+                                 <a href="http://localhost/Nodin/public/surat/info_surat" class="nav-link">
                                      <i class="mr-3 fa-solid fa-user-tie"></i>
                                      <p>Informasi</p>
                                  </a>

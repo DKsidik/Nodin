@@ -45,7 +45,7 @@
                             <span class="info-box-icon bg-success elevation-1"><i class="fa-solid fa-pen-to-square"></i></span>
                             <div class="info-box-content">
                                 <a href="http://localhost/Nodin/public/home/buat_akun" class="info-box-link" style="text-decoration: none; color: inherit;">
-                                    <span class="info-box-text">Buat User</span>
+                                    <span class="info-box-text">Tambah User</span>
                                 </a>
                                 <!-- <span class="info-box-number">760</span> -->
                             </div>

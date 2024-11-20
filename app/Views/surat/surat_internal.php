@@ -26,6 +26,7 @@
         justify-content: center;
     }
 
+
     .judul {
         text-align: center;
         width: 100%;
@@ -138,10 +139,12 @@
         margin-right: 20px;
         /* Memberi jarak dari tepi kanan */
         line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
     }
 
     .kepala p {
         margin: 30px 0;
+        /* Memberi jarak 20px di atas dan bawah paragraf */
     }
 
     .nuring {
@@ -168,7 +171,7 @@
 
 <body class="">
     <div class="logo">
-        <img src="http://localhost/Nodin/public/template/dist/img/jkt-raya.png" alt="">
+        <img src="assets/jakarta2.png" alt="">
     </div>
     <div class="container">
         <div class="judul">
@@ -177,18 +180,20 @@
             <h1>NOTA DINAS</h1>
         </div>
         <div class="format" style="margin-bottom:13em;">
-            <li>Kepada Yth &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;: <?= $surat['kepada'] ?></li>
-            <li>Dari &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;: <?= $surat['pembuat'] ?></li>
-            <li>Nomor &emsp;&emsp;&nbsp;&nbsp;:</li>
-            <li>Sifat &emsp;&emsp;&emsp;&nbsp; : <?= $surat['sifat'] ?></li>
+            <li>Kepada Yth. : Kepala Suku Dinas Komunikasi, Informatika dan Statistik
+                Kota Administrasi Jakarta Selatan
+
+            </li>
+            <li>Dari &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;:</li>
+            <li>Sifat &emsp;&emsp;&emsp;&nbsp; :</li>
             <li>Lampiran &emsp;&nbsp;:</li>
-            <li>Hal &emsp;&emsp;&emsp;&emsp;: <?= $surat['hal'] ?></li>
+            <li>Hal &emsp;&emsp;&emsp;&emsp;:</li>
         </div>
 
         <div class="">
-            <div class="row justify-content-end">
-                <div class="col-4 text-center">
-                    <p> Jakarta, <?= $surat['tanggal'] ?></p>
+            <div class="row justify-content-end"> <!-- Kolom rata kanan -->
+                <div class="col-4 text-center"> <!-- Kolom untuk tanggal, rata kanan -->
+                    <p>Jakarta, xx xxxxxxxxx xxxx</p>
                 </div>
             </div>
 
@@ -206,39 +211,15 @@
             </div>
             <div class="row justify-content-end">
                 <div class="Nip col-4 text-center">
-                    <p>Ahmad Zaini <br>
+                    <p>Nama <br>
                         NIP xxxxxxxxxxxxxxxx</p>
                 </div>
             </div>
         </div>
 
 
-
-        <div class="tembusan">
-            <p>Tembusan:</p>
-        </div>
-        <div class="lampiran">
-            <p> Lampiran : Nota Dinas Plt. Kepala Suku Dinas<br>
-                Komunikasi, Informatika dan Statistik<br>
-                Kota Administrasi Jakarta Selatan<br>
-                Nomor : <br>
-                Tanggal : 2024</p>
-        </div>
-        <div class="kepala">
-            <p> Plt. Kepala Suku Dinas<br>
-                Komunikasi, Informatika dan Statistik <br>
-                Kota Administrasi Jakarta Selatan <br>
-            </p>
-        </div>
-        <div class="nuring">
-            <p>Nuruning Septarida <br>
-                NIP 197309081993022001 <br>
-            </p>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
 </body>
 

@@ -7,7 +7,7 @@
 
   .card {
     margin-left: 17em;
-    margin-top: 2em;
+    margin-top: 1em;
     width: 80%;
   }
 
@@ -23,7 +23,7 @@
 </style>
 
 
-<section class="content">
+<section class="content" style="padding: 1em;">
 
 
 
@@ -43,9 +43,7 @@
       <h3 class="card-title">Info Surat</h3>
 
       <div class="card-tools">
-        <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-          <i class="fas fa-minus"></i>
-        </button>
+
       </div>
     </div>
     <div class="card-body p-0">
@@ -104,7 +102,7 @@
                 </a>
               </td>
               <td class="project-actions text-center d-flex">
-                <a class="btn btn-primary btn-sm mr-1" href="#">
+                <a class="btn btn-primary btn-sm mr-1" href="http://localhost/Nodin/public/surat/print_surat/<?= $key['id'] ?>" target="_surat">
                   <i class="fas fa-folder">
                   </i>
                   View

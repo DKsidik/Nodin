@@ -10,19 +10,27 @@ class Home extends BaseController
 {
     public function index()
     {
-        // print_r(session()->get());
-        // $nama = session()->get('nama_user');
         $suratModel = new SuratModel();
         $jumlahSurat = $suratModel->jumlahsurat();
+        $surat = $suratModel->find(); // Mengambil semua surat
+        $latestSurat = $suratModel->getLatest(); // Mengambil surat terbaru
+
+        $userModel = new UserModel();
+        $user = $userModel->find();
+
         $data = [
             'content' => 'admin/v_dashboard',
             'role' => 'Tata usaha',
             'nama' => session()->get('nama_user'),
             'jumlah_surat' => $jumlahSurat,
-
+            'surat' => $surat,
+            'latest_surat' => $latestSurat, // Tambahkan data surat terbaru
+            'user' => $user
         ];
+
         echo view('layout/v_wrapper', $data);
     }
+
 
 
     public function surat()
@@ -50,7 +58,7 @@ class Home extends BaseController
             'user' => $user,
             'jumlah_surat' => $jumlahSurat
         ];
-        echo view('layout/v_wrapper', $data);
+        echo view('layout_u/u_wrapper', $data);
     }
     public function profile()
     {

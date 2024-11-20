@@ -17,8 +17,8 @@
         </div><!-- /.container-fluid -->
     </section>
 
-    <section class="content" style="width: 120%;">
-        <div class="mt-2 ml-5 col-md-9">
+    <section class="content" style="width: 125%; padding: 1em">
+        <div class="mt-1 ml-4 col-md-9">
             <div class="card card-primary card-outline">
                 <div class="card-header">
                     <h3 class="card-title">Surat Masuk</h3>
@@ -48,9 +48,7 @@
                             <button type="button" class="btn btn-default btn-sm" onclick="reloadPage()">
                                 <i class="fas fa-reply"></i>
                             </button>
-                            <button type="button" class="btn btn-default btn-sm">
-                                <i class="fas fa-share"></i>
-                            </button>
+
                         </div>
                         <!-- /.btn-group -->
                         <button type="button" class="btn btn-default btn-sm">

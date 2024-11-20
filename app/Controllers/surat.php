@@ -51,7 +51,7 @@ class surat extends BaseController
             'tanggal' => 'required',
             'isi' => 'required'
         ])) {
-            // return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+            // return redirect()->to
         }
 
         // Menyimpan data ke database
@@ -72,7 +72,7 @@ class surat extends BaseController
 
         // Redirect ke halaman preview dengan ID surat yang baru disimpan
         session()->setFlashdata('pesan', 'Surat Telah dibuat');
-        return redirect()->to('surat/infosurat');
+        return redirect()->to('Home/buat');
     }
 
     // Method untuk menampilkan preview surat
@@ -105,5 +105,42 @@ class surat extends BaseController
             'user' => $user
         ];
         echo view('layout/v_wrapper', $data);
+    }
+
+    public function print_surat($id)
+    {
+        $suratModel = new SuratModel();
+        $data = [
+            'surat' => $suratModel->where('id', $id)->first()
+        ];
+        return view('surat/cetak_surat', $data);
+    }
+
+    public function print_surat_internal($id)
+    {
+        $suratModel = new SuratModel();
+        $data = [
+            'surat' => $suratModel->where('id', $id)->first()
+        ];
+        return view('surat/surat_internal', $data);
+    }
+
+    public function info_surat()
+    {
+        $suratModel = new SuratModel();
+        $jumlahSurat = $suratModel->jumlahsurat();
+        $suratModel = new SuratModel();
+        $surat = $suratModel->find();
+        $userModel = new UserModel();
+        $user = $userModel->find();
+        // print_r($surat);
+        $data = [
+            'content' => 'surat/info_surat',
+            'nama' => session()->get('nama_user'),
+            'surat' => $surat,
+            'jumlah_surat' => $jumlahSurat,
+            'user' => $user
+        ];
+        echo view('layout_u/u_wrapper', $data);
     }
 }

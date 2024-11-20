@@ -31,7 +31,7 @@
 
                              <div class="info-box-content">
                                  <span class="info-box-text">Surat Masuk</span>
-                                 <span class="info-box-number">700</span>
+                                 <span class="badge badge-info float-right" style="width: 20%;"><?= $jumlah_surat ?></span>
                                  <!-- <span class="info-box-number">
                                      10
                                      <small>%</small> -->
@@ -88,44 +88,100 @@
                      <!-- /.col -->
                  </div>
                  <!-- /.row -->
-                 <div class="card bg-gradient-succes">
-                     <div class="card-header border-0">
 
-                         <h3 class="card-title">
-                             <i class="mr-2 far fa-calendar-alt"></i>
-                             Calendar
-                         </h3>
-                         <!-- tools card -->
-                         <div class="card-tools">
-                             <!-- button with a dropdown -->
-                             <div class="btn-group">
-                                 <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" data-offset="-52">
-                                     <i class="fas fa-bars"></i>
-                                 </button>
-                                 <div class="dropdown-menu" role="menu">
-                                     <a href="#" class="dropdown-item">Add new event</a>
-                                     <a href="#" class="dropdown-item">Clear events</a>
-                                     <div class="dropdown-divider"></div>
-                                     <a href="#" class="dropdown-item">View calendar</a>
+             </div>
+             <section class="content" style="width: 125%; padding: 1em">
+                 <div class="mt-1 ml-4 col-md-9">
+
+                     <div class="card card-primary card-outline">
+                         <div class="card-header">
+
+                             <h3 class="card-title">Surat Masuk</h3>
+
+                             <div class="card-tools">
+                                 <div class="input-group input-group-sm">
+                                     <input type="text" class="form-control" placeholder="Search Mail">
+                                     <div class="input-group-append">
+                                         <div class="btn btn-primary">
+                                             <i class="fas fa-search"></i>
+                                         </div>
+                                         <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                             <i class="fas fa-minus"></i>
+                                         </button>
+                                     </div>
                                  </div>
                              </div>
-                             <button type="button" class="btn btn-success btn-sm" data-card-widget="collapse">
-                                 <i class="fas fa-minus"></i>
-                             </button>
-                             <button type="button" class="btn btn-success btn-sm" data-card-widget="remove">
-                                 <i class="fas fa-times"></i>
-                             </button>
+                             <!-- /.card-tools -->
                          </div>
-                         <!-- /. tools -->
+                         <!-- /.card-header -->
+                         <div class="card-body p-0">
+                             <div class="mailbox-controls">
+                                 <div class="btn-group">
+                                     <button type="button" class="btn btn-default btn-sm" onclick="reloadPage()">
+                                         <i class="fas fa-reply"></i>
+                                     </button>
+                                 </div>
+                                 <!-- /.btn-group -->
+                                 <button type="button" class="btn btn-default btn-sm">
+                                     <i class="fas fa-sync-alt"></i>
+                                 </button>
+                                 <div class="float-right">
+                                     1-50/200
+                                     <div class="btn-group">
+                                         <button type="button" class="btn btn-default btn-sm">
+                                             <i class="fas fa-chevron-left"></i>
+                                         </button>
+                                         <button type="button" class="btn btn-default btn-sm">
+                                             <i class="fas fa-chevron-right"></i>
+                                         </button>
+                                     </div>
+                                     <!-- /.btn-group -->
+                                 </div>
+                                 <!-- /.float-right -->
+                             </div>
+                             <div class="table-responsive mailbox-messages">
+                                 <table class="table table-hover table-striped">
+                                     <tbody>
+                                         <?php $no = 1 ?>
+                                         <?php foreach (array_reverse($surat) as $key) { ?>
+                                             <tr>
+
+                                                 <td class=""><?= $no++ ?> </a></td>
+                                                 <td class="mailbox-name"><?= $key['pembuat'] ?></a></td>
+                                                 <td class="mailbox-subject"><b>Disposisi</b> - <?= $key['hal'] ?>
+                                                 </td>
+                                                 <td class="mailbox-attachment"></td>
+                                                 <td class="mailbox-date">5 mins ago</td>
+                                             </tr>
+                                         <?php } ?>
+
+                                     </tbody>
+                                 </table>
+                                 <!-- /.table -->
+                             </div>
+                             <!-- /.mail-box-messages -->
+                         </div>
+                         <!-- /.card-body -->
+                         <div class="card-footer p-0">
+                             <div class="mailbox-controls">
+                                 <div class="float-right">
+                                     1-50/200
+                                     <div class="btn-group">
+                                         <button type="button" class="btn btn-default btn-sm">
+                                             <i class="fas fa-chevron-left"></i>
+                                         </button>
+                                         <button type="button" class="btn btn-default btn-sm">
+                                             <i class="fas fa-chevron-right"></i>
+                                         </button>
+                                     </div>
+                                     <!-- /.btn-group -->
+                                 </div>
+                                 <!-- /.float-right -->
+                             </div>
+                         </div>
                      </div>
-                     <!-- /.card-header -->
-                     <div class="card-body pt-0">
-                         <!--The calendar -->
-                         <div id="calendar"></div>
-                     </div>
-                     <!-- /.card-body -->
                  </div>
-             </div>
+             </section>
 
 
          </section>

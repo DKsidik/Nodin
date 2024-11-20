@@ -81,11 +81,11 @@
                  <li class="nav-item">
                    <a href="http://localhost/Nodin/public/surat/infosurat" class="nav-link">
                      <i class="mr-3 fa-regular fa-envelope"></i>
-                     <p>Surat</p>
+                     <p>Info Surat</p>
                    </a>
                  </li>
                </ul>
-               <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
+               <!-- <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
                  <li class="nav-item">
                    <a href="http://localhost/Nodin/public/surat/masuk" class="nav-link">
                      <i class="mr-3 fas fa-inbox"></i>
@@ -94,12 +94,12 @@
                      </p>
                    </a>
                  </li>
-               </ul>
+               </ul> -->
 
 
                <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
                  <li class="nav-item">
-                   <a href="http://localhost/Nodin/public/home/buat" class="nav-link">
+                   <a href="http://localhost/Nodin/public/home/empty" class="nav-link">
                      <i class="mr-3 fa-solid fa-pen-to-square"></i>
                      <p>Buat Surat</p>
                    </a>

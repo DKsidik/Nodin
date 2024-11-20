@@ -23,4 +23,9 @@ class SuratModel extends Model
     {
         return $this->countAll();
     }
+
+    public function getLatest()
+    {
+        return $this->orderBy('id', 'DESC')->first();
+    }
 }
