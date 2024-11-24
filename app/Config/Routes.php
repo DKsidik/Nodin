@@ -24,6 +24,9 @@ $routes->get('home/infouser', 'Home::infouser');
 $routes->get('home/profile_User/(:num)', 'Home::v_profile/$1');
 $routes->get('home/edit_User/(:num)', 'Home::edit_akun/$1');
 $routes->get('auth/edit_User/(:num)', 'Auth::edit_akun/$1');
+$routes->get('surat/update_surat/(:num)', 'surat::update_surat/$1');
+// $routes->post('surat/update_surat/(:num)', 'surat::update_surat/$1');
+
 // $routes->get('user/profile/(:num)', 'UserController::profile/$1');
 
 

@@ -143,4 +143,74 @@ class surat extends BaseController
         ];
         echo view('layout_u/u_wrapper', $data);
     }
+
+    public function edit_surat($id)
+    {
+        helper('form');
+        if (!$this->validate([
+            'kepada' => 'required',
+            'pembuat' => 'required',
+            'sifat' => 'required',
+            'hal' => 'required',
+            'tembusan' => 'permit_empty',
+            'lampiran' => 'required',
+            'tanggal' => 'required',
+            'isi' => 'required'
+        ])) {
+        }
+
+        $userModel = new UserModel();
+        $user = $userModel->find();
+        $suratModel = new SuratModel();
+        $surat = $suratModel->find($id);
+        $jumlahSurat = $suratModel->jumlahsurat();
+
+        $data = [
+            'content' => 'surat/edit_surat',
+            'nama' => session()->get('nama_user'),
+            'user' => $user,
+            'jumlah_surat' => $jumlahSurat,
+            'surat' => $surat,
+
+        ];
+        echo view('layout_u/u_wrapper', $data);
+    }
+
+    public function update_surat($id)
+    {
+        helper('form');
+        $suratModel = new SuratModel();
+
+        $data = [
+            'kepada' => $this->request->getPost('kepada'),
+            'pembuat' => $this->request->getPost('pembuat'),
+            'sifat' => $this->request->getPost('sifat'),
+            'no_surat' => $this->request->getPost('no_surat'),
+            'hal' => $this->request->getPost('hal'),
+            'tembusan' => $this->request->getPost('tembusan'),
+            'lampiran' => $this->request->getPost('lampiran'),
+            'tanggal' => $this->request->getPost('tanggal'),
+            'isi' => $this->request->getPost('isi')
+        ];
+
+        $suratModel->update($id, $data); // Update data berdasarkan ID
+
+        session()->setFlashdata('pesan', 'Surat Telah dibuat');
+        // return redirect()->to('surat/edit_surat');
+        return redirect()->to(base_url('surat/edit_surat/' . $id));
+    }
+
+
+
+
+    public function delete($id)
+    {
+        $suratModel = new SuratModel(); // Ganti dengan model Anda
+        session()->setFlashdata('pesan', 'Surat Telah di Hapus');
+        if ($suratModel->delete($id)) {
+            return redirect()->to('surat/infosurat')->with('message', 'Data deleted successfully');
+        } else {
+            return redirect()->to('surat/infosurat')->with('error', 'Failed to delete data');
+        }
+    }
 }

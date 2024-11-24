@@ -6,7 +6,7 @@
                 <?php if (session()->getFlashdata('pesan')): ?>
                     <div class="alert alert-success d-flex justify-content-between align-items-center" role="alert">
                         <span><?= session()->getFlashdata('pesan'); ?></span>
-                        <a href="/detail" class="btn btn-sm btn-outline-light" style="text-decoration: none;">Lihat Detail</a>
+                        <a href="http://localhost/Nodin/public/surat/info_surat" class="btn btn-sm btn-outline-light" style="text-decoration: none;">Lihat Detail</a>
                     </div>
                 <?php endif; ?>
             </div>
@@ -25,8 +25,7 @@
                         <form action="cetaKk_surat.php" method="POST">
                             <div class="form-group">
                                 <label> Kepada </label>
-                                <input name="hal" class="form-control" type="text" placeholder=" Kepala Suku Dinas Komunikasi, Informatika dan Statistik
-                            Kota Administrasi Jakarta Selatan">
+                                <input name="kepada" class="form-control" type="text" placeholder=" Kepala Suku Dinas Komunikasi, Informatika dan Statistik Kota Administrasi Jakarta Selatan">
                             </div>
 
 

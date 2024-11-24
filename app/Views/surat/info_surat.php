@@ -105,7 +105,7 @@
                                 </i>
                                 View
                             </a>
-                            <a class="btn btn-info btn-sm mr-1" href="#">
+                            <a class="btn btn-info btn-sm mr-1" href="http://localhost/Nodin/public/surat/edit_surat/<?= $key['id'] ?>" target="_surat">
                                 <i class="fas fa-pencil-alt">
                                 </i>
                                 Edit
@@ -122,22 +122,23 @@
             </tbody>
         </table>
     </div>
+</div>
 
 
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const alertBox = document.querySelector(".alert"); // Select the .alert div directly
-            if (alertBox) {
-                // Show the alert with a smooth effect
-                setTimeout(() => {
-                    alertBox.classList.add("show");
-                }, 100); // Small delay to ensure DOM is ready
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const alertBox = document.querySelector(".alert"); // Select the .alert div directly
+        if (alertBox) {
+            // Show the alert with a smooth effect
+            setTimeout(() => {
+                alertBox.classList.add("show");
+            }, 100); // Small delay to ensure DOM is ready
 
-                // Set timeout for 5 seconds, then fade out smoothly
-                setTimeout(() => {
-                    alertBox.classList.remove("show");
-                }, 5000);
-            }
-        });
-    </script>
+            // Set timeout for 5 seconds, then fade out smoothly
+            setTimeout(() => {
+                alertBox.classList.remove("show");
+            }, 5000);
+        }
+    });
+</script>

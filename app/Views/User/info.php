@@ -30,7 +30,7 @@
         <div class="card card-solid">
             <div class="card-body pb-0">
                 <div class="row">
-                    <?php foreach ($user as $key) : ?>
+                    <?php foreach (array_reverse($user) as $key) : ?>
                         <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
                             <div class="card bg-light d-flex flex-fill">
                                 <div class="card-header text-muted border-bottom-0">
@@ -62,17 +62,17 @@
                                             </ul>
                                         </div>
                                         <div class="col-5 text-center">
-                                            <img src="http://localhost/Nodin/public/template/dist/img/<?=$key['image']?>" alt="user-avatar" class="img-circle img-fluid">
+                                            <img src="http://localhost/Nodin/public/template/dist/img/<?= $key['image'] ?>" alt="user-avatar" class="img-circle img-fluid">
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="card-footer">
                                     <div class="text-right">
-                                        <a href="http://localhost/Nodin/public/Home/edit_akun/<?=$key['id_user']?>" class="btn btn-sm bg-teal">
+                                        <a href="http://localhost/Nodin/public/Home/edit_akun/<?= $key['id_user'] ?>" class="btn btn-sm bg-teal">
                                             <i class="mr-1 fa-solid fa-user-pen"></i> Edit Profile
                                         </a>
-                                        <a href="http://localhost/Nodin/public/Home/v_profile/<?=$key['id_user']?>" class="btn btn-sm btn-primary">
+                                        <a href="http://localhost/Nodin/public/Home/v_profile/<?= $key['id_user'] ?>" class="btn btn-sm btn-primary">
                                             <i class="mr-2 fas fa-user"></i> View Profile
                                         </a>
                                     </div>
@@ -101,4 +101,3 @@
         <!-- /.card -->
     </section>
     <!-- /.content -->
-

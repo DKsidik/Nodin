@@ -22,22 +22,22 @@
   }
 </style>
 
+<section class="content" style="width: 50%;">
+  <div class="pesan" id="pesan">
+    <?php if (session()->getFlashdata('pesan')): ?>
+      <div class="alert alert-danger   d-flex justify-content-between align-items-center" role="alert">
+        <span><?= session()->getFlashdata('pesan'); ?></span>
+        <!-- <a href="http://localhost/Nodin/public/surat/info_surat" class="btn btn-sm btn-outline-light" style="text-decoration: none;">Lihat Detail</a> -->
+      </div>
+    <?php endif; ?>
+  </div>
+</section>
+
+
 
 <section class="content" style="padding: 1em;">
-
-
-
   <!-- Default box -->
   <div class="card">
-    <div class="pesan" id="pesan">
-      <?php
-      if (session()->getFlashdata('pesan')) {
-        echo ' <div class="alert alert-success" role="alert">';
-        echo   session()->getFlashdata('pesan');
-        echo '</div>';
-      }
-      ?>
-    </div>
 
     <div class="card-header">
       <h3 class="card-title">Info Surat</h3>
@@ -103,21 +103,19 @@
               </td>
               <td class="project-actions text-center d-flex">
                 <a class="btn btn-primary btn-sm mr-1" href="http://localhost/Nodin/public/surat/print_surat/<?= $key['id'] ?>" target="_surat">
-                  <i class="fas fa-folder">
-                  </i>
-                  View
+                  <i class="fas fa-folder"></i> View
                 </a>
                 <a class="btn btn-info btn-sm mr-1" href="#">
-                  <i class="fas fa-pencil-alt">
-                  </i>
-                  Edit
+                  <i class="fas fa-pencil-alt"></i> Edit
                 </a>
-                <a class="btn btn-danger btn-sm" href="#">
-                  <i class="fas fa-trash">
-                  </i>
-                  Delete
-                </a>
+                <form action="http://localhost/Nodin/public/surat/delete/<?= $key['id'] ?>" method="post" style="display: inline;">
+                  <input type="hidden" name="_method" value="DELETE">
+                  <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this data?');">
+                    <i class="fas fa-trash"></i> Delete
+                  </button>
+                </form>
               </td>
+
             </tr>
           <?php } ?>
 

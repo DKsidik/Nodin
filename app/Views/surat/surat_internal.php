@@ -43,7 +43,7 @@
 
     .logo img {
         width: 13%;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     .judul h1 {
@@ -59,9 +59,10 @@
         /* Menghapus bullet point dari li */
         padding: 0;
         /* Menghapus padding default dari list */
-        margin-left: 10%;
+        /* margin-left: 5%; */
         /* Menghapus margin default dari list */
         font-family: Arial, sans-serif;
+        /* width: 800px; */
     }
 
     .format li {
@@ -171,34 +172,35 @@
 
 <body class="">
     <div class="logo">
-        <img src="assets/jakarta2.png" alt="">
+        <img src="http://localhost/Nodin/public/template/dist/img/jakarta_hitam.png" alt="">
     </div>
     <div class="container">
         <div class="judul">
             <h1>SUKU DINAS KOMUNIKASI, INFORMATIKA, DAN STATISTIK <br> KOTA ADMINISTRASI JAKARTA SELATAN
             </h1>
-            <h1>NOTA DINAS</h1>
+            <h5>NOTA DINAS</h5>
         </div>
-        <div class="format" style="margin-bottom:13em;">
-            <li>Kepada Yth. : Kepala Suku Dinas Komunikasi, Informatika dan Statistik
-                Kota Administrasi Jakarta Selatan
+        <div class="format">
+            <li>Kepada Yth &emsp;: <?= $surat['kepada'] ?></li>
+            <li>Dari &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;: <?= $surat['pembuat'] ?></li>
+            <li>Sifat &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;: <?= $surat['sifat'] ?></li>
+            <li>Lampiran &emsp;&nbsp;&nbsp;:</li>
+            <li>Hal &emsp;&emsp;&emsp;&emsp;&nbsp;: <?= $surat['hal'] ?></li>
+            <div class="isi">
+                <p class="mt-2">&emsp;Berdasarkan hasil rapat koordinasi terkait tindak lanjut Sosialisasi Aplikasi “MyJaksel” KADIN Jakarta tanggal 2 Agustus 2024, maka telah dilakukan kajian menyeluruh terkait aspek UI/UX (User Interface/User Experience) dan keamanan informasi. Pengkajian pada aspek UI/UX berlandaskan prinsip Heuristic Evaluation (evaluasi kegunaan/usability) dan pengkajian keamanan informasi berdasarkan prinsip CIA Triad yang terdiri dari tiga aspek utama, yaitu Confidentiality (Kerahasiaan), Integrity (Integritas), dan Availability (Ketersediaan). Adapun hasil dari kajian ini akan diuraikan dalam bentuk analisis (terlampir).</p>
+            </div>
+        </div>
 
-            </li>
-            <li>Dari &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;:</li>
-            <li>Sifat &emsp;&emsp;&emsp;&nbsp; :</li>
-            <li>Lampiran &emsp;&nbsp;:</li>
-            <li>Hal &emsp;&emsp;&emsp;&emsp;:</li>
-        </div>
 
         <div class="">
             <div class="row justify-content-end"> <!-- Kolom rata kanan -->
-                <div class="col-4 text-center"> <!-- Kolom untuk tanggal, rata kanan -->
-                    <p>Jakarta, xx xxxxxxxxx xxxx</p>
+                <div class="col-4 text-center" style="margin-right: 15px;"> <!-- Kolom untuk tanggal, rata kanan -->
+                    <p>Jakarta, <?= $surat['tanggal'] ?></p>
                 </div>
             </div>
 
             <div class="row justify-content-end"> <!-- Kolom rata kanan -->
-                <div class="col-4 text-center"> <!-- Kolom untuk alamat, rata kanan -->
+                <div class="col-10 text-center" style="margin-right: -120px;"> <!-- Kolom untuk alamat, rata kanan -->
                     <p>
                         Pelaksana Seksi xxxxxxxxxx<br>
                         Suku Dinas Komunikasi, Informatika dan Statistik<br>
@@ -210,7 +212,7 @@
 
             </div>
             <div class="row justify-content-end">
-                <div class="Nip col-4 text-center">
+                <div class="Nip col-8 text-center" style="margin-right: -70px;">
                     <p>Nama <br>
                         NIP xxxxxxxxxxxxxxxx</p>
                 </div>

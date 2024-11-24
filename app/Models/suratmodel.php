@@ -12,6 +12,7 @@ class SuratModel extends Model
         'kepada',
         'pembuat',
         'sifat',
+        'no_surat',
         'hal',
         'tembusan',
         'lampiran',

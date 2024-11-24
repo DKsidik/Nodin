@@ -71,11 +71,11 @@
     })
 
     //Datemask dd/mm/yyyy
-    $('#datemask').inputmask('dd/mm/yyyy', {
+    $('#datemask').inputmask('yyy/dd/mm', {
         'placeholder': 'dd/mm/yyyy'
     })
     //Datemask2 mm/dd/yyyy
-    $('#datemask2').inputmask('mm/dd/yyyy', {
+    $('#datemask2').inputmask('yyy/dd/mm', {
         'placeholder': 'mm/dd/yyyy'
     })
     //Money Euro

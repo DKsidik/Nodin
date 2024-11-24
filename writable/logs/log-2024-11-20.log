@@ -207,3 +207,1803 @@ INFO - 2024-11-20 02:15:04 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-11-20 02:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-11-20 02:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-11-20 02:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 02:26:21 --> ErrorException: unlink(C:\xampp\htdocs\Nodin\writable\debugbar/debugbar_1732068769.580813.json): No such file or directory
+[Method: GET, Route: /]
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\Nodin\\writable\\debugbar/debugbar_1732068769.580813.json): No such file or directory', 'C:\\xampp\\htdocs\\Nodin\\system\\Debug\\Toolbar\\Collectors\\History.php', 82)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(82): unlink('C:\\xampp\\htdocs\\Nodin\\writable\\debugbar/debugbar_1732068769.580813.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(518): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1732069580.191185', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(497): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(155): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 02:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 02:29:17 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta2.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta2.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 02:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 02:40:21 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta2.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta2.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 02:40:34 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta2.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta2.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 02:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 02:43:32 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::print_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: surat/print_surat]
+in APPPATH\Controllers\surat.php on line 110.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 02:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 02:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 02:59:24 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta2.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta2.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 02:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 03:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 03:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 03:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 03:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 03:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 03:03:17 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta2.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta2.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 03:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 03:04:56 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta2.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta2.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 03:05:53 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta2.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta2.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 03:08:15 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta2.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta2.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 03:08:28 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta2.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta2.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 03:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 03:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 03:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 03:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 03:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 03:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 03:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 04:06:36 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta_hitam.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta_hitam.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 04:08:04 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta_hitam.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta_hitam.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 04:08:10 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta_hitam.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta_hitam.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 04:08:18 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta_hitam.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta_hitam.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 04:08:31 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta_hitam.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta_hitam.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 04:08:43 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta_hitam.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta_hitam.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 04:08:56 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta_hitam.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta_hitam.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 04:09:06 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta_hitam.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta_hitam.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 04:09:12 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta_hitam.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta_hitam.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 04:09:38 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: surat/print_surat_internal/assets/jakarta_hitam.png]
+in APPPATH\Views\surat\surat_internal.php on line 7.
+ 1 APPPATH\Views\surat\surat_internal.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\surat_internal.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/surat_internal', [], true)
+ 5 APPPATH\Controllers\surat.php(125): view('surat/surat_internal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('assets', 'jakarta_hitam.png')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 04:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:32:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 04:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 06:22:36 --> ErrorException: Undefined variable $content
+[Method: GET, Route: surat/print_surat_internal/54]
+in APPPATH\Views\layout_u\u_content.php on line 2.
+ 1 APPPATH\Views\layout_u\u_content.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $content', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_content.php', 2)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_content.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_content', [], true)
+ 5 APPPATH\Views\layout_u\u_wrapper.php(4): view('layout_u/u_content')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_wrapper', [], true)
+ 9 APPPATH\Controllers\surat.php(126): view('layout_u/u_wrapper')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('54')
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 06:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 06:24:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "<!-- DEBUG-VIEW START 1 APPPATH\Views\surat\surat_internal.php -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen_surat penindakan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<style>
+    @media print {
+        @page {
+            margin: 0;
+            /* Menghilangkan margin default */
+        }
+
+        body {
+            margin: 0;
+            /* Mengatur margin body untuk mencetak */
+        }
+    }
+
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .judul {
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo {
+        margin-top: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .logo img {
+        width: 13%;
+        margin-bottom: 2rem;
+    }
+
+    .judul h1 {
+        margin: 0;
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .format {
+        list-style-type: none;
+        /* Menghapus bullet point dari li */
+        padding: 0;
+        /* Menghapus padding default dari list */
+        margin-left: 10%;
+        /* Menghapus margin default dari list */
+        font-family: Arial, sans-serif;
+    }
+
+    .format li {
+        margin-bottom: 10px;
+        /* Memberikan jarak antar item */
+        display: flex;
+        /* Membuat item flexbox */
+        justify-content: space-between;
+        /* Membuat spasi antara label dan isinya */
+    }
+
+    .format li::after {
+        content: " ";
+        /* Memberikan ruang untuk konten setelah label */
+        flex-grow: 1;
+        /* Memastikan ada ruang fleksibel setelah teks sebelum ":" */
+        /* Garis putus-putus di antara label dan isinya */
+    }
+
+    .format li span {
+        font-weight: bold;
+        /* Membuat teks label lebih tebal */
+    }
+
+    .tanggal {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Opsional: menentukan font */
+        margin-right: 15px;
+        /* Opsional: memberi sedikit jarak dari tepi kanan */
+    }
+
+    .alamat {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Opsional: menentukan jenis font */
+        margin-right: 20px;
+        /* Opsional: memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Opsional: memberi spasi antar baris */
+    }
+
+    .Nip {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Opsional: menentukan jenis font */
+        margin-right: 20px;
+        /* Opsional: memberi jarak dari tepi kanan */
+    }
+
+    .lampiran {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Menentukan jenis font */
+        margin-right: 20px;
+        /* Memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
+    }
+
+    .lampiran p {
+        margin: 0;
+        /* Menghapus margin default pada paragraf */
+    }
+
+    .kepala {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Menentukan jenis font */
+        margin-right: 20px;
+        /* Memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
+    }
+
+    .kepala p {
+        margin: 30px 0;
+        /* Memberi jarak 20px di atas dan bawah paragraf */
+    }
+
+    .nuring {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Menentukan jenis font */
+        margin-right: 20px;
+        /* Memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
+    }
+
+    .nuring p {
+        margin: 20px 0;
+        /* Memberi jarak 20px di atas dan bawah paragraf */
+    }
+
+    .waktu {
+        justify-content: end;
+        justify-items: end;
+    }
+</style>
+
+<body class="">
+    <div class="logo">
+        <img src="http://localhost/Nodin/public/template/dist/img/jakarta_hitam.png" alt="">
+    </div>
+    <div class="container">
+        <div class="judul">
+            <h1>SUKU DINAS KOMUNIKASI, INFORMATIKA, DAN STATISTIK <br> KOTA ADMINISTRASI JAKARTA SELATAN
+            </h1>
+            <h1>NOTA DINAS</h1>
+        </div>
+        <div class="format" style="margin-bottom:13em;">
+            <li>Kepada Yth &emsp;: kepala suku dinas Komunikasi dan informasi</li>
+            <li>Dari &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;: ahmad</li>
+            <li>Sifat &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;: diperlukan</li>
+            <li>Lampiran &emsp;&nbsp;&nbsp;:</li>
+            <li>Hal &emsp;&emsp;&emsp;&emsp;&nbsp;: surat penindakan</li>
+        </div>
+
+        <div class="">
+            <div class="row justify-content-end"> <!-- Kolom rata kanan -->
+                <div class="col-4 text-center"> <!-- Kolom untuk tanggal, rata kanan -->
+                    <p>Jakarta, 2024-11-20</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-end"> <!-- Kolom rata kanan -->
+                <div class="col-4 text-center"> <!-- Kolom untuk alamat, rata kanan -->
+                    <p>
+                        Pelaksana Seksi xxxxxxxxxx<br>
+                        Suku Dinas Komunikasi, Informatika dan Statistik<br>
+                        Kota Administrasi Jakarta Selatan
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-end" style="height:5rem;">
+
+            </div>
+            <div class="row justify-content-end">
+                <div class="Nip col-4 text-center">
+                    <p>Nama <br>
+                        NIP xxxxxxxxxxxxxxxx</p>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+<script>
+    window.addEventListener(window.print());
+</script>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\Views\surat\surat_internal.php -->
+"
+[Method: GET, Route: surat/print_surat_internal/54]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\surat\\surat_internal.php -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen_surat penindakan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<style>
+    @media print {
+        @page {
+            margin: 0;
+            /* Menghilangkan margin default */
+        }
+
+        body {
+            margin: 0;
+            /* Mengatur margin body untuk mencetak */
+        }
+    }
+
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .judul {
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo {
+        margin-top: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .logo img {
+        width: 13%;
+        margin-bottom: 2rem;
+    }
+
+    .judul h1 {
+        margin: 0;
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .format {
+        list-style-type: none;
+        /* Menghapus bullet point dari li */
+        padding: 0;
+        /* Menghapus padding default dari list */
+        margin-left: 10%;
+        /* Menghapus margin default dari list */
+        font-family: Arial, sans-serif;
+    }
+
+    .format li {
+        margin-bottom: 10px;
+        /* Memberikan jarak antar item */
+        display: flex;
+        /* Membuat item flexbox */
+        justify-content: space-between;
+        /* Membuat spasi antara label dan isinya */
+    }
+
+    .format li::after {
+        content: " ";
+        /* Memberikan ruang untuk konten setelah label */
+        flex-grow: 1;
+        /* Memastikan ada ruang fleksibel setelah teks sebelum ":" */
+        /* Garis putus-putus di antara label dan isinya */
+    }
+
+    .format li span {
+        font-weight: bold;
+        /* Membuat teks label lebih tebal */
+    }
+
+    .tanggal {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Opsional: menentukan font */
+        margin-right: 15px;
+        /* Opsional: memberi sedikit jarak dari tepi kanan */
+    }
+
+    .alamat {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Opsional: menentukan jenis font */
+        margin-right: 20px;
+        /* Opsional: memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Opsional: memberi spasi antar baris */
+    }
+
+    .Nip {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Opsional: menentukan jenis font */
+        margin-right: 20px;
+        /* Opsional: memberi jarak dari tepi kanan */
+    }
+
+    .lampiran {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Menentukan jenis font */
+        margin-right: 20px;
+        /* Memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
+    }
+
+    .lampiran p {
+        margin: 0;
+        /* Menghapus margin default pada paragraf */
+    }
+
+    .kepala {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Menentukan jenis font */
+        margin-right: 20px;
+        /* Memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
+    }
+
+    .kepala p {
+        margin: 30px 0;
+        /* Memberi jarak 20px di atas dan bawah paragraf */
+    }
+
+    .nuring {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Menentukan jenis font */
+        margin-right: 20px;
+        /* Memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
+    }
+
+    .nuring p {
+        margin: 20px 0;
+        /* Memberi jarak 20px di atas dan bawah paragraf */
+    }
+
+    .waktu {
+        justify-content: end;
+        justify-items: end;
+    }
+</style>
+
+<body class="">
+    <div class="logo">
+        <img src="http://localhost/Nodin/public/template/dist/img/jakarta_hitam.png" alt="">
+    </div>
+    <div class="container">
+        <div class="judul">
+            <h1>SUKU DINAS KOMUNIKASI, INFORMATIKA, DAN STATISTIK <br> KOTA ADMINISTRASI JAKARTA SELATAN
+            </h1>
+            <h1>NOTA DINAS</h1>
+        </div>
+        <div class="format" style="margin-bottom:13em;">
+            <li>Kepada Yth &emsp;: kepala suku dinas Komunikasi dan informasi</li>
+            <li>Dari &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;: ahmad</li>
+            <li>Sifat &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;: diperlukan</li>
+            <li>Lampiran &emsp;&nbsp;&nbsp;:</li>
+            <li>Hal &emsp;&emsp;&emsp;&emsp;&nbsp;: surat penindakan</li>
+        </div>
+
+        <div class="">
+            <div class="row justify-content-end"> <!-- Kolom rata kanan -->
+                <div class="col-4 text-center"> <!-- Kolom untuk tanggal, rata kanan -->
+                    <p>Jakarta, 2024-11-20</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-end"> <!-- Kolom rata kanan -->
+                <div class="col-4 text-center"> <!-- Kolom untuk alamat, rata kanan -->
+                    <p>
+                        Pelaksana Seksi xxxxxxxxxx<br>
+                        Suku Dinas Komunikasi, Informatika dan Statistik<br>
+                        Kota Administrasi Jakarta Selatan
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-end" style="height:5rem;">
+
+            </div>
+            <div class="row justify-content-end">
+                <div class="Nip col-4 text-center">
+                    <p>Nama <br>
+                        NIP xxxxxxxxxxxxxxxx</p>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+<script>
+    window.addEventListener(window.print());
+</script>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\surat\\surat_internal.php -->
+')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\surat\\surat_internal.php -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen_surat penindakan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<style>
+    @media print {
+        @page {
+            margin: 0;
+            /* Menghilangkan margin default */
+        }
+
+        body {
+            margin: 0;
+            /* Mengatur margin body untuk mencetak */
+        }
+    }
+
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .judul {
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo {
+        margin-top: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .logo img {
+        width: 13%;
+        margin-bottom: 2rem;
+    }
+
+    .judul h1 {
+        margin: 0;
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .format {
+        list-style-type: none;
+        /* Menghapus bullet point dari li */
+        padding: 0;
+        /* Menghapus padding default dari list */
+        margin-left: 10%;
+        /* Menghapus margin default dari list */
+        font-family: Arial, sans-serif;
+    }
+
+    .format li {
+        margin-bottom: 10px;
+        /* Memberikan jarak antar item */
+        display: flex;
+        /* Membuat item flexbox */
+        justify-content: space-between;
+        /* Membuat spasi antara label dan isinya */
+    }
+
+    .format li::after {
+        content: " ";
+        /* Memberikan ruang untuk konten setelah label */
+        flex-grow: 1;
+        /* Memastikan ada ruang fleksibel setelah teks sebelum ":" */
+        /* Garis putus-putus di antara label dan isinya */
+    }
+
+    .format li span {
+        font-weight: bold;
+        /* Membuat teks label lebih tebal */
+    }
+
+    .tanggal {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Opsional: menentukan font */
+        margin-right: 15px;
+        /* Opsional: memberi sedikit jarak dari tepi kanan */
+    }
+
+    .alamat {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Opsional: menentukan jenis font */
+        margin-right: 20px;
+        /* Opsional: memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Opsional: memberi spasi antar baris */
+    }
+
+    .Nip {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Opsional: menentukan jenis font */
+        margin-right: 20px;
+        /* Opsional: memberi jarak dari tepi kanan */
+    }
+
+    .lampiran {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Menentukan jenis font */
+        margin-right: 20px;
+        /* Memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
+    }
+
+    .lampiran p {
+        margin: 0;
+        /* Menghapus margin default pada paragraf */
+    }
+
+    .kepala {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Menentukan jenis font */
+        margin-right: 20px;
+        /* Memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
+    }
+
+    .kepala p {
+        margin: 30px 0;
+        /* Memberi jarak 20px di atas dan bawah paragraf */
+    }
+
+    .nuring {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Menentukan jenis font */
+        margin-right: 20px;
+        /* Memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
+    }
+
+    .nuring p {
+        margin: 20px 0;
+        /* Memberi jarak 20px di atas dan bawah paragraf */
+    }
+
+    .waktu {
+        justify-content: end;
+        justify-items: end;
+    }
+</style>
+
+<body class="">
+    <div class="logo">
+        <img src="http://localhost/Nodin/public/template/dist/img/jakarta_hitam.png" alt="">
+    </div>
+    <div class="container">
+        <div class="judul">
+            <h1>SUKU DINAS KOMUNIKASI, INFORMATIKA, DAN STATISTIK <br> KOTA ADMINISTRASI JAKARTA SELATAN
+            </h1>
+            <h1>NOTA DINAS</h1>
+        </div>
+        <div class="format" style="margin-bottom:13em;">
+            <li>Kepada Yth &emsp;: kepala suku dinas Komunikasi dan informasi</li>
+            <li>Dari &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;: ahmad</li>
+            <li>Sifat &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;: diperlukan</li>
+            <li>Lampiran &emsp;&nbsp;&nbsp;:</li>
+            <li>Hal &emsp;&emsp;&emsp;&emsp;&nbsp;: surat penindakan</li>
+        </div>
+
+        <div class="">
+            <div class="row justify-content-end"> <!-- Kolom rata kanan -->
+                <div class="col-4 text-center"> <!-- Kolom untuk tanggal, rata kanan -->
+                    <p>Jakarta, 2024-11-20</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-end"> <!-- Kolom rata kanan -->
+                <div class="col-4 text-center"> <!-- Kolom untuk alamat, rata kanan -->
+                    <p>
+                        Pelaksana Seksi xxxxxxxxxx<br>
+                        Suku Dinas Komunikasi, Informatika dan Statistik<br>
+                        Kota Administrasi Jakarta Selatan
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-end" style="height:5rem;">
+
+            </div>
+            <div class="row justify-content-end">
+                <div class="Nip col-4 text-center">
+                    <p>Nama <br>
+                        NIP xxxxxxxxxxxxxxxx</p>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+<script>
+    window.addEventListener(window.print());
+</script>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\surat\\surat_internal.php -->
+', [], true)
+ 3 APPPATH\Views\layout_u\u_content.php(3): view('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\surat\\surat_internal.php -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen_surat penindakan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<style>
+    @media print {
+        @page {
+            margin: 0;
+            /* Menghilangkan margin default */
+        }
+
+        body {
+            margin: 0;
+            /* Mengatur margin body untuk mencetak */
+        }
+    }
+
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .judul {
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo {
+        margin-top: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .logo img {
+        width: 13%;
+        margin-bottom: 2rem;
+    }
+
+    .judul h1 {
+        margin: 0;
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .format {
+        list-style-type: none;
+        /* Menghapus bullet point dari li */
+        padding: 0;
+        /* Menghapus padding default dari list */
+        margin-left: 10%;
+        /* Menghapus margin default dari list */
+        font-family: Arial, sans-serif;
+    }
+
+    .format li {
+        margin-bottom: 10px;
+        /* Memberikan jarak antar item */
+        display: flex;
+        /* Membuat item flexbox */
+        justify-content: space-between;
+        /* Membuat spasi antara label dan isinya */
+    }
+
+    .format li::after {
+        content: " ";
+        /* Memberikan ruang untuk konten setelah label */
+        flex-grow: 1;
+        /* Memastikan ada ruang fleksibel setelah teks sebelum ":" */
+        /* Garis putus-putus di antara label dan isinya */
+    }
+
+    .format li span {
+        font-weight: bold;
+        /* Membuat teks label lebih tebal */
+    }
+
+    .tanggal {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Opsional: menentukan font */
+        margin-right: 15px;
+        /* Opsional: memberi sedikit jarak dari tepi kanan */
+    }
+
+    .alamat {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Opsional: menentukan jenis font */
+        margin-right: 20px;
+        /* Opsional: memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Opsional: memberi spasi antar baris */
+    }
+
+    .Nip {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Opsional: menentukan jenis font */
+        margin-right: 20px;
+        /* Opsional: memberi jarak dari tepi kanan */
+    }
+
+    .lampiran {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Menentukan jenis font */
+        margin-right: 20px;
+        /* Memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
+    }
+
+    .lampiran p {
+        margin: 0;
+        /* Menghapus margin default pada paragraf */
+    }
+
+    .kepala {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Menentukan jenis font */
+        margin-right: 20px;
+        /* Memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
+    }
+
+    .kepala p {
+        margin: 30px 0;
+        /* Memberi jarak 20px di atas dan bawah paragraf */
+    }
+
+    .nuring {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Menentukan jenis font */
+        margin-right: 20px;
+        /* Memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
+    }
+
+    .nuring p {
+        margin: 20px 0;
+        /* Memberi jarak 20px di atas dan bawah paragraf */
+    }
+
+    .waktu {
+        justify-content: end;
+        justify-items: end;
+    }
+</style>
+
+<body class="">
+    <div class="logo">
+        <img src="http://localhost/Nodin/public/template/dist/img/jakarta_hitam.png" alt="">
+    </div>
+    <div class="container">
+        <div class="judul">
+            <h1>SUKU DINAS KOMUNIKASI, INFORMATIKA, DAN STATISTIK <br> KOTA ADMINISTRASI JAKARTA SELATAN
+            </h1>
+            <h1>NOTA DINAS</h1>
+        </div>
+        <div class="format" style="margin-bottom:13em;">
+            <li>Kepada Yth &emsp;: kepala suku dinas Komunikasi dan informasi</li>
+            <li>Dari &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;: ahmad</li>
+            <li>Sifat &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;: diperlukan</li>
+            <li>Lampiran &emsp;&nbsp;&nbsp;:</li>
+            <li>Hal &emsp;&emsp;&emsp;&emsp;&nbsp;: surat penindakan</li>
+        </div>
+
+        <div class="">
+            <div class="row justify-content-end"> <!-- Kolom rata kanan -->
+                <div class="col-4 text-center"> <!-- Kolom untuk tanggal, rata kanan -->
+                    <p>Jakarta, 2024-11-20</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-end"> <!-- Kolom rata kanan -->
+                <div class="col-4 text-center"> <!-- Kolom untuk alamat, rata kanan -->
+                    <p>
+                        Pelaksana Seksi xxxxxxxxxx<br>
+                        Suku Dinas Komunikasi, Informatika dan Statistik<br>
+                        Kota Administrasi Jakarta Selatan
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-end" style="height:5rem;">
+
+            </div>
+            <div class="row justify-content-end">
+                <div class="Nip col-4 text-center">
+                    <p>Nama <br>
+                        NIP xxxxxxxxxxxxxxxx</p>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+<script>
+    window.addEventListener(window.print());
+</script>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\surat\\surat_internal.php -->
+')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_content.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_content', [], true)
+ 7 APPPATH\Views\layout_u\u_wrapper.php(4): view('layout_u/u_content')
+ 8 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_wrapper.php')
+ 9 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_wrapper', [], true)
+11 APPPATH\Controllers\surat.php(125): view('layout_u/u_wrapper', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('54')
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 06:25:34 --> ErrorException: Undefined variable $content
+[Method: GET, Route: surat/print_surat_internal/54]
+in APPPATH\Views\layout_u\u_content.php on line 2.
+ 1 APPPATH\Views\layout_u\u_content.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $content', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_content.php', 2)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_content.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_content', [], true)
+ 5 APPPATH\Views\layout_u\u_wrapper.php(4): view('layout_u/u_content')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_wrapper', [], true)
+ 9 APPPATH\Controllers\surat.php(126): view('layout_u/u_wrapper', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->print_surat_internal('54')
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 06:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 06:44:01 --> ErrorException: Undefined variable $surat
+[Method: GET, Route: surat/edit_surat/54]
+in APPPATH\Views\surat\edit_surat.php on line 28.
+ 1 APPPATH\Views\surat\edit_surat.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surat', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\edit_surat.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\edit_surat.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/edit_surat', [], true)
+ 5 APPPATH\Views\layout_u\u_content.php(3): view('surat/edit_surat')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_content.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_content', [], true)
+ 9 APPPATH\Views\layout_u\u_wrapper.php(4): view('layout_u/u_content')
+10 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_wrapper.php')
+11 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_wrapper', [], true)
+13 APPPATH\Controllers\surat.php(161): view('layout_u/u_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->edit_surat('54')
+15 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+16 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 06:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 06:44:23 --> ErrorException: Undefined variable $surat
+[Method: GET, Route: surat/edit_surat/54]
+in APPPATH\Views\surat\edit_surat.php on line 28.
+ 1 APPPATH\Views\surat\edit_surat.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surat', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\edit_surat.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\edit_surat.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/edit_surat', [], true)
+ 5 APPPATH\Views\layout_u\u_content.php(3): view('surat/edit_surat')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_content.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_content', [], true)
+ 9 APPPATH\Views\layout_u\u_wrapper.php(4): view('layout_u/u_content')
+10 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_wrapper.php')
+11 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_wrapper', [], true)
+13 APPPATH\Controllers\surat.php(162): view('layout_u/u_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->edit_surat('54')
+15 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+16 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 06:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 06:45:10 --> ErrorException: Undefined array key "kepada"
+[Method: GET, Route: surat/edit_surat/54]
+in APPPATH\Views\surat\edit_surat.php on line 28.
+ 1 APPPATH\Views\surat\edit_surat.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kepada"', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\edit_surat.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\edit_surat.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/edit_surat', [], true)
+ 5 APPPATH\Views\layout_u\u_content.php(3): view('surat/edit_surat')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_content.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_content', [], true)
+ 9 APPPATH\Views\layout_u\u_wrapper.php(4): view('layout_u/u_content')
+10 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_wrapper.php')
+11 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_wrapper', [], true)
+13 APPPATH\Controllers\surat.php(163): view('layout_u/u_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->edit_surat('54')
+15 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+16 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 06:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 06:56:22 --> ErrorException: Undefined variable $surat
+[Method: GET, Route: home/buat]
+in APPPATH\Views\layout_u\u_footer.php on line 75.
+ 1 APPPATH\Views\layout_u\u_footer.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $surat', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_footer.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_footer.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_footer', [], true)
+ 5 APPPATH\Views\layout_u\u_wrapper.php(5): view('layout_u/u_footer')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_wrapper', [], true)
+ 9 APPPATH\Controllers\Home.php(61): view('layout_u/u_wrapper', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->buat()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 06:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 06:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:12:57 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 07:16:16 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:16:19 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 07:16:42 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:16:46 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 07:17:42 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:17:45 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 07:18:59 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:19:01 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 07:21:24 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:21:27 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:23:08 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:25:06 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 07:26:57 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:27:00 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:27:14 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:29:52 --> ErrorException: Undefined array key "nama_user"
+[Method: GET, Route: surat/edit_surat/54]
+in APPPATH\Views\surat\edit_surat.php on line 54.
+ 1 APPPATH\Views\surat\edit_surat.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_user"', 'C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\edit_surat.php', 54)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\surat\\edit_surat.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('surat/edit_surat', [], true)
+ 5 APPPATH\Views\layout_u\u_content.php(3): view('surat/edit_surat')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_content.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_content', [], true)
+ 9 APPPATH\Views\layout_u\u_wrapper.php(4): view('layout_u/u_content')
+10 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Nodin\\app\\Views\\layout_u\\u_wrapper.php')
+11 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layout_u/u_wrapper', [], true)
+13 APPPATH\Controllers\surat.php(174): view('layout_u/u_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->edit_surat('54')
+15 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+16 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:32:06 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:37:58 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:40:29 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-20 07:46:06 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:46:08 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-20 07:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-20 07:48:21 --> ArgumentCountError: Too few arguments to function App\Controllers\surat::update_surat(), 0 passed in C:\xampp\htdocs\Nodin\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: surat/update_surat]
+in APPPATH\Controllers\surat.php on line 178.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\surat->update_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\surat))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-20 07:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
