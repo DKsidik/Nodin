@@ -20,6 +20,17 @@
     .alert.show {
         opacity: 1;
     }
+
+    .modal-dialog.custom-width {
+
+        max-width: 60%;
+        /* Lebar modal 95% dari layar */
+    }
+
+    .modal-body iframe {
+        height: 70vh;
+        /* Tinggi iframe 70% dari tinggi layar */
+    }
 </style>
 
 
@@ -100,14 +111,13 @@
                             </a>
                         </td>
                         <td class="project-actions text-center d-flex">
-                            <a class="btn btn-primary btn-sm mr-1" href="http://localhost/Nodin/public/surat/print_surat_internal/<?= $key['id'] ?>" target="_surat">
-                                <i class="fas fa-folder">
-                                </i>
-                                View
+                            <a class="btn btn-primary btn-sm mr-1" href="javascript:void(0);"
+                                onclick="previewSurat('print_surat_internal', <?= $key['id'] ?>)">
+                                <i class="fas fa-folder"></i> View
                             </a>
-                            <a class="btn btn-info btn-sm mr-1" href="http://localhost/Nodin/public/surat/edit_surat/<?= $key['id'] ?>" target="_surat">
-                                <i class="fas fa-pencil-alt">
-                                </i>
+
+                            <a class="btn btn-info btn-sm mr-1" href="http://localhost/Nodin/public/surat/edit_surat/<?= $key['id'] ?>">
+                                <i class="fas fa-pencil-alt"></i>
                                 Edit
                             </a>
                             <a class="btn btn-danger btn-sm" href="#">
@@ -121,8 +131,30 @@
 
             </tbody>
         </table>
+
+        <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
+            <div class="modal-dialog custom-width">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="previewModalLabel">Preview Surat</h5>
+                        <a class="btn btn-info btn-sm mr-1" href="http://localhost/Nodin/public/surat/edit_surat/<?= $key['id'] ?>">
+                            <i class="fas fa-pencil-alt"></i>
+                            Edit
+                        </a>
+                    </div>
+                    <div class="modal-body">
+                        <iframe id="previewIframe" src="" style="width: 100%; height: 70vh; border: none;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
+
+</div>
+</div>
+
 
 
 
@@ -141,4 +173,16 @@
             }, 5000);
         }
     });
+</script>
+
+<script>
+    function previewSurat(type, id) {
+        // Tentukan URL untuk iframe
+        let url = `http://localhost/Nodin/public/surat/${type}/${id}`;
+        // Set src iframe ke URL yang sesuai
+        document.getElementById('previewIframe').src = url;
+        // Tampilkan modal
+        let modal = new bootstrap.Modal(document.getElementById('previewModal'));
+        modal.show();
+    }
 </script>

@@ -17,7 +17,7 @@
 
         body {
             margin: 0;
-            /* Mengatur margin body untuk mencetak */
+
         }
     }
 
@@ -63,7 +63,9 @@
         /* Menghapus margin default dari list */
         font-family: Arial, sans-serif;
         /* width: 800px; */
+        background-color: aqua;
     }
+
 
     .format li {
         margin-bottom: 10px;
@@ -78,13 +80,20 @@
         content: " ";
         /* Memberikan ruang untuk konten setelah label */
         flex-grow: 1;
-        /* Memastikan ada ruang fleksibel setelah teks sebelum ":" */
-        /* Garis putus-putus di antara label dan isinya */
     }
 
     .format li span {
         font-weight: bold;
         /* Membuat teks label lebih tebal */
+    }
+
+    .isi {
+        background-color: aqua;
+    }
+
+    .container {
+        background-color: aqua;
+        width: 100%;
     }
 
     .tanggal {
@@ -187,20 +196,26 @@
             <li>Lampiran &emsp;&nbsp;&nbsp;:</li>
             <li>Hal &emsp;&emsp;&emsp;&emsp;&nbsp;: <?= $surat['hal'] ?></li>
             <div class="isi">
-                <p class="mt-2">&emsp;Berdasarkan hasil rapat koordinasi terkait tindak lanjut Sosialisasi Aplikasi “MyJaksel” KADIN Jakarta tanggal 2 Agustus 2024, maka telah dilakukan kajian menyeluruh terkait aspek UI/UX (User Interface/User Experience) dan keamanan informasi. Pengkajian pada aspek UI/UX berlandaskan prinsip Heuristic Evaluation (evaluasi kegunaan/usability) dan pengkajian keamanan informasi berdasarkan prinsip CIA Triad yang terdiri dari tiga aspek utama, yaitu Confidentiality (Kerahasiaan), Integrity (Integritas), dan Availability (Ketersediaan). Adapun hasil dari kajian ini akan diuraikan dalam bentuk analisis (terlampir).</p>
+                <p class="mt-4" style="text-align: justify;">&emsp;Berdasarkan hasil rapat koordinasi terkait tindak lanjut Sosialisasi Aplikasi
+                    “MyJaksel” KADIN Jakarta tanggal 2 Agustus 2024, maka telah dilakukan kajian menyeluruh terkait
+                    aspek UI/UX (User Interface/User Experience) dan keamanan informasi. Pengkajian pada aspek UI/UX
+                    berlandaskan prinsip Heuristic Evaluation (evaluasi kegunaan/usability) dan pengkajian keamanan informasi
+                    berdasarkan prinsip CIA Triad yang terdiri dari tiga aspek utama, yaitu Confidentiality (Kerahasiaan),
+                    Integrity (Integritas), dan Availability (Ketersediaan). Adapun hasil dari kajian ini akan diuraikan dalam
+                    bentuk analisis (terlampir).</p>
             </div>
         </div>
 
 
         <div class="">
-            <div class="row justify-content-end"> <!-- Kolom rata kanan -->
-                <div class="col-4 text-center" style="margin-right: 15px;"> <!-- Kolom untuk tanggal, rata kanan -->
+            <div class="row justify-content-end">
+                <div class="col-4 text-center" style="margin-right: 15px;">
                     <p>Jakarta, <?= $surat['tanggal'] ?></p>
                 </div>
             </div>
 
-            <div class="row justify-content-end"> <!-- Kolom rata kanan -->
-                <div class="col-10 text-center" style="margin-right: -120px;"> <!-- Kolom untuk alamat, rata kanan -->
+            <div class="row justify-content-end">
+                <div class="col-10 text-center" style="margin-right: -120px;">
                     <p>
                         Pelaksana Seksi xxxxxxxxxx<br>
                         Suku Dinas Komunikasi, Informatika dan Statistik<br>

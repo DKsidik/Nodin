@@ -118,9 +118,9 @@
         <div class="format" style="margin-bottom:13em;">
             <li>Kepada Yth&emsp;: <?= $surat['kepada'] ?></li>
             <li>Dari &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;: <?= $surat['pembuat'] ?></li>
-            <li>Nomor &emsp;&emsp;&nbsp;&nbsp;&nbsp;:</li>
+            <li>Nomor &emsp;&emsp;&nbsp;&nbsp;&nbsp;: <?= $surat['no_surat'] ?></li>
             <li>Sifat &emsp;&emsp;&emsp;&nbsp;&nbsp; : <?= $surat['sifat'] ?></li>
-            <li>Lampiran &emsp;&nbsp;&nbsp;:</li>
+            <li>Lampiran &emsp;&nbsp;&nbsp;: <?= $surat['lampiran'] ?></li>
             <li>Hal &emsp;&emsp;&emsp;&emsp;&nbsp;: <?= $surat['hal'] ?></li>
         </div>
 

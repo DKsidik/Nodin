@@ -105,8 +105,9 @@
                 <a class="btn btn-primary btn-sm mr-1" href="http://localhost/Nodin/public/surat/print_surat/<?= $key['id'] ?>" target="_surat">
                   <i class="fas fa-folder"></i> View
                 </a>
-                <a class="btn btn-info btn-sm mr-1" href="#">
-                  <i class="fas fa-pencil-alt"></i> Edit
+                <a class="btn btn-info btn-sm mr-1" href="http://localhost/Nodin/public/surat/edit_surat/<?= $key['id'] ?>">
+                  <i class="fas fa-pencil-alt"></i>
+                  Edit
                 </a>
                 <form action="http://localhost/Nodin/public/surat/delete/<?= $key['id'] ?>" method="post" style="display: inline;">
                   <input type="hidden" name="_method" value="DELETE">

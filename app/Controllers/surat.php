@@ -76,17 +76,17 @@ class surat extends BaseController
     }
 
     // Method untuk menampilkan preview surat
-    public function preview($id)
-    {
-        $suratModel = new SuratModel();
-        $surat = $suratModel->find($id);
+    // public function preview($id)
+    // {
+    //     $suratModel = new SuratModel();
+    //     $surat = $suratModel->find($id);
 
-        if (!$surat) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Surat tidak ditemukan');
-        }
+    //     if (!$surat) {
+    //         throw new \CodeIgniter\Exceptions\PageNotFoundException('Surat tidak ditemukan');
+    //     }
 
-        return view('surat/cetak_surat', ['surat' => $suratModel]);
-    }
+    //     return view('surat/cetak_surat', ['surat' => $suratModel]);
+    // }
 
     public function masuk()
     {
