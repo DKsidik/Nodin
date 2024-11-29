@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 13, 2024 at 02:23 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.1.17
+-- Waktu pembuatan: 29 Nov 2024 pada 16.01
+-- Versi server: 10.4.32-MariaDB
+-- Versi PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `surat_db`
+-- Struktur dari tabel `surat_db`
 --
 
 CREATE TABLE `surat_db` (
@@ -32,38 +32,38 @@ CREATE TABLE `surat_db` (
   `kepada` varchar(255) DEFAULT NULL,
   `pembuat` varchar(255) DEFAULT NULL,
   `sifat` varchar(50) DEFAULT NULL,
+  `no_surat` varchar(50) DEFAULT NULL,
   `hal` varchar(255) DEFAULT NULL,
   `tembusan` varchar(255) DEFAULT NULL,
   `lampiran` varchar(255) DEFAULT NULL,
   `tanggal` date DEFAULT NULL,
-  `isi` text DEFAULT current_timestamp()
+  `isi` text DEFAULT current_timestamp(),
+  `jenis_surat` varchar(15) DEFAULT NULL,
+  `status` varchar(20) NOT NULL,
+  `catatan` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `surat_db`
+-- Dumping data untuk tabel `surat_db`
 --
 
-INSERT INTO `surat_db` (`id`, `kepada`, `pembuat`, `sifat`, `hal`, `tembusan`, `lampiran`, `tanggal`, `isi`) VALUES
-(1, 'Kepala Suku Dinas Komunikasi, Informatika dan Statistik Kota Administrasi Jakarta Selatan', 'Pemohon2', 'diperlukan', 'surat perjalanan', 'i halaman', NULL, '0000-00-00', 'qwdqdqdw'),
-(2, 'Kepala Suku Dinas Komunikasi, Informatika dan Statistik Kota Administrasi Jakarta Selatan', 'Pemohon2', 'Penting', 'surat perjalanan', 'i halaman', NULL, '0000-00-00', 'sadfgdfgaagad'),
-(3, 'Kepala Suku Dinas Komunikasi, Informatika dan Statistik Kota Administrasi Jakarta Selatan', 'Pemohon2', 'diperlukan', 'wdsfdsdc', 'i halaman', NULL, '0000-00-00', 'DAd'),
-(4, 'Kepala Suku Dinas Komunikasi, Informatika dan Statistik Kota Administrasi Jakarta Selatan', 'Pemohon2', 'diperlukan', 'surat perjalanan', 'i halaman', NULL, '0000-00-00', 'axcc'),
-(5, NULL, 'Pemohon', NULL, '', '', NULL, '0000-00-00', '\r\n                    '),
-(6, NULL, 'Pemohon', NULL, '', '', NULL, '0000-00-00', '\r\n                    '),
-(7, NULL, 'Pemohon', NULL, '', '', NULL, '0000-00-00', '\r\n                    '),
-(8, NULL, 'Pemohon', NULL, '', '', NULL, '0000-00-00', '\r\n                    '),
-(9, NULL, 'Pemohon', NULL, '', '', NULL, '0000-00-00', '\r\n                    '),
-(10, 'Kepala Suku Dinas Komunikasi, Informatika dan Statistik Kota Administrasi Jakarta Selatan', 'pemohon3', 'diperlukan', '', 'i halaman', NULL, '0000-00-00', '\r\n                    '),
-(11, 'Kepala Suku Dinas Komunikasi, Informatika dan Statistik Kota Administrasi Jakarta Selatan', 'pemohon3', 'diperlukan', 'surat perjalanan', 'i halaman', NULL, '2024-11-05', 'saDSAFDSA A'),
-(12, 'Kepala Suku Dinas Komunikasi, Informatika dan Statistik Kota Administrasi Jakarta Selatan', 'didik sidik', 'Penting', 'surat perjalanan', 'i halaman', NULL, '2024-11-05', 'coba surat'),
-(13, 'Kepala Suku Dinas Komunikasi, Informatika dan Statistik Kota Administrasi Jakarta Selatan', 'didik sidik', 'Penting', 'surat perjalanan', 'i halaman', NULL, '2024-11-05', 'coba surat'),
-(14, 'Kepala Suku Dinas Komunikasi, Informatika dan Statistik Kota Administrasi Jakarta Selatan', 'malik', 'diperlukan', 'surat perjalanan', 'i halaman', NULL, '2024-11-06', 'dxfghtgyhyhyh'),
-(15, NULL, 'akhmal', NULL, '', '', NULL, '0000-00-00', '\r\n                    ');
+INSERT INTO `surat_db` (`id`, `kepada`, `pembuat`, `sifat`, `no_surat`, `hal`, `tembusan`, `lampiran`, `tanggal`, `isi`, `jenis_surat`, `status`, `catatan`) VALUES
+(54, 'kepala suku dinas Komunikasi dan informasi', 'ahmad', 'diperlukan', 'R35GTR', 'surat penindakan', 'tembusan tambisan', '2', '2024-11-20', '\r\n                    ', NULL, '', NULL),
+(55, 'informatika dan statistika', 'rizal', 'Penting', NULL, 'penangkapan ayam hitam', 'kepada si itu', NULL, '2024-11-20', '\r\n                    ', NULL, '', NULL),
+(56, 'walikota Kota Administrasi Jakarta Selatan', 'ijal254', 'Penting', '', 'surat penindakan bandar narkoboy', 'tembusan Kepada', '', '2024-11-21', '\r\n                    ', NULL, '', NULL),
+(57, 'kepala Sudin Komunikasi', 'Ahmad Zaini', 'Penting', NULL, 'surat pengaduan ayam ', 'kepada si inian', NULL, '2024-11-25', '\r\n                    ', NULL, '', NULL),
+(58, '', 'rizal', 'diperlukan', '', 'surat Penangkapan Bandar Judol', 'tembusan Kepada', '', '2024-11-25', 'Berdasarkan hasil rapat koordinasi terkait tindak lanjut<span>&nbsp;</span><span lang=\"IN\" style=\"box-sizing: border-box; orphans: 2; text-align: left; text-indent: 0px; widows: 2; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: 18.4px;\">S</span><span lang=\"EN-US\" style=\"box-sizing: border-box; orphans: 2; text-align: left; text-indent: 0px; widows: 2; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: 18.4px;\">osialisasi<span>&nbsp;</span></span><span lang=\"IN\" style=\"box-sizing: border-box; orphans: 2; text-align: left; text-indent: 0px; widows: 2; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: 18.4px;\">A</span><span lang=\"EN-US\" style=\"box-sizing: border-box; orphans: 2; text-align: left; text-indent: 0px; widows: 2; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: 18.4px;\">plikasi “MyJaksel” KADIN Jakarta tanggal 2 Agustus 2024, maka telah dilakukan kajian menyeluruh terkait aspek UI/UX (User Interface/User Experience) dan keamanan informasi. Pengkajian pada aspek UI/UX berlandaskan prinsip Heuristic Evaluation (evaluasi&nbsp;</span>', NULL, '', NULL),
+(59, 'walikota Kota Administrasi Jakarta Selatan', 'rijalpikri', 'diperlukan', NULL, 'surat perjalanan', 'tembusan Kepada', NULL, '2024-11-14', 'facsjndcbsamcnd&nbsp; as.,m ca. mscas.,knmcdsa.lkdkn/wlkd', NULL, '', NULL),
+(60, 'kepala Sudin Komunikasi', 'rizal', 'diperlukan', NULL, 'surat penindakan', 'sds', NULL, '2024-11-29', 'wafdfdcadx', NULL, '', NULL),
+(61, 'walikota Kota Administrasi Jakarta Selatan', 'rizal', 'diperlukan', NULL, 'surat kebobolan hacker', 'tembusan tambisan', NULL, '2024-11-29', 'demikian surat berikut di buat untuk penangkapan kasus bjorka yang mulai meresahkan di duia teknologi khususnya di bidang teknologi dan inbformatika', 'internal', '', NULL),
+(62, 'kepala suku dinas Komunikasi dan informasi', 'rizal', 'diperlukan', '', 'surat penindakan', 'tembusan Kepada', '', '2024-11-29', NULL, 'external', 'ditolak', '                    \r\n                    '),
+(63, 'kepala suku dinas Komunikasi dan informasi', 'rizal', 'Penting', NULL, 'surat penindakan', 'kepada si inian', NULL, '2024-11-29', 'contoh status', 'internal', '', NULL),
+(64, 'kepala Sudin Komunikasi', 'rizal', 'diperlukan', '', 'surat penindakan', 'tembusan Kepada', '', '2024-11-29', NULL, 'internal', 'disetujui', 'sadxsaxas\r\n                    ');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_user`
+-- Struktur dari tabel `tbl_user`
 --
 
 CREATE TABLE `tbl_user` (
@@ -77,7 +77,7 @@ CREATE TABLE `tbl_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tbl_user`
+-- Dumping data untuk tabel `tbl_user`
 --
 
 INSERT INTO `tbl_user` (`id_user`, `nama_user`, `email`, `no_hp`, `password`, `level`, `image`) VALUES
@@ -92,27 +92,40 @@ INSERT INTO `tbl_user` (`id_user`, `nama_user`, `email`, `no_hp`, `password`, `l
 (13, 'bujang', 'bujang@gmail.com', '45678', '$2y$10$tt81RhczRwQj.VcOdW69k.u//plRkJhQPhqOhHTTy01b.Vn76oBEm', 1, 'avatar.png'),
 (14, 'young', 'young@gmail.com', '456789', '$2y$10$cljLC0GjkHstgrO7LkV/seZQCgljYmZiMYtSmzqFP8la.7GOoMnRO', 3, 'avatar.png'),
 (15, 'young', 'young@gmail.com', '456789', '$2y$10$xNdVovYYB97lNvG57GcogeKNZGvqycHxBs1f.Bz41I5vQrqDPwV92', 3, 'avatar.png'),
-(16, 'zen', 'zen@gmail.com', '998786', '$2y$10$Ky8yy2raA5zD23CNjBJHIe9U4s2TryOphAXjquplBlqw61us6Dh8a', 2, 'avatar.png');
+(16, 'zen', 'zen@gmail.com', '998786', '$2y$10$Ky8yy2raA5zD23CNjBJHIe9U4s2TryOphAXjquplBlqw61us6Dh8a', 2, 'avatar.png'),
+(17, 'didik sidik', 'rayaraya88@gmail.com', '0823456788', '$2y$10$JSo11BpkbTyHEVj5trGAE.yvT6vOS5YjzRs8rvic6xNHb2fwSkEVe', 2, 'avatar.png');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tbl_user`
+-- Indeks untuk tabel `surat_db`
+--
+ALTER TABLE `surat_db`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `tbl_user`
 --
 ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tbl_user`
+-- AUTO_INCREMENT untuk tabel `surat_db`
+--
+ALTER TABLE `surat_db`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+
+--
+-- AUTO_INCREMENT untuk tabel `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
