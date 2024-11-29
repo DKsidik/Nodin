@@ -17,7 +17,10 @@ class SuratModel extends Model
         'tembusan',
         'lampiran',
         'tanggal',
-        'isi'
+        'isi',
+        'jenis_surat',
+        'status',
+        'catatan'
     ];
 
     public function jumlahsurat()

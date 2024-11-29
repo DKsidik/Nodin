@@ -13,7 +13,7 @@
 
 
             <div class="card-header">
-                <h3 class="card-title">Surat Internal </h3>
+                <h3 class="card-title">Surat External</h3>
 
                 <div class="card-tools">
                 </div>
@@ -49,13 +49,14 @@
 
                                 </select>
                             </div>
-                            <div class="form-group d-none">
-                                <label>Sifat</label>
-                                <input name="jenis" type="text" value="internal">
 
-                                </select>
+                            <div class="form-group d-none">
+                                <label>External</label>
+                                <input name="jenis" type="text" value="external">
                             </div>
                             <!-- /.form-group -->
+
+
                     </div>
                     <!-- /.col -->
                     <div class="card-body" style="margin-top: -1.3rem;">

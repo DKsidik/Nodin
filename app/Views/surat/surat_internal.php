@@ -193,16 +193,10 @@
             <li>Kepada Yth &emsp;: <?= $surat['kepada'] ?></li>
             <li>Dari &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;: <?= $surat['pembuat'] ?></li>
             <li>Sifat &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;: <?= $surat['sifat'] ?></li>
-            <li>Lampiran &emsp;&nbsp;&nbsp;:</li>
+            <li>Lampiran &emsp;&nbsp;&nbsp;: <?= $surat['lampiran'] ?></li>
             <li>Hal &emsp;&emsp;&emsp;&emsp;&nbsp;: <?= $surat['hal'] ?></li>
             <div class="isi">
-                <p class="mt-4" style="text-align: justify;">&emsp;Berdasarkan hasil rapat koordinasi terkait tindak lanjut Sosialisasi Aplikasi
-                    “MyJaksel” KADIN Jakarta tanggal 2 Agustus 2024, maka telah dilakukan kajian menyeluruh terkait
-                    aspek UI/UX (User Interface/User Experience) dan keamanan informasi. Pengkajian pada aspek UI/UX
-                    berlandaskan prinsip Heuristic Evaluation (evaluasi kegunaan/usability) dan pengkajian keamanan informasi
-                    berdasarkan prinsip CIA Triad yang terdiri dari tiga aspek utama, yaitu Confidentiality (Kerahasiaan),
-                    Integrity (Integritas), dan Availability (Ketersediaan). Adapun hasil dari kajian ini akan diuraikan dalam
-                    bentuk analisis (terlampir).</p>
+                <p class="mt-4" style="text-align: justify;">&emsp;<?= $surat['isi'] ?>
             </div>
         </div>
 

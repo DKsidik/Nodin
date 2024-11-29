@@ -20,117 +20,167 @@
   .alert.show {
     opacity: 1;
   }
+
+  .modal-dialog.custom-width {
+
+    max-width: 60%;
+    /* Lebar modal 95% dari layar */
+  }
+
+  .modal-body iframe {
+    height: 70vh;
+    /* Tinggi iframe 70% dari tinggi layar */
+  }
 </style>
 
-<section class="content" style="width: 50%;">
+
+
+
+<!-- Default box -->
+<div class="card">
   <div class="pesan" id="pesan">
-    <?php if (session()->getFlashdata('pesan')): ?>
-      <div class="alert alert-danger   d-flex justify-content-between align-items-center" role="alert">
-        <span><?= session()->getFlashdata('pesan'); ?></span>
-        <!-- <a href="http://localhost/Nodin/public/surat/info_surat" class="btn btn-sm btn-outline-light" style="text-decoration: none;">Lihat Detail</a> -->
-      </div>
-    <?php endif; ?>
+    <?php
+    if (session()->getFlashdata('pesan')) {
+      echo ' <div class="alert alert-success" role="alert">';
+      echo   session()->getFlashdata('pesan');
+      echo '</div>';
+    }
+    ?>
   </div>
-</section>
 
+  <div class="card-header">
+    <h3 class="card-title">Info Surat</h3>
 
+    <div class="card-tools">
 
-<section class="content" style="padding: 1em;">
-  <!-- Default box -->
-  <div class="card">
-
-    <div class="card-header">
-      <h3 class="card-title">Info Surat</h3>
-
-      <div class="card-tools">
-
-      </div>
     </div>
-    <div class="card-body p-0">
-      <table class="table table-striped projects">
-        <thead>
+  </div>
+  <div class="card-body p-0">
+    <table class="table table-striped projects">
+      <thead>
+        <tr>
+          <th style="width: 1%">
+            No
+          </th>
+          <th style="width: 20%">
+            Perihal
+          </th>
+          <th style="width: 20%">
+            Pembuat
+          </th>
+          <th style="width: 20%">
+            Jenis Surat
+          </th>
+          <th style="width: 20%">
+            Status
+          </th>
+          <th style="width: 20%">
+            Sifat
+          </th>
+          <th style="width: 20%">
+            tombol
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php $no = 1 ?>
+        <?php foreach (array_reverse($surat) as $key) { ?>
           <tr>
-            <th style="width: 1%">
-              No
-            </th>
-            <th style="width: 20%">
-              Perihal
-            </th>
-            <th style="width: 20%">
-              Pembuat
-            </th>
-            <th style="width: 20%">
-              Status
-            </th>
-            <th style="width: 20%">
-              Sifat
-            </th>
-            <th style="width: 20%">
-              tombol
-            </th>
+            <td>
+
+              <a><?= $no++ ?></a>
+            </td>
+            <td>
+              <a>
+                <?= $key['hal'] ?>
+              </a>
+              <br />
+              <small>
+                Created <?= $key['tanggal'] ?>
+              </small>
+            </td>
+            <td>
+              <a>
+                <?= $key['pembuat'] ?>
+              </a>
+              </ul>
+            </td>
+            <td>
+              <a>
+                <?= $key['jenis_surat'] ?>
+              </a>
+              </ul>
+            </td>
+            <td class="project_progress">
+              <?php
+              // Tentukan warna berdasarkan status
+              $badgeClass = '';
+              if ($key['status'] === 'disposisi') {
+                $badgeClass = 'badge-primary'; // Biru
+              } elseif ($key['status'] === 'disetujui') {
+                $badgeClass = 'badge-success'; // Hijau
+              } elseif ($key['status'] === 'ditolak') {
+                $badgeClass = 'badge-danger'; // Merah
+              }
+              ?>
+              <span class="badge <?= $badgeClass ?>"><?= $key['status'] ?></span>
+            </td>
+
+            <td>
+              <a>
+                <?= $key['sifat'] ?>
+              </a>
+            </td>
+            <td class="project-actions text-center d-flex">
+              <a class="btn btn-primary btn-sm mr-1" href="javascript:void(0);"
+                onclick="previewSurat(
+       <?= $key['jenis_surat'] === 'internal' ? "'print_surat_internal'" : "'print_surat'" ?>, 
+       <?= $key['id'] ?>)">
+                <i class="fas fa-folder"></i> View
+              </a>
+
+
+              <a class="btn btn-info btn-sm mr-1" href="http://localhost/Nodin/public/surat/edit_surat/<?= $key['id'] ?>">
+                <i class="fas fa-pencil-alt"></i>
+                Edit
+              </a>
+              <a class="btn btn-danger btn-sm" href="#">
+                <i class="fas fa-trash">
+                </i>
+                Delete
+              </a>
+            </td>
           </tr>
-        </thead>
-        <tbody>
-          <?php $no = 1 ?>
-          <?php foreach (array_reverse($surat) as $key) { ?>
-            <tr>
-              <td>
+        <?php } ?>
 
-                <a><?= $no++ ?></a>
-              </td>
-              <td>
-                <a>
-                  <?= $key['hal'] ?>
-                </a>
-                <br />
-                <small>
-                  Created <?= $key['tanggal'] ?>
-                </small>
-              </td>
-              <td>
-                <a>
-                  <?= $key['pembuat'] ?>
-                </a>
-                </ul>
-              </td>
-              <td class="project_progress">
-                <span class="badge badge-success">Disposisi</span>
-              </td>
-              <td>
-                <a>
-                  <?= $key['sifat'] ?>
-                </a>
-              </td>
-              <td class="project-actions text-center d-flex">
-                <a class="btn btn-primary btn-sm mr-1" href="http://localhost/Nodin/public/surat/print_surat/<?= $key['id'] ?>" target="_surat">
-                  <i class="fas fa-folder"></i> View
-                </a>
-                <a class="btn btn-info btn-sm mr-1" href="http://localhost/Nodin/public/surat/edit_surat/<?= $key['id'] ?>">
-                  <i class="fas fa-pencil-alt"></i>
-                  Edit
-                </a>
-                <form action="http://localhost/Nodin/public/surat/delete/<?= $key['id'] ?>" method="post" style="display: inline;">
-                  <input type="hidden" name="_method" value="DELETE">
-                  <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this data?');">
-                    <i class="fas fa-trash"></i> Delete
-                  </button>
-                </form>
-              </td>
+      </tbody>
+    </table>
 
-            </tr>
-          <?php } ?>
-
-        </tbody>
-      </table>
+    <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
+      <div class="modal-dialog custom-width">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="previewModalLabel">Preview Surat</h5>
+            <a class="btn btn-info btn-sm mr-1" href="http://localhost/Nodin/public/surat/edit_surat/<?= $key['id'] ?>">
+              <i class="fas fa-pencil-alt"></i>
+              Edit
+            </a>
+          </div>
+          <div class="modal-body">
+            <iframe id="previewIframe" src="" style="width: 100%; height: 70vh; border: none;"></iframe>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- /.card-body -->
-  </div>
-  <!-- /.card -->
 
-</section>
-<!-- /.content -->
+  </div>
 </div>
-<!-- /.content-wrapper -->
+
+</div>
+</div>
+
+
+
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -147,4 +197,16 @@
       }, 5000);
     }
   });
+</script>
+
+<script>
+  function previewSurat(type, id) {
+    // Tentukan URL untuk iframe
+    let url = `http://localhost/Nodin/public/surat/${type}/${id}`;
+    // Set src iframe ke URL yang sesuai
+    document.getElementById('previewIframe').src = url;
+    // Tampilkan modal
+    let modal = new bootstrap.Modal(document.getElementById('previewModal'));
+    modal.show();
+  }
 </script>

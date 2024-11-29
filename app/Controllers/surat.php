@@ -19,6 +19,21 @@ class surat extends BaseController
         ];
         echo view('layout/v_wrapper', $data);
     }
+    public function external()
+    {
+        $userModel = new UserModel();
+        $user = $userModel->find();
+        $suratModel = new SuratModel();
+        $jumlahSurat = $suratModel->jumlahsurat();
+
+        $data = [
+            'content' => 'surat/buat_external',
+            'nama' => session()->get('nama_user'),
+            'user' => $user,
+            'jumlah_surat' => $jumlahSurat
+        ];
+        echo view('layout_u/u_wrapper', $data);
+    }
 
     public function infosurat()
     {
@@ -65,6 +80,8 @@ class surat extends BaseController
             'lampiran' => $this->request->getPost('lampiran'),
             'tanggal' => $this->request->getPost('tanggal'),
             'isi' => $this->request->getPost('isi'),
+            'jenis_surat' => $this->request->getPost('jenis'),
+            'status' => 'disposisi',
         ];
 
         $suratmodel->insert($suratData);
@@ -75,18 +92,7 @@ class surat extends BaseController
         return redirect()->to('Home/buat');
     }
 
-    // Method untuk menampilkan preview surat
-    // public function preview($id)
-    // {
-    //     $suratModel = new SuratModel();
-    //     $surat = $suratModel->find($id);
 
-    //     if (!$surat) {
-    //         throw new \CodeIgniter\Exceptions\PageNotFoundException('Surat tidak ditemukan');
-    //     }
-
-    //     return view('surat/cetak_surat', ['surat' => $suratModel]);
-    // }
 
     public function masuk()
     {
@@ -127,10 +133,12 @@ class surat extends BaseController
 
     public function info_surat()
     {
+        // print_r(session()->get());
         $suratModel = new SuratModel();
         $jumlahSurat = $suratModel->jumlahsurat();
         $suratModel = new SuratModel();
-        $surat = $suratModel->find();
+        $userLogin = session()->get('nama_user');
+        $surat = $suratModel->where('pembuat', $userLogin)->findAll();
         $userModel = new UserModel();
         $user = $userModel->find();
         // print_r($surat);
@@ -173,7 +181,7 @@ class surat extends BaseController
             'surat' => $surat,
 
         ];
-        echo view('layout_u/u_wrapper', $data);
+        echo view('layout/v_wrapper', $data);
     }
 
     public function update_surat($id)
@@ -190,7 +198,9 @@ class surat extends BaseController
             'tembusan' => $this->request->getPost('tembusan'),
             'lampiran' => $this->request->getPost('lampiran'),
             'tanggal' => $this->request->getPost('tanggal'),
-            'isi' => $this->request->getPost('isi')
+            'isi' => $this->request->getPost('isi'),
+            'status' => $this->request->getPost('status'),
+            'catatan' => $this->request->getpost('catatan')
         ];
 
         $suratModel->update($id, $data); // Update data berdasarkan ID

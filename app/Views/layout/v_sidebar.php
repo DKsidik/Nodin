@@ -85,16 +85,7 @@
                    </a>
                  </li>
                </ul>
-               <!-- <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
-                 <li class="nav-item">
-                   <a href="http://localhost/Nodin/public/surat/masuk" class="nav-link">
-                     <i class="mr-3 fas fa-inbox"></i>
-                     <p>Surat Masuk
-                       <span class="badge badge-info right"><?= $jumlah_surat ?></span>
-                     </p>
-                   </a>
-                 </li>
-               </ul> -->
+
 
 
                <ul class="nav nav-treeview" style="margin-left: 0.5rem;">

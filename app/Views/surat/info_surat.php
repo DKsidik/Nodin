@@ -69,6 +69,9 @@
                         Pembuat
                     </th>
                     <th style="width: 20%">
+                        Jenis Surat
+                    </th>
+                    <th style="width: 20%">
                         Status
                     </th>
                     <th style="width: 20%">
@@ -102,9 +105,61 @@
                             </a>
                             </ul>
                         </td>
-                        <td class="project_progress">
-                            <span class="badge badge-success">Disposisi</span>
+                        <td>
+                            <a>
+                                <?= $key['jenis_surat'] ?>
+                            </a>
+                            </ul>
                         </td>
+                        <td class="project_progress">
+                            <?php
+                            // Tentukan warna berdasarkan status
+                            $badgeClass = '';
+                            if ($key['status'] === 'disposisi') {
+                                $badgeClass = 'badge-primary'; // Biru
+                            } elseif ($key['status'] === 'disetujui') {
+                                $badgeClass = 'badge-success'; // Hijau
+                            } elseif ($key['status'] === 'ditolak') {
+                                $badgeClass = 'badge-danger'; // Merah
+                            }
+
+                            // Pastikan catatan ada dan tidak kosong
+                            $catatan = isset($key['catatan']) ? htmlspecialchars($key['catatan'], ENT_QUOTES, 'UTF-8') : 'Tidak ada catatan';
+                            ?>
+                            <span type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer;"
+                                class="badge <?= $badgeClass ?>"
+                                data-note="<?= $key['catatan'] ?>" <!-- Add the data-id attribute -->
+
+                                <?= $key['status'] ?>
+                            </span>
+
+                            <!-- Button trigger modal -->
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Catatan</h5>
+
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+
+
+
+
                         <td>
                             <a>
                                 <?= $key['sifat'] ?>
@@ -112,9 +167,12 @@
                         </td>
                         <td class="project-actions text-center d-flex">
                             <a class="btn btn-primary btn-sm mr-1" href="javascript:void(0);"
-                                onclick="previewSurat('print_surat_internal', <?= $key['id'] ?>)">
+                                onclick="previewSurat(
+       <?= $key['jenis_surat'] === 'internal' ? "'print_surat_internal'" : "'print_surat'" ?>, 
+       <?= $key['id'] ?>)">
                                 <i class="fas fa-folder"></i> View
                             </a>
+
 
                             <a class="btn btn-info btn-sm mr-1" href="http://localhost/Nodin/public/surat/edit_surat/<?= $key['id'] ?>">
                                 <i class="fas fa-pencil-alt"></i>
@@ -156,7 +214,7 @@
 </div>
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -186,3 +244,34 @@
         modal.show();
     }
 </script>
+<script>
+    // This script runs when the modal is about to show
+    var myModal = document.getElementById('exampleModal');
+    myModal.addEventListener('show.bs.modal', function(event) {
+        // Get the button that triggered the modal
+        var button = event.relatedTarget;
+
+        // Extract the custom data-id from the clicked button
+        var note = button.getAttribute('data-note');
+
+        // Now you can fetch data based on this id using AJAX or other methods
+        // For demonstration, we will just show the id in the modal body
+        var modalBody = myModal.querySelector('.modal-body');
+        if (note && note.trim() !== '') {
+            modalBody.textContent = note; // Display the note if it exists
+        } else {
+            modalBody.textContent = 'Catatan belum diisi'; // Display default message
+        }
+    });
+</script>
+
+
+<!-- <script>
+    // Jika ingin menggunakan event listener alih-alih inline onclick
+    document.querySelectorAll('.badge').forEach(badge => {
+        badge.addEventListener('click', function() {
+            const catatan = this.getAttribute('data-catatan');
+            alert('Catatan: ' + catatan);
+        });
+    });
+</script> -->

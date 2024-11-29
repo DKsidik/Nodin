@@ -55,42 +55,43 @@
                              <p>Dashboard</p>
                          </a>
                      </li>
-
+                     <li class="nav-item">
+                         <a href="http://localhost/Nodin/public/surat/info_surat" class="nav-link">
+                             <i class="mr-4 fa-solid fa-user-tie" style="margin-right: 10px;"></i>
+                             <p>Surat</p>
+                         </a>
+                     </li>
 
                      <li class="nav-item">
                          <a href="#" class="nav-link">
-                             <i class="mr-4 fa-solid fa-users-line"></i>
+                             <i class="mr-4 fa-solid fa-pen"></i>
                              <p>
-                                 Surat
+                                 Buat Surat
                                  <i class="right fas fa-angle-left"></i>
                              </p>
                          </a>
                          <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
                              <li class="nav-item">
-                                 <a href="http://localhost/Nodin/public/surat/info_surat" class="nav-link">
-                                     <i class="mr-3 fa-solid fa-user-tie"></i>
-                                     <p>Informasi</p>
+                                 <a href="http://localhost/Nodin/public/home/buat" class="nav-link">
+                                     <i class="mr-3 fa-regular fa-envelope"></i>
+                                     <p>Surat Internal</p>
                                  </a>
                              </li>
                          </ul>
+
+
+
                          <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
                              <li class="nav-item">
-                                 <a href="http://localhost/Nodin/public/home/buat" class="nav-link">
+                                 <a href="http://localhost/Nodin/public/surat/external" class="nav-link">
                                      <i class="mr-3 fa-solid fa-pen-to-square"></i>
-                                     <p>Buat Surat</p>
+                                     <p>Surat External</p>
                                  </a>
                              </li>
                          </ul>
 
 
-                         <!-- <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
-                             <li class="nav-item">
-                                 <a href="http://localhost/Nodin/public/home/edit_akun" class="nav-link">
-                                     <i class="mr-3 fa-solid fa-pen-to-square"></i>
-                                     <p>Edit Akun</p>
-                                 </a>
-                             </li>
-                         </ul> -->
+
                          <div class="row">
 
                          </div>

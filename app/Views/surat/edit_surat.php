@@ -6,7 +6,7 @@
                 <?php if (session()->getFlashdata('pesan')): ?>
                     <div class="alert alert-success d-flex justify-content-between align-items-center" role="alert">
                         <span><?= session()->getFlashdata('pesan'); ?></span>
-                        <a href="http://localhost/Nodin/public/surat/info_surat" class="btn btn-sm btn-outline-light" style="text-decoration: none;">Lihat Detail</a>
+                        <a href="http://localhost/Nodin/public/surat/infosurat" class="btn btn-sm btn-outline-light" style="text-decoration: none;">Lihat Detail</a>
                     </div>
                 <?php endif; ?>
             </div>
@@ -44,6 +44,15 @@
                             <label>No.Surat</label>
                             <input name="no_surat" class="form-control" type="text">
                         </div>
+                        <div class="form-group">
+                            <label>Status</label>
+                            <select name="status" class="form-control">
+                                <option value="disposisi" <?= $surat['status'] === 'disposisi' ? 'selected' : '' ?>>disposisi</option>
+                                <option value="disetujui" <?= $surat['status'] === 'disetujui' ? 'selected' : '' ?>>disetujui</option>
+                                <option value="ditolak" <?= $surat['status'] === 'ditolak' ? 'selected' : '' ?>>ditolak</option>
+                            </select>
+
+                        </div>
                     </div>
                     <!-- /.col -->
                     <div class="card-body" style="margin-top: -1.3rem;">
@@ -74,7 +83,8 @@
                 </div>
                 <!-- /.row -->
                 <div class="form-group">
-                    <textarea name="isi" id="compose-textarea" class="form-control">
+                    <label for="">Catatan</label>
+                    <textarea name="catatan" class="form-control"><?= $surat['catatan'] ?>
 
                     </textarea>
                 </div>
