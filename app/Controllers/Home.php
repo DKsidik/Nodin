@@ -12,7 +12,8 @@ class Home extends BaseController
     {
         $suratModel = new SuratModel();
         $jumlahSurat = $suratModel->jumlahsurat();
-        $surat = $suratModel->find(); // Mengambil semua surat
+        $jumlahSuratmasuk = $suratModel->jumlahsuratmasuk();
+        $surat = $suratModel->where('status', 'disposisi')->findAll(); // Mengambil semua surat
         $latestSurat = $suratModel->getLatest(); // Mengambil surat terbaru
 
         $userModel = new UserModel();
@@ -23,6 +24,7 @@ class Home extends BaseController
             'role' => 'Tata usaha',
             'nama' => session()->get('nama_user'),
             'jumlah_surat' => $jumlahSurat,
+            'surat_masuk' => $jumlahSuratmasuk,
             'surat' => $surat,
             'latest_surat' => $latestSurat, // Tambahkan data surat terbaru
             'user' => $user
@@ -37,8 +39,10 @@ class Home extends BaseController
     {
         $suratModel = new SuratModel();
         $jumlahSurat = $suratModel->jumlahsurat();
+        $jumlahSuratmasuk = $suratModel->jumlahsuratmasuk();
         $data = [
             'content' => 'surat/buat-surat',
+            'surat_masuk' => $jumlahSuratmasuk,
             'nama' => session()->get('nama_user'),
             'jumlah_surat' => $jumlahSurat
         ];

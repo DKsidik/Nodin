@@ -31,7 +31,7 @@
 
                              <div class="info-box-content">
                                  <span class="info-box-text">Surat Masuk</span>
-                                 <span class="badge badge-info float-right" style="width: 20%;"><?= $jumlah_surat ?></span>
+                                 <span class="badge badge-info float-right" style="width: 20%;"><?= $surat_masuk ?></span>
                                  <!-- <span class="info-box-number">
                                      10
                                      <small>%</small> -->
@@ -148,7 +148,7 @@
 
                                                  <td class=""><?= $no++ ?> </a></td>
                                                  <td class="mailbox-name"><?= $key['pembuat'] ?></a></td>
-                                                 <td class="mailbox-subject"><b>Disposisi</b> - <?= $key['hal'] ?>
+                                                 <td class="mailbox-subject"><span class="badge badge-primary"><?= $key['status'] ?></span> - <?= $key['hal'] ?>
                                                  </td>
                                                  <td class="mailbox-attachment"></td>
                                                  <td class="mailbox-date">5 mins ago</td>

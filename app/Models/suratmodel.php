@@ -27,6 +27,10 @@ class SuratModel extends Model
     {
         return $this->countAll();
     }
+    public function jumlahsuratmasuk()
+    {
+        return $this->where('status', 'disposisi')->countAllResults();
+    }
 
     public function getLatest()
     {

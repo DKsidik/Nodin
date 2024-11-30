@@ -174,15 +174,18 @@
                             </a>
 
 
-                            <a class="btn btn-info btn-sm mr-1" href="http://localhost/Nodin/public/surat/edit_surat/<?= $key['id'] ?>">
-                                <i class="fas fa-pencil-alt"></i>
-                                Edit
-                            </a>
-                            <a class="btn btn-danger btn-sm" href="#">
-                                <i class="fas fa-trash">
-                                </i>
-                                Delete
-                            </a>
+                            <a class="btn btn-info btn-sm mr-1 <?= ($key['status'] === 'disposisi' || $key['status'] === 'disetujui') ? 'disabled' : '' ?>" 
+        href="<?= ($key['status'] === 'ditolak') ? "http://localhost/Nodin/public/surat/edit_surat/{$key['id']}" : 'javascript:void(0);' ?>"
+        <?= ($key['status'] === 'disposisi' || $key['status'] === 'disetujui') ? 'tabindex="-1" aria-disabled="true"' : '' ?>>
+        <i class="fas fa-pencil-alt"></i>
+        Edit
+    </a>
+    <a class="btn btn-danger btn-sm mr-1 <?= ($key['status'] === 'disposisi' || $key['status'] === 'disetujui') ? 'disabled' : '' ?>" 
+        href="<?= ($key['status'] === 'ditolak') ? "http://localhost/Nodin/public/surat/deletex/{$key['id']}" : 'javascript:void(0);' ?>"
+        <?= ($key['status'] === 'disposisi' || $key['status'] === 'disetujui') ? 'tabindex="-1" aria-disabled="true"' : '' ?>>
+        <i class="fas fa-trash"></i>
+        Delete
+    </a>
                         </td>
                     </tr>
                 <?php } ?>
@@ -195,10 +198,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="previewModalLabel">Preview Surat</h5>
-                        <a class="btn btn-info btn-sm mr-1" href="http://localhost/Nodin/public/surat/edit_surat/<?= $key['id'] ?>">
-                            <i class="fas fa-pencil-alt"></i>
-                            Edit
-                        </a>
+                       
                     </div>
                     <div class="modal-body">
                         <iframe id="previewIframe" src="" style="width: 100%; height: 70vh; border: none;"></iframe>
@@ -240,8 +240,7 @@
         // Set src iframe ke URL yang sesuai
         document.getElementById('previewIframe').src = url;
         // Tampilkan modal
-        let modal = new bootstrap.Modal(document.getElementById('previewModal'));
-        modal.show();
+    
     }
 </script>
 <script>
