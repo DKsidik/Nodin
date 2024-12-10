@@ -17,7 +17,7 @@
      <!-- Main Sidebar Container -->
      <aside class="main-sidebar sidebar-dark-primary elevation-4">
          <!-- Brand Logo -->
-         <a href="http://localhost/Nodin/public/home/home3" class="brand-link">
+         <a href="<?= base_url('home/home3'); ?>" class="brand-link">
              <img src="http://localhost/Nodin/public/template/dist/img/jkt-raya.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
              <span class="brand-text font-weight-light">Nota Dinas</span>
          </a>
@@ -50,14 +50,14 @@
              <nav class="mt-2">
                  <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                      <li class="nav-item">
-                         <a href="http://localhost/Nodin/public/home/home3" class="nav-link">
+                         <a href="<?= base_url('home/home3'); ?>" class="nav-link">
                              <i class="mr-4 fa-solid fa-house" style="margin-right: 10px;"></i>
                              <p>Dashboard</p>
                          </a>
                      </li>
                      <li class="nav-item">
-                         <a href="http://localhost/Nodin/public/surat/info_surat" class="nav-link">
-                             <i class="mr-4 fa-solid fa-user-tie" style="margin-right: 10px;"></i>
+                         <a href="<?= base_url('surat/info_surat'); ?>" class="nav-link">
+                             <i class="mr-4 fa-solid fa-inbox" style="margin-right: 10px;"></i>
                              <p>Surat</p>
                          </a>
                      </li>
@@ -72,8 +72,8 @@
                          </a>
                          <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
                              <li class="nav-item">
-                                 <a href="http://localhost/Nodin/public/home/buat" class="nav-link">
-                                     <i class="mr-3 fa-regular fa-envelope"></i>
+                                 <a href="<?= base_url('home/buat'); ?>" class="nav-link">
+                                     <i class="mr-3 fa-solid fa-pen-to-square"></i>
                                      <p>Surat Internal</p>
                                  </a>
                              </li>
@@ -83,7 +83,7 @@
 
                          <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
                              <li class="nav-item">
-                                 <a href="http://localhost/Nodin/public/surat/external" class="nav-link">
+                                 <a href="<?= base_url('surat/external'); ?>" class="nav-link">
                                      <i class="mr-3 fa-solid fa-pen-to-square"></i>
                                      <p>Surat External</p>
                                  </a>
@@ -96,7 +96,7 @@
 
                          </div>
                      <li class="nav-item logout-item">
-                         <a href="http://localhost/Nodin/public/auth/logout" class="nav-link">
+                         <a href="<?= base_url('auth/logout'); ?>" class="nav-link">
                              <i class="mr-4 fa-solid fa-right-from-bracket"></i>
                              <p>Logout</p>
                          </a>

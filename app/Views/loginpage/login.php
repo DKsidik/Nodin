@@ -2,7 +2,24 @@
     body {
         background-image: url('http://localhost/Nodin/public/template/dist/img/photo5.jpg');
         background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+    }
 
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('http://localhost/Nodin/public/template/dist/img/photo5.jpg');
+        background-size: cover;
+        background-position: center;
+        filter: blur(5px);
+        z-index: -1;
     }
 
     .card {
@@ -19,10 +36,11 @@
             <!-- /.login-logo -->
             <div class="card">
                 <div class="login-logo mb-0 mt-4">
-                    <p style="font-weight: bold;">E<span style="font-weight: normal;">Office</span></p>
+                    <img src="http://localhost/Nodin/public/template/dist/img/jkt-selatan.png" alt="Logo Kominfo" style="height: 8rem; margin-bottom:1rem;">
+                    <p style="font-size:1.5rem; font-weight:bold">NOTA DINAS</p>
                 </div>
                 <div class="card-body login-card-body" style="border-radius: 10%;">
-                    <p class="login-box-msg">Sign in to start your session</p>
+                    <p class="login-box-msg">Enter Email and Your Password</p>
                     <?php $errors = session()->getFlashdata('errors'); ?>
                     <?php if (!empty($errors)) : ?>
                         <div class="alert alert-danger" role="alert">

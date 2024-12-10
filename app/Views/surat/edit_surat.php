@@ -1,5 +1,6 @@
 <section class="content">
 
+
     <div class="card card-default" style="margin-left:20em; margin-top: 1em; width:70%;">
         <div class="card">
             <div class="pesan" id="pesan">
@@ -29,20 +30,27 @@
                         <div class="form-group">
 
                             <label> Kepada </label>
-                            <input name="kepada" class="form-control" type="text" value="<?= $surat['kepada'] ?>">
+                            <input name="kepada" class="form-control" type="text" value="<?= $surat['kepada'] ?>" readonly>
                         </div>
                         <!-- /.form-group -->
                         <div class="form-group">
                             <label>Pembuat</label>
-                            <input name="pembuat" class="form-control" type="text" value="<?= $surat['pembuat'] ?>">
+                            <input name="pembuat" class="form-control" type="text" value="<?= $surat['pembuat'] ?>" readonly>
                         </div>
+                        <input class="form-control" id="jenis_surat" type="text" value="<?= $surat['jenis_surat'] ?>" readonly>
                         <div class="form-group">
                             <label>Sifat</label>
-                            <input name="sifat" class="form-control" type="text" value="<?= $surat['sifat'] ?>">
+                            <input name="sifat" class="form-control" type="text" value="<?= $surat['sifat'] ?>" readonly>
                         </div>
                         <div class="form-group">
-                            <label>No.Surat</label>
-                            <input name="no_surat" class="form-control" type="text">
+                            <label>No. Surat</label>
+                            <input
+                                id="no_surat"
+                                name="no_surat"
+                                value="<?= $surat['jenis_surat'] == 'internal' ? 'Surat internal tidak memiliki no surat' : $surat['no_surat'] ?>"
+                                class="form-control"
+                                type="text"
+                                <?= $surat['jenis_surat'] == 'internal' ? 'disabled' : '' ?>>
                         </div>
                         <div class="form-group">
                             <label>Status</label>
@@ -58,16 +66,16 @@
                     <div class="card-body" style="margin-top: -1.3rem;">
                         <div class="form-group">
                             <label> Hal </label>
-                            <input name="hal" class="form-control" value="<?= $surat['hal'] ?>">
+                            <input name="hal" class="form-control" value="<?= $surat['hal'] ?>" readonly>
                         </div>
                         <div class="form-group">
                             <label> Tembusan </label>
-                            <input name="tembusan" class="form-control" type="text" value="<?= $surat['tembusan'] ?>">
+                            <input name="tembusan" class="form-control" type="text" value="<?= $surat['tembusan'] ?>" readonly>
                         </div>
 
                         <div class="form-group">
                             <label> Lampiran </label>
-                            <input name="lampiran" class="form-control" type="text" value="<?= $surat['lampiran'] ?>">
+                            <input name="lampiran" class="form-control" type="text" value="<?= $surat['lampiran'] ?>" readonly>
                         </div>
 
 
@@ -75,7 +83,7 @@
                         <div class="form-group">
                             <label>Date:</label>
                             <div class="input-group date">
-                                <input name="tanggal" type="date" class="form-control " value="<?= $surat['tanggal'] ?>">
+                                <input name="tanggal" type="date" class="form-control " value="<?= $surat['tanggal'] ?>" readonly>
                             </div>
                         </div>
                     </div>
@@ -102,6 +110,21 @@
             </div>
             <!-- /.col -->
         </div>
+
+        <!-- <script>
+            $(document).ready(function() {
+                $('#jenis_surat').on('change', function() {
+                    if ($(this).val() === 'external') {
+                        $('#no_surat_group').removeClass('d-none');
+                    } else {
+                        $('#no_surat_group').addClass('d-none');
+                    }
+                });
+
+                // Trigger initial check
+                $('#jenis_surat').trigger('change');
+            });
+        </script> -->
 
 
         <!-- /.row -->

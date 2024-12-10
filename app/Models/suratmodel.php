@@ -20,7 +20,9 @@ class SuratModel extends Model
         'isi',
         'jenis_surat',
         'status',
-        'catatan'
+        'catatan',
+        'pengaju',
+        'tgl_buat'
     ];
 
     public function jumlahsurat()

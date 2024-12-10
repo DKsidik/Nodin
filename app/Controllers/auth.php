@@ -83,7 +83,7 @@ class Auth extends BaseController
                 'no_hp' => $this->request->getPost('no_hp'),
                 'level' => $this->request->getPost('level'),
                 'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
-                'image'=> "avatar.png",
+                'image' => "avatar.png",
             ];
             $this->M_auth->sv_register($data);
             session()->setFlashdata('pesan', 'Register Telah Berhasil');
@@ -130,7 +130,7 @@ class Auth extends BaseController
             }
         } else {
             // Login gagal
-            session()->setFlashdata('pesan', 'Login Gagal, Email atau Password Tidak Sesuai');
+            session()->setFlashdata('pesan', ' <span style="color: red;">Login Gagal, Email atau Password Tidak Sesuai</span>');
             return redirect()->to(base_url('Auth/login'));
         }
     }
@@ -167,5 +167,4 @@ class Auth extends BaseController
         session()->setFlashdata('pesan', 'Data Berhasil Di Ubah');
         return redirect()->to(base_url('Home/edit_akun/' . $id));
     }
-
 }

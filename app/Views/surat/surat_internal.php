@@ -89,6 +89,7 @@
 
     .isi {
         background-color: aqua;
+        height: 250px;
     }
 
     .container {
@@ -180,6 +181,7 @@
 </style>
 
 <body class="">
+
     <div class="logo">
         <img src="http://localhost/Nodin/public/template/dist/img/jakarta_hitam.png" alt="">
     </div>
@@ -191,7 +193,7 @@
         </div>
         <div class="format">
             <li>Kepada Yth &emsp;: <?= $surat['kepada'] ?></li>
-            <li>Dari &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;: <?= $surat['pembuat'] ?></li>
+            <li>Dari &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;: <?= $surat['pengaju'] ?></li>
             <li>Sifat &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;: <?= $surat['sifat'] ?></li>
             <li>Lampiran &emsp;&nbsp;&nbsp;: <?= $surat['lampiran'] ?></li>
             <li>Hal &emsp;&emsp;&emsp;&emsp;&nbsp;: <?= $surat['hal'] ?></li>
@@ -203,7 +205,7 @@
 
         <div class="">
             <div class="row justify-content-end">
-                <div class="col-4 text-center" style="margin-right: 15px;">
+                <div class="col-4 text-center" style="margin-right: 5px; width: 200px;">
                     <p>Jakarta, <?= $surat['tanggal'] ?></p>
                 </div>
             </div>

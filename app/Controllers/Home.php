@@ -55,12 +55,18 @@ class Home extends BaseController
         $user = $userModel->find();
         $suratModel = new SuratModel();
         $jumlahSurat = $suratModel->jumlahsurat();
+        $today = date("Y-m-d");
+
+
+
 
         $data = [
             'content' => 'surat/suratbuat',
             'nama' => session()->get('nama_user'),
             'user' => $user,
-            'jumlah_surat' => $jumlahSurat
+            'jumlah_surat' => $jumlahSurat,
+            'today' => $today
+
         ];
         echo view('layout_u/u_wrapper', $data);
     }
@@ -175,12 +181,7 @@ class Home extends BaseController
 
     public function home3()
     {
-        // print_r(session()->get());
-        // $nama = session()->get('nama_user');
-        // $userModel = new UserModel();
-        // $user = $userModel->find();
-        // $UserModel = new UserModel();
-        // $jumlahUser = $UserModel->jumlahUser();
+
         $data = [
             'content' => 'admin/u_dashboard',
             'role' => 'User',

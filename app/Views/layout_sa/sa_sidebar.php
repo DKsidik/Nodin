@@ -50,7 +50,7 @@
              <nav class="mt-2">
                  <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                      <li class="nav-item">
-                         <a href="http://localhost/Nodin/public/home/home1" class="nav-link">
+                         <a href="<?= base_url('home/home1'); ?>" class="nav-link">
                              <i class="mr-4 fa-solid fa-house" style="margin-right: 10px;"></i>
                              <p>Dashboard</p>
                          </a>
@@ -67,7 +67,7 @@
                          </a>
                          <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
                              <li class="nav-item">
-                                 <a href="http://localhost/Nodin/public/Home/infouser" class="nav-link">
+                                 <a href="<?= base_url('home/infouser'); ?>" class="nav-link">
                                      <i class="mr-3 fa-solid fa-user-tie"></i>
                                      <p>Informasi User</p>
                                  </a>
@@ -75,7 +75,7 @@
                          </ul>
                          <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
                              <li class="nav-item">
-                                 <a href="http://localhost/Nodin/public/home/buat_akun" class="nav-link">
+                                 <a href="<?= base_url('home/buat_akun'); ?>" class="nav-link">
                                      <i class="mr-3 fa-solid fa-user-plus"></i>
                                      <p>Buat Akun</p>
                                  </a>
@@ -95,7 +95,7 @@
 
                          </div>
                      <li class="nav-item logout-item">
-                         <a href="http://localhost/Nodin/public/auth/logout" class="nav-link">
+                         <a href="<?= base_url('auth/logout'); ?>" class="nav-link">
                              <i class="mr-4 fa-solid fa-right-from-bracket"></i>
                              <p>Logout</p>
                          </a>

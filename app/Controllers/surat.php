@@ -25,12 +25,14 @@ class surat extends BaseController
         $user = $userModel->find();
         $suratModel = new SuratModel();
         $jumlahSurat = $suratModel->jumlahsurat();
-
+        $today = date("Y-m-d");
+        // print_r($today);
         $data = [
             'content' => 'surat/buat_external',
             'nama' => session()->get('nama_user'),
             'user' => $user,
-            'jumlah_surat' => $jumlahSurat
+            'jumlah_surat' => $jumlahSurat,
+            'today' => $today
         ];
         echo view('layout_u/u_wrapper', $data);
     }
@@ -58,7 +60,7 @@ class surat extends BaseController
     {
         if (!$this->validate([
             'kepada' => 'required',
-            'pembuat' => 'required',
+            'pengaju' => 'required',
             'sifat' => 'required',
             'hal' => 'required',
             'tembusan' => 'permit_empty',
@@ -81,6 +83,8 @@ class surat extends BaseController
             'tanggal' => $this->request->getPost('tanggal'),
             'isi' => $this->request->getPost('isi'),
             'jenis_surat' => $this->request->getPost('jenis'),
+            'pengaju' => $this->request->getPost('pengaju'),
+            'tgl_buat' => $this->request->getPost('tgl_buat'),
             'status' => 'disposisi',
         ];
 
@@ -116,20 +120,76 @@ class surat extends BaseController
     public function print_surat($id)
     {
         $suratModel = new SuratModel();
+
+        // Ambil data surat berdasarkan ID
+        $surat = $suratModel->where('id', $id)->first();
+
+        // Format ulang tanggal jika tersedia
+        if (isset($surat['tanggal'])) {
+            $dateObj = \DateTime::createFromFormat('Y-m-d', $surat['tanggal']);
+            $formattedDate = $dateObj->format('d F Y'); // Format: d F Y (contoh: 10 December 2023)
+
+            // Ganti nama bulan menjadi bahasa Indonesia
+            $bulanIndonesia = [
+                'January' => 'Januari',
+                'February' => 'Februari',
+                'March' => 'Maret',
+                'April' => 'April',
+                'May' => 'Mei',
+                'June' => 'Juni',
+                'July' => 'Juli',
+                'August' => 'Agustus',
+                'September' => 'September',
+                'October' => 'Oktober',
+                'November' => 'November',
+                'December' => 'Desember'
+            ];
+            $surat['tanggal'] = strtr($formattedDate, $bulanIndonesia);
+        }
+
+        // Kirim data ke view
         $data = [
-            'surat' => $suratModel->where('id', $id)->first()
+            'surat' => $surat
         ];
         return view('surat/cetak_surat', $data);
     }
 
+
     public function print_surat_internal($id)
     {
         $suratModel = new SuratModel();
+        $surat = $suratModel->where('id', $id)->first();
+
+        // Format ulang tanggal jika tersedia
+        if (isset($surat['tanggal'])) {
+            $dateObj = \DateTime::createFromFormat('Y-m-d', $surat['tanggal']);
+            $formattedDate = $dateObj->format('d F Y'); // Format d F Y (contoh: 10 December 2023)
+
+            // Ganti nama bulan menjadi bahasa Indonesia
+            $bulanIndonesia = [
+                'January' => 'Januari',
+                'February' => 'Februari',
+                'March' => 'Maret',
+                'April' => 'April',
+                'May' => 'Mei',
+                'June' => 'Juni',
+                'July' => 'Juli',
+                'August' => 'Agustus',
+                'September' => 'September',
+                'October' => 'Oktober',
+                'November' => 'November',
+                'December' => 'Desember'
+            ];
+            $surat['tanggal'] = strtr($formattedDate, $bulanIndonesia);
+        }
+
+        // Kirim data ke view
         $data = [
-            'surat' => $suratModel->where('id', $id)->first()
+            'surat' => $surat
         ];
         return view('surat/surat_internal', $data);
     }
+
 
     public function info_surat()
     {
@@ -184,21 +244,45 @@ class surat extends BaseController
         echo view('layout/v_wrapper', $data);
     }
 
+    public function e_surat($id)
+    {
+        helper('form');
+        if (!$this->validate([
+            'kepada' => 'required',
+            'pembuat' => 'required',
+            'sifat' => 'required',
+            'hal' => 'required',
+            'tembusan' => 'permit_empty',
+            'lampiran' => 'required',
+            'tanggal' => 'required',
+            'isi' => 'required'
+        ])) {
+        }
+
+        $userModel = new UserModel();
+        $user = $userModel->find();
+        $suratModel = new SuratModel();
+        $surat = $suratModel->find($id);
+        $jumlahSurat = $suratModel->jumlahsurat();
+
+        $data = [
+            'content' => 'surat/e_surat',
+            'nama' => session()->get('nama_user'),
+            'user' => $user,
+            'jumlah_surat' => $jumlahSurat,
+            'surat' => $surat,
+
+        ];
+        echo view('layout_u/u_wrapper', $data);
+    }
+
     public function update_surat($id)
     {
         helper('form');
         $suratModel = new SuratModel();
 
         $data = [
-            'kepada' => $this->request->getPost('kepada'),
-            'pembuat' => $this->request->getPost('pembuat'),
-            'sifat' => $this->request->getPost('sifat'),
             'no_surat' => $this->request->getPost('no_surat'),
-            'hal' => $this->request->getPost('hal'),
-            'tembusan' => $this->request->getPost('tembusan'),
-            'lampiran' => $this->request->getPost('lampiran'),
-            'tanggal' => $this->request->getPost('tanggal'),
-            'isi' => $this->request->getPost('isi'),
             'status' => $this->request->getPost('status'),
             'catatan' => $this->request->getpost('catatan')
         ];
@@ -208,6 +292,31 @@ class surat extends BaseController
         session()->setFlashdata('pesan', 'Surat Telah dibuat');
         // return redirect()->to('surat/edit_surat');
         return redirect()->to(base_url('surat/edit_surat/' . $id));
+    }
+
+    public function up_surat($id)
+    {
+        helper('form');
+        $suratModel = new SuratModel();
+
+        $data = [
+            'kepada' => $this->request->getPost('kepada'),
+            'pengaju' => $this->request->getPost('pengaju'),
+            'sifat' => $this->request->getPost('sifat'),
+            'hal' => $this->request->getPost('hal'),
+            'tembusan' => $this->request->getPost('tembusan'),
+            'lampiran' => $this->request->getPost('lampiran'),
+            'tanggal' => $this->request->getPost('tanggal'),
+            'isi' => $this->request->getPost('isi'),
+            'status' => 'disposisi'
+
+        ];
+
+        $suratModel->update($id, $data); // Update data berdasarkan ID
+
+        session()->setFlashdata('pesan', 'Surat Telah dibuat');
+        // return redirect()->to('surat/edit_surat');
+        return redirect()->to(base_url('surat/e_surat/' . $id));
     }
 
 

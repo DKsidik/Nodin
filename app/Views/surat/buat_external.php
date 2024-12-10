@@ -32,14 +32,10 @@
                             <!-- /.form-group -->
                             <div class="form-group">
                                 <label>Pembuat</label>
-                                <!-- <input type="text" name="pembuat" class="form-control" value="<?= $nama ?>" readonly> -->
-                                <select name="pembuat" class="form-control select2bs4" style="width: 100%;">
-                                    <?php foreach ($user as $pembuat) { ?>
-                                        <option value="<?= $pembuat['nama_user'] ?>"><?= $pembuat['nama_user'] ?></option>
-                                    <?php } ?>
+                                <input type="text" name="pengaju" class="form-control" placeholder="Pengaju Surat">
 
-                                </select>
                             </div>
+                            <input name="pembuat" class="form-control d-none" type="text" value="<?= $nama ?>" placeholder="">
                             <div class="form-group">
                                 <label>Sifat</label>
                                 <select name="sifat" class="form-control select2bs4" style="width: 100%;">
@@ -87,8 +83,9 @@
                                 <input name="tanggal" type="date" class="form-control " />
                             </div>
                         </div>
+                        <input name="tgl_buat" type="date" value="<?= $today ?>" class="form-control d-none" />
                     </div>
-                    <!-- /.col -->
+
                 </div>
                 <!-- /.row -->
                 <div class="form-group">
