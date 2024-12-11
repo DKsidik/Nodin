@@ -6,7 +6,7 @@
                 <?php if (session()->getFlashdata('pesan')): ?>
                     <div class="alert alert-success d-flex justify-content-between align-items-center" role="alert">
                         <span><?= session()->getFlashdata('pesan'); ?></span>
-                        <a href="http://localhost/Nodin/public/surat/infosurat" class="btn btn-sm btn-outline-light" style="text-decoration: none;">Lihat Detail</a>
+                        <a href="http://localhost/Nodin/public/surat/info_surat" class="btn btn-sm btn-outline-light" style="text-decoration: none;">Lihat Detail</a>
                     </div>
                 <?php endif; ?>
             </div>

@@ -11,31 +11,21 @@
 <style>
     @media print {
         @page {
-            margin-top: 1.2cm;
-            margin-bottom: 1.2cm;
-            margin-left: 1.94cm;
-            margin-right: 1cm;
+            margin: 0;
+            /* Menghilangkan margin default */
         }
 
         body {
             margin: 0;
+
         }
     }
 
     body {
         align-items: center;
         justify-content: center;
-        font-size: 12px;
-        font-family: Arial, sans-serif;
-        background-color: aqua;
-        padding: 0%;
     }
 
-    .container {
-        width: 100%;
-        padding: 5;
-        background-color: aliceblue;
-    }
 
     .judul {
         text-align: center;
@@ -48,16 +38,17 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+
     }
 
     .logo img {
         width: 13%;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     .judul h1 {
         margin: 0;
-        font-size: 12px;
+        font-size: 17px;
         font-weight: bold;
         margin-bottom: 30px;
         text-align: center;
@@ -65,37 +56,118 @@
 
     .format {
         list-style-type: none;
+        /* Menghapus bullet point dari li */
         padding: 0;
-        font-size: 12px;
+
+        font-family: Arial, sans-serif;
     }
+
 
     .format li {
         margin-bottom: 10px;
+        /* Memberikan jarak antar item */
         display: flex;
+        /* Membuat item flexbox */
         justify-content: space-between;
+        /* Membuat spasi antara label dan isinya */
+    }
+
+    .format li::after {
+        content: " ";
+        /* Memberikan ruang untuk konten setelah label */
+        flex-grow: 1;
     }
 
     .format li span {
         font-weight: bold;
+        /* Membuat teks label lebih tebal */
     }
 
-    .tanggal,
-    .alamat,
-    .Nip,
-    .lampiran,
-    .kepala,
-    .nuring {
+    .isi {
+
+        height: 250px;
+    }
+
+    .container {
         background-color: aqua;
-        text-align: right;
-        margin-right: 20px;
-        line-height: 1.5;
-        font-size: 12px;
+        width: 100%;
     }
 
-    .lampiran p,
-    .kepala p,
+    .tanggal {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Opsional: menentukan font */
+        margin-right: 15px;
+        /* Opsional: memberi sedikit jarak dari tepi kanan */
+    }
+
+    .alamat {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Opsional: menentukan jenis font */
+        margin-right: 20px;
+        /* Opsional: memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Opsional: memberi spasi antar baris */
+    }
+
+    .Nip {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Opsional: menentukan jenis font */
+        margin-right: 20px;
+        /* Opsional: memberi jarak dari tepi kanan */
+    }
+
+    .lampiran {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Menentukan jenis font */
+        margin-right: 20px;
+        /* Memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
+    }
+
+    .lampiran p {
+        margin: 0;
+        /* Menghapus margin default pada paragraf */
+    }
+
+    .kepala {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Menentukan jenis font */
+        margin-right: 20px;
+        /* Memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
+    }
+
+    .kepala p {
+        margin: 30px 0;
+        /* Memberi jarak 20px di atas dan bawah paragraf */
+    }
+
+    .nuring {
+        text-align: right;
+        /* Meratakan teks ke kanan */
+        font-family: Arial, sans-serif;
+        /* Menentukan jenis font */
+        margin-right: 20px;
+        /* Memberi jarak dari tepi kanan */
+        line-height: 1.5;
+        /* Meningkatkan spasi antar baris untuk keterbacaan */
+    }
+
     .nuring p {
         margin: 20px 0;
+        /* Memberi jarak 20px di atas dan bawah paragraf */
     }
 
     .waktu {
@@ -104,8 +176,8 @@
     }
 </style>
 
-
 <body class="">
+
     <div class="logo">
         <img src="http://localhost/Nodin/public/template/dist/img/jakarta_hitam.png" alt="">
     </div>
@@ -113,30 +185,35 @@
         <div class="judul">
             <h1>SUKU DINAS KOMUNIKASI, INFORMATIKA, DAN STATISTIK <br> KOTA ADMINISTRASI JAKARTA SELATAN
             </h1>
-            <h1>NOTA DINAS</h1>
+            <h5>NOTA DINAS</h5>
         </div>
-        <div class="format" style="margin-bottom:13em;">
-            <li>Kepada Yth&emsp;: <?= $surat['kepada'] ?></li>
-            <li>Dari &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;: <?= $surat['pembuat'] ?></li>
+        <div class="format">
+            <li>Kepada Yth &emsp;: <?= $surat['kepada'] ?></li>
+            <li>Dari &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;: <?= $surat['pengaju'] ?></li>
             <li>Nomor &emsp;&emsp;&nbsp;&nbsp;&nbsp;: <?= $surat['no_surat'] ?></li>
-            <li>Sifat &emsp;&emsp;&emsp;&nbsp;&nbsp; : <?= $surat['sifat'] ?></li>
+            <li>Sifat &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;: <?= $surat['sifat'] ?></li>
             <li>Lampiran &emsp;&nbsp;&nbsp;: <?= $surat['lampiran'] ?></li>
             <li>Hal &emsp;&emsp;&emsp;&emsp;&nbsp;: <?= $surat['hal'] ?></li>
+            <div class="isi">
+                <p class="mt-4" style="text-align: justify;">&emsp;<?= $surat['isi'] ?>
+            </div>
         </div>
+
 
         <div class="">
             <div class="row justify-content-end">
-                <div class="col-4 text-center">
-                    <p> Jakarta, <?= $surat['tanggal'] ?></p>
+                <div class="col-4 text-center" style="margin-right: 5px; width: 200px;">
+                    <p>Jakarta, <?= $surat['tanggal'] ?></p>
                 </div>
             </div>
 
-            <div class="bg-success row justify-content-end"> <!-- Kolom rata kanan -->
-                <div class="col-6 text-center"> <!-- Kolom untuk alamat, rata kanan -->
+            <div class="row justify-content-end">
+                <div class="col-10 text-center" style="margin-right: -120px;">
                     <p>
-                        Pelaksana Seksi xxxxxxxxxx<br>
-                        Suku Dinas Komunikasi, Informatika dan Statistik<br>
-                        Kota Administrasi Jakarta Selatan
+                        Plt. Kepala Suku Dinas<br>
+                        Komunikasi, Informatika dan Statistik<br>
+                        Kota Administrasi Jakarta Selatan<br>
+
                     </p>
                 </div>
             </div>
@@ -144,8 +221,8 @@
 
             </div>
             <div class="row justify-content-end">
-                <div class="Nip col-4 text-center">
-                    <p>Ahmad Zaini <br>
+                <div class="Nip col-8 text-center" style="margin-right: -70px;">
+                    <p>Nama <br>
                         NIP xxxxxxxxxxxxxxxx</p>
                 </div>
             </div>
@@ -157,28 +234,27 @@
             <p>Tembusan: <?= $surat['tembusan'] ?></p>
         </div>
         <div class="lampiran">
-            <p> Lampiran : Nota Dinas Plt. Kepala Suku Dinas<br>
+            <p>
+                Lampiran : Nota Dinas Plt. Kepala Suku Dinas<br>
                 Komunikasi, Informatika dan Statistik<br>
                 Kota Administrasi Jakarta Selatan<br>
                 Nomor : <br>
-                Tanggal : 2024</p>
+                Tanggal : 2024
+            </p>
         </div>
         <div class="kepala">
-            <p> Plt. Kepala Suku Dinas<br>
-                Komunikasi, Informatika dan Statistik <br>
-                Kota Administrasi Jakarta Selatan <br>
-            </p>
+            <p>Plt. Kepala Suku Dinas<br>
+                Komunikasi, Informatika dan Statistik<br>
+                Kota Administrasi Jakarta Selatan</p>
         </div>
         <div class="nuring">
-            <p>Nuruning Septarida <br>
-                NIP 197309081993022001 <br>
-            </p>
+            <p>Nuruning Septarida<br>NIP 197309081993022001</p>
         </div>
     </div>
 </body>
 
-
 </html>
+
 
 
 <script>

@@ -58,12 +58,8 @@
         list-style-type: none;
         /* Menghapus bullet point dari li */
         padding: 0;
-        /* Menghapus padding default dari list */
-        /* margin-left: 5%; */
-        /* Menghapus margin default dari list */
+
         font-family: Arial, sans-serif;
-        /* width: 800px; */
-        background-color: aqua;
     }
 
 
@@ -88,7 +84,7 @@
     }
 
     .isi {
-        background-color: aqua;
+
         height: 250px;
     }
 
