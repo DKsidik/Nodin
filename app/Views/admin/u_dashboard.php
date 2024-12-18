@@ -31,7 +31,7 @@
 
                              <div class="info-box-content">
                                  <span class="info-box-text">Surat Masuk</span>
-                                 <span class="info-box-number">700</span>
+                                 <span class="info-box-number">90</span>
                                  <!-- <span class="info-box-number">
                                      10
                                      <small>%</small> -->
@@ -126,4 +126,4 @@
                      <!-- /.card-body -->
                  </div>
              </div>
- </section>
+         </section>

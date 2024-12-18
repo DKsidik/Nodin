@@ -12,7 +12,7 @@
     @media print {
         @page {
             margin: 0;
-            /* Menghilangkan margin default */
+
         }
 
         body {
@@ -24,6 +24,7 @@
     body {
         align-items: center;
         justify-content: center;
+        font-size: 14px;
     }
 
 
@@ -85,12 +86,14 @@
 
     .isi {
 
-        height: 250px;
+        height: 225px;
     }
 
     .container {
         background-color: aqua;
         width: 100%;
+        height: 1500vh;
+
     }
 
     .tanggal {
@@ -143,10 +146,10 @@
         /* Meratakan teks ke kanan */
         font-family: Arial, sans-serif;
         /* Menentukan jenis font */
-        margin-right: 20px;
+        margin-right: 0;
         /* Memberi jarak dari tepi kanan */
         line-height: 1.5;
-        /* Meningkatkan spasi antar baris untuk keterbacaan */
+
     }
 
     .kepala p {
@@ -173,6 +176,10 @@
     .waktu {
         justify-content: end;
         justify-items: end;
+    }
+
+    .tembusan p {
+        margin-bottom: 15px;
     }
 </style>
 
@@ -201,7 +208,7 @@
 
 
         <div class="">
-            <div class="row justify-content-end">
+            <div class="row justify-content-end" style="margin-top: -50px">
                 <div class="col-4 text-center" style="margin-right: 5px; width: 200px;">
                     <p>Jakarta, <?= $surat['tanggal'] ?></p>
                 </div>
@@ -229,26 +236,36 @@
         </div>
 
 
+        <div>
+            <div class="tembusan">
+                <p>1. Tembusan: <?= $surat['tembusan'] ?></p>
+            </div>
+            <!-- Pemisah Halaman -->
+            <div style="page-break-after: always;"></div>
+            <!-- Halaman Kedua -->
+            <div class="row" style="margin-right:-100px; display: flex; justify-content: space-between; align-items: flex-start; height: 100%; position: relative;">
+                <div class="" style="width: 48%; margin-top: 1rem;">
+                    <div class="col" style="text-align:right;">
+                        <p>Lampiran :</p>
+                    </div>
+                </div>
+                <div class="col" style="margin-top: 1rem;">
+                    Nota Dinas Plt. Kepala Suku Dinas<br>
+                    Komunikasi, Informatika dan Statistik<br>
+                    Kota Administrasi Jakarta Selatan<br>
+                    Nomor : <br>
+                    Tanggal : 2024
+                </div>
+                <div style="height: 800px;">
 
-        <div class="tembusan">
-            <p>Tembusan: <?= $surat['tembusan'] ?></p>
-        </div>
-        <div class="lampiran">
-            <p>
-                Lampiran : Nota Dinas Plt. Kepala Suku Dinas<br>
-                Komunikasi, Informatika dan Statistik<br>
-                Kota Administrasi Jakarta Selatan<br>
-                Nomor : <br>
-                Tanggal : 2024
-            </p>
-        </div>
-        <div class="kepala">
-            <p>Plt. Kepala Suku Dinas<br>
-                Komunikasi, Informatika dan Statistik<br>
-                Kota Administrasi Jakarta Selatan</p>
-        </div>
-        <div class="nuring">
-            <p>Nuruning Septarida<br>NIP 197309081993022001</p>
+                </div>
+                <div class="col" style="width: 48%; text-align: right; position: absolute; bottom: 0; right: 0;">
+                    <p>Plt. Kepala Suku Dinas<br>
+                        Komunikasi, Informatika dan Statistik<br>
+                        Kota Administrasi Jakarta Selatan</p>
+                    <p>Nuruning Septarida<br>NIP 197309081993022001</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>

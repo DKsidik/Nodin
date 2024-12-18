@@ -40,7 +40,9 @@
                                 <select name="sifat" class="form-control select2bs4" style="width: 100%;">
                                     <option selected="selected" disabled>--Pilih--</option>
                                     <option>Penting</option>
-                                    <option>diperlukan</option>
+                                    <option>Rahasia</option>
+                                    <option>biasa</option>
+                                    <option>Segera</option>
 
                                 </select>
                             </div>

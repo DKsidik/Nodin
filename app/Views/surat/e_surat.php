@@ -79,8 +79,6 @@
                 <div class="card-footer">
                     <div class="float-right">
                         <button type="submit" class="btn btn-primary">Ubah</button>
-                        <!-- <button type="reset" class="btn btn-danger">Cancel</button> -->
-
                     </div>
                     <button type="button" class="btn btn-default" formaction="<?= site_url('surat/info_surat') ?>">Kembali</button>
                 </div>

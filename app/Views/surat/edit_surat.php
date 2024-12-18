@@ -14,7 +14,7 @@
 
 
             <div class="card-header">
-                <h3 class="card-title">Edit Surat</h3>
+                <h3 class="card-title">Edit Surat&nbsp;<?= $surat['jenis_surat'] ?></h3>
 
                 <div class="card-tools">
                 </div>
@@ -34,10 +34,11 @@
                         </div>
                         <!-- /.form-group -->
                         <div class="form-group">
-                            <label>Pembuat</label>
+                            <label>Dari</label>
                             <input name="pembuat" class="form-control" type="text" value="<?= $surat['pembuat'] ?>" readonly>
                         </div>
                         <input class="form-control" id="jenis_surat" type="text" value="<?= $surat['jenis_surat'] ?>" readonly>
+
                         <div class="form-group">
                             <label>Sifat</label>
                             <input name="sifat" class="form-control" type="text" value="<?= $surat['sifat'] ?>" readonly>
@@ -102,7 +103,6 @@
                         <!-- <button type="reset" class="btn btn-danger">Cancel</button> -->
 
                     </div>
-                    <button type="submit" class="btn btn-default" formaction="<?= site_url('surat/info_surat') ?>">Kembali</button>
                 </div>
                 <?php
                 echo form_close();
@@ -110,21 +110,3 @@
             </div>
             <!-- /.col -->
         </div>
-
-        <!-- <script>
-            $(document).ready(function() {
-                $('#jenis_surat').on('change', function() {
-                    if ($(this).val() === 'external') {
-                        $('#no_surat_group').removeClass('d-none');
-                    } else {
-                        $('#no_surat_group').addClass('d-none');
-                    }
-                });
-
-                // Trigger initial check
-                $('#jenis_surat').trigger('change');
-            });
-        </script> -->
-
-
-        <!-- /.row -->
