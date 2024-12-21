@@ -51,42 +51,40 @@
         margin: 0;
         font-size: 17px;
         font-weight: bold;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
         text-align: center;
+    }
+
+    .judul h5 {
+        margin-bottom: 25px;
     }
 
     .format {
         list-style-type: none;
-        /* Menghapus bullet point dari li */
         padding: 0;
-
         font-family: Arial, sans-serif;
     }
 
 
     .format li {
         margin-bottom: 10px;
-        /* Memberikan jarak antar item */
         display: flex;
-        /* Membuat item flexbox */
         justify-content: space-between;
-        /* Membuat spasi antara label dan isinya */
     }
 
     .format li::after {
         content: " ";
-        /* Memberikan ruang untuk konten setelah label */
         flex-grow: 1;
     }
 
     .format li span {
         font-weight: bold;
-        /* Membuat teks label lebih tebal */
     }
 
     .isi {
 
         height: 225px;
+        margin-top: -30px;
     }
 
     .container {
@@ -98,79 +96,59 @@
 
     .tanggal {
         text-align: right;
-        /* Meratakan teks ke kanan */
         font-family: Arial, sans-serif;
-        /* Opsional: menentukan font */
         margin-right: 15px;
-        /* Opsional: memberi sedikit jarak dari tepi kanan */
     }
 
     .alamat {
         text-align: right;
-        /* Meratakan teks ke kanan */
         font-family: Arial, sans-serif;
-        /* Opsional: menentukan jenis font */
         margin-right: 20px;
-        /* Opsional: memberi jarak dari tepi kanan */
         line-height: 1.5;
-        /* Opsional: memberi spasi antar baris */
     }
 
     .Nip {
         text-align: right;
-        /* Meratakan teks ke kanan */
         font-family: Arial, sans-serif;
-        /* Opsional: menentukan jenis font */
         margin-right: 20px;
-        /* Opsional: memberi jarak dari tepi kanan */
     }
 
     .lampiran {
         text-align: right;
-        /* Meratakan teks ke kanan */
         font-family: Arial, sans-serif;
-        /* Menentukan jenis font */
         margin-right: 20px;
-        /* Memberi jarak dari tepi kanan */
         line-height: 1.5;
-        /* Meningkatkan spasi antar baris untuk keterbacaan */
+
     }
 
     .lampiran p {
         margin: 0;
-        /* Menghapus margin default pada paragraf */
+
     }
 
     .kepala {
         text-align: right;
-        /* Meratakan teks ke kanan */
         font-family: Arial, sans-serif;
-        /* Menentukan jenis font */
         margin-right: 0;
-        /* Memberi jarak dari tepi kanan */
         line-height: 1.5;
 
     }
 
     .kepala p {
         margin: 30px 0;
-        /* Memberi jarak 20px di atas dan bawah paragraf */
     }
 
     .nuring {
         text-align: right;
-        /* Meratakan teks ke kanan */
         font-family: Arial, sans-serif;
-        /* Menentukan jenis font */
         margin-right: 20px;
-        /* Memberi jarak dari tepi kanan */
         line-height: 1.5;
-        /* Meningkatkan spasi antar baris untuk keterbacaan */
+
     }
 
     .nuring p {
         margin: 20px 0;
-        /* Memberi jarak 20px di atas dan bawah paragraf */
+
     }
 
     .waktu {
@@ -202,7 +180,7 @@
             <li>Lampiran &emsp;&nbsp;&nbsp;: <?= $surat['lampiran'] ?></li>
             <li>Hal &emsp;&emsp;&emsp;&emsp;&nbsp;: <?= $surat['hal'] ?></li>
             <div class="isi">
-                <p class="mt-4" style="text-align: justify;">&emsp;<?= $surat['isi'] ?>
+                <p class="mt-4" style="text-align: justify;">&emsp;&emsp;<?= $surat['isi'] ?>
             </div>
         </div>
 
@@ -244,12 +222,12 @@
             <div style="page-break-after: always;"></div>
             <!-- Halaman Kedua -->
             <div class="row" style="margin-right:-100px; display: flex; justify-content: space-between; align-items: flex-start; height: 100%; position: relative;">
-                <div class="" style="width: 48%; margin-top: 1rem;">
-                    <div class="col" style="text-align:right;">
+                <div class="" style="width: 60%; margin-top: 1rem;">
+                    <div class="col" style="text-align:right; margin-top: 2rem;">
                         <p>Lampiran :</p>
                     </div>
                 </div>
-                <div class="col" style="margin-top: 1rem;">
+                <div class="col" style="margin-top: 3rem;">
                     Nota Dinas Plt. Kepala Suku Dinas<br>
                     Komunikasi, Informatika dan Statistik<br>
                     Kota Administrasi Jakarta Selatan<br>
@@ -265,6 +243,7 @@
                         Kota Administrasi Jakarta Selatan</p>
                     <p>Nuruning Septarida<br>NIP 197309081993022001</p>
                 </div>
+
             </div>
         </div>
     </div>

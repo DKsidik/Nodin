@@ -86,14 +86,7 @@
 
 
 
-               <ul class="nav nav-treeview" style="margin-left: 0.5rem;">
-                 <li class="nav-item">
-                   <a href="<?= base_url('/'); ?>" class="nav-link">
-                     <i class="mr-3 fa-solid fa-pen-to-square"></i>
-                     <p>Buat Surat</p>
-                   </a>
-                 </li>
-               </ul>
+
              <li class="nav-item logout-item">
                <a href="<?= base_url('auth/logout'); ?>" class="nav-link">
                  <i class="mr-4 fa-solid fa-right-from-bracket"></i>
