@@ -185,7 +185,7 @@
                                 Edit
                             </a>
                             <a class="btn btn-danger btn-sm mr-1 <?= ($key['status'] === 'disposisi' || $key['status'] === 'disetujui') ? 'disabled' : '' ?>"
-                                href="<?= ($key['status'] === 'ditolak') ? "http://localhost/Nodin/public/surat/deletex/{$key['id']}" : 'javascript:void(0);' ?>"
+                                href="<?= ($key['status'] === 'ditolak') ? "http://localhost/Nodin/public/surat/hapus/{$key['id']}" : 'javascript:void(0);' ?>"
                                 <?= ($key['status'] === 'disposisi' || $key['status'] === 'disetujui') ? 'tabindex="-1" aria-disabled="true"' : '' ?>>
                                 <i class="fas fa-trash"></i>
                                 Delete

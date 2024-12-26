@@ -332,4 +332,15 @@ class surat extends BaseController
             return redirect()->to('surat/infosurat')->with('error', 'Failed to delete data');
         }
     }
+
+    public function hapus($id)
+    {
+        $suratModel = new SuratModel(); // Ganti dengan model Anda
+        session()->setFlashdata('pesan', 'Surat Telah di Hapus');
+        if ($suratModel->delete($id)) {
+            return redirect()->to('surat/info_surat')->with('message', 'Data deleted successfully');
+        } else {
+            return redirect()->to('surat/info_surat')->with('error', 'Failed to delete data');
+        }
+    }
 }

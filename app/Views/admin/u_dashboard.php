@@ -31,7 +31,7 @@
 
                              <div class="info-box-content">
                                  <span class="info-box-text">Surat Masuk</span>
-                                 <span class="info-box-number">90</span>
+
                                  <!-- <span class="info-box-number">
                                      10
                                      <small>%</small> -->
@@ -47,9 +47,11 @@
                              <span class="info-box-icon bg-danger elevation-1"><i class="fa-regular fa-envelope"></i></span>
 
                              <div class="info-box-content">
-                                 <span class="info-box-text">Surat</span>
-                                 <span class="badge badge-info float-right" style="width: 20%;"></span>
-                                 <!-- <span class="info-box-number">41,410</span> -->
+                                 <a href="<?= base_url('surat/info_surat'); ?>" class="nav-link" style="text-decoration: none; color: inherit;">
+                                     <span class=" info-box-text">Surat</span>
+                                     <span class="badge badge-info float-right" style="width: 20%;"></span>
+                                     <!-- <span class="info-box-number">41,410</span> -->
+                                 </a>
                              </div>
                              <!-- /.info-box-content -->
                          </div>
@@ -78,7 +80,7 @@
                              <span class="info-box-icon bg-warning elevation-1"><i class="fa-solid fa-box-archive"></i></span>
 
                              <div class="info-box-content">
-                                 <span class="info-box-text">Arsip Surat</span>
+                                 <span class="info-box-text"></span>
                                  <!-- <span class="info-box-number">2,000</span> -->
                              </div>
                              <!-- /.info-box-content -->

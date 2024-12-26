@@ -73,7 +73,6 @@
                                 <option selected disabled>Pilih Lampiran</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
-                                <option value="custom">Masukkan Manual</option>
                             </select>
                         </div>
 

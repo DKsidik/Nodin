@@ -174,6 +174,10 @@
         justify-content: end;
         justify-items: end;
     }
+
+    .isi {
+        margin-top: -25px;
+    }
 </style>
 
 <body class="">
@@ -194,7 +198,7 @@
             <li>Lampiran &emsp;&nbsp;&nbsp;: <?= $surat['lampiran'] ?></li>
             <li>Hal &emsp;&emsp;&emsp;&emsp;&nbsp;: <?= $surat['hal'] ?></li>
             <div class="isi">
-                <p class="mt-4" style="text-align: justify;">&emsp;<?= $surat['isi'] ?>
+                <p class="" style="text-align: justify;">&emsp;<?= $surat['isi'] ?>
             </div>
         </div>
 
