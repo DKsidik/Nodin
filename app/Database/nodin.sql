@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Des 2024 pada 03.15
+-- Waktu pembuatan: 28 Des 2024 pada 07.46
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `surat_db` (
   `id` int(11) NOT NULL,
-  `kepada` varchar(255) DEFAULT NULL,
+  `kepada` varchar(150) DEFAULT NULL,
   `pembuat` varchar(255) DEFAULT NULL,
   `sifat` varchar(50) DEFAULT NULL,
   `no_surat` varchar(50) DEFAULT NULL,
@@ -50,29 +50,18 @@ CREATE TABLE `surat_db` (
 --
 
 INSERT INTO `surat_db` (`id`, `kepada`, `pembuat`, `sifat`, `no_surat`, `hal`, `tembusan`, `lampiran`, `tanggal`, `isi`, `jenis_surat`, `status`, `catatan`, `pengaju`, `tgl_buat`) VALUES
-(54, 'kepala suku dinas Komunikasi dan informasi', 'ahmad', 'diperlukan', 'R35GTR', 'surat penindakan', 'tembusan tambisan', '2', '2024-11-20', '\r\n                    ', NULL, '', NULL, '', NULL),
-(55, 'informatika dan statistika', 'rizal', 'Penting', NULL, 'penangkapan ayam hitam', 'kepada si itu', NULL, '2024-11-20', '\r\n                    ', NULL, '', NULL, '', NULL),
-(56, 'walikota Kota Administrasi Jakarta Selatan', 'ijal254', 'Penting', '', 'surat penindakan bandar narkoboy', 'tembusan Kepada', '', '2024-11-21', '\r\n                    ', NULL, '', NULL, '', NULL),
-(57, 'kepala Sudin Komunikasi', 'Ahmad Zaini', 'Penting', NULL, 'surat pengaduan ayam ', 'kepada si inian', NULL, '2024-11-25', '\r\n                    ', NULL, '', NULL, '', NULL),
-(58, '', 'rizal', 'diperlukan', '', 'surat Penangkapan Bandar Judol', 'tembusan Kepada', '', '2024-11-25', 'Berdasarkan hasil rapat koordinasi terkait tindak lanjut<span>&nbsp;</span><span lang=\"IN\" style=\"box-sizing: border-box; orphans: 2; text-align: left; text-indent: 0px; widows: 2; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: 18.4px;\">S</span><span lang=\"EN-US\" style=\"box-sizing: border-box; orphans: 2; text-align: left; text-indent: 0px; widows: 2; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: 18.4px;\">osialisasi<span>&nbsp;</span></span><span lang=\"IN\" style=\"box-sizing: border-box; orphans: 2; text-align: left; text-indent: 0px; widows: 2; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: 18.4px;\">A</span><span lang=\"EN-US\" style=\"box-sizing: border-box; orphans: 2; text-align: left; text-indent: 0px; widows: 2; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: 18.4px;\">plikasi “MyJaksel” KADIN Jakarta tanggal 2 Agustus 2024, maka telah dilakukan kajian menyeluruh terkait aspek UI/UX (User Interface/User Experience) dan keamanan informasi. Pengkajian pada aspek UI/UX berlandaskan prinsip Heuristic Evaluation (evaluasi&nbsp;</span>', NULL, '', NULL, '', NULL),
-(59, 'walikota Kota Administrasi Jakarta Selatan', 'rijalpikri', 'diperlukan', NULL, 'surat perjalanan', 'tembusan Kepada', NULL, '2024-11-14', 'facsjndcbsamcnd&nbsp; as.,m ca. mscas.,knmcdsa.lkdkn/wlkd', NULL, '', NULL, '', NULL),
-(60, 'kepala Sudin Komunikasi', 'rizal', 'diperlukan', NULL, 'surat penindakan', 'sds', NULL, '2024-11-29', 'wafdfdcadx', NULL, '', NULL, '', NULL),
-(61, 'walikota Kota Administrasi Jakarta Selatan', 'rizal', 'diperlukan', NULL, 'surat kebobolan hacker', 'tembusan tambisan', NULL, '2024-11-29', 'demikian surat berikut di buat untuk penangkapan kasus bjorka yang mulai meresahkan di duia teknologi khususnya di bidang teknologi dan inbformatika', 'internal', '', NULL, '', NULL),
 (62, 'kepala suku dinas Komunikasi dan informasi', 'rizal', 'diperlukan', '', 'surat penindakan', 'tembusan Kepada', '', '2024-11-29', NULL, 'external', 'ditolak', '                    \r\n                    ', '', NULL),
-(63, 'kepala suku dinas Komunikasi dan informasi', 'rizal', 'Penting', NULL, 'surat penindakan', 'kepada si inian', NULL, '2024-11-29', 'contoh status', 'internal', '', NULL, '', NULL),
-(64, 'kepala Sudin Komunikasi', 'rizal', 'diperlukan', '', 'surat penindakan', 'tembusan Kepada', '', '2024-11-29', NULL, 'internal', 'disetujui', 'sadxsaxas\r\n                    ', '', NULL),
-(65, 'walikota Kota Administrasi Jakarta Selatan', 'rijalpikri', '', 'RTX-KMIFO123', 'surat Penangkapan Bandar Judol', 'tembusan tambisan', '', '2024-12-02', NULL, 'external', 'ditolak', '                    asdjnaskjdnaskjcnasklncaslkn', '', NULL),
-(66, 'informatika dan statistika', 'rizal', 'Penting', NULL, 'Surat penangkapan bandar', 'tembusan tambisan', NULL, '2024-12-02', 'membuat surat Internal', 'internal', 'disposisi', NULL, '', NULL),
-(67, 'walikota Kota Administrasi Jakarta Selatan', 'Ahmad Zaini', 'diperlukan', '', 'surat Penangkapan Bandar Judol', 'tembusan Kepada', '', '2024-12-02', NULL, 'internal', 'ditolak', 'isi tidak jelas', '', NULL),
-(68, 'walikota Kota Administrasi Jakarta Selatan', 'malik', 'diperlukan', NULL, 'surat Penangkapan Bandar Judol', 'tembusan Kepada', NULL, '2024-12-09', '•	Peluang (Opportunities) \r\nMerupakan kondisi peluang berkembang di masa datang yang terjadi. Kondisi yang terjadi merupakan peluang dari luar organisasi, proyek atau konsep bisnis itu sendiri, misalnya kebijakan pemerintah, kondisi lingkungan sekitar. \r\n\r\n•	Ancama (Threats) \r\nMerupakan kondisi yang mengancam dari luar. Ancaman ini dapat mengganggu organisasi, proyek atau konsep bisnis itu sendiri.\r\n                    ', 'external', 'disposisi', NULL, '', NULL),
-(69, 'walikota Kota Administrasi Jakarta Selatan', 'Ahmad Zaini', 'Penting', NULL, 'surat Penangkapan Bandar Judol', 'tembusan Kepada', NULL, '2024-12-09', '•	Peluang (Opportunities) \r\nMerupakan kondisi peluang berkembang di masa datang yang terjadi. Kondisi yang terjadi merupakan peluang dari luar organisasi, proyek atau konsep bisnis itu sendiri, misalnya kebijakan pemerintah, kondisi lingkungan sekitar. \r\n\r\n•	Ancama (Threats) \r\nMerupakan kondisi yang mengancam dari luar. Ancaman ini dapat mengganggu organisasi, proyek atau konsep bisnis itu sendiri.\r\n                    ', 'external', 'disposisi', NULL, '', NULL),
-(70, 'walikota Kota Administrasi Jakarta Selatan', 'Ahmad Zaini', 'diperlukan', 'R35GTR', 'surat Penangkapan Bandar Judol', 'tembusan Kepada', '', '2024-12-09', 'isi', 'internal', 'disetujui', '', '', NULL),
-(71, 'Kepala BUMN', 'Ahmad Zaini', 'Penting', NULL, 'haleluya', 'Komdigi', NULL, '2024-12-10', 'LOrem Ipsum', 'internal', 'disposisi', NULL, 'Mbak Hera', NULL),
-(72, 'Kepala BUMN', 'Ahmad Zaini', 'diperlukan', NULL, 'samlekom', 'Komdigi', NULL, '2024-10-29', 'lorem ipsum', 'internal', 'disposisi', NULL, 'Mbak Hera', '2024-12-10'),
-(73, 'Kepala BUMN', 'Ahmad Zaini', 'Penting', NULL, 'surat Penangkapan Bandar Judol', 'Komdigi', NULL, '2024-12-10', 'sckac aks caks asc as caslmcawkmndmaownxwoaWNA ACNASKOCNASK', 'external', 'disposisi', NULL, 'walikota administrasi jakarta selatan', '0000-00-00'),
 (74, 'walikota Kota Administrasi Jakarta Selatan', 'Ahmad Zaini', 'diperlukan', 'NTR-348', 'haleluya', 'Komdigi', NULL, '2024-12-26', 'ASCACASASASS', 'external', 'disposisi', '                    ', 'walikota administrasi jakarta selatan', '0000-00-00'),
-(75, 'Kepala BUMN', 'Ahmad Zaini', 'Penting', 'R35GTR', 'surat Penangkapan Bandar Judol', 'Komdigi', 'sdasdads', '2024-10-16', '<span style=\"font-size:12.0pt;line-height:150%;font-family:\"Times New Roman\",serif\">Dengan\r\nmengucapkan puji syukur kehadirat Allah SWT, yang telah melimpahkan rahmat,\r\nhidayat serta nikmat –Nya sehingga penyusunan masalah mata kuliah E-Business\r\nini dapat di selesaikan dengan baik dan tetap waktu. Penulisan makalah ini\r\nmengambil tema dengan judul “ ANALISA SWOT PADA USAHA KAMI” Makalah ini disusun\r\nsebagai salah satu syarat untuk memenuhi Tugas Akhir Ujian Semester 5 di\r\nUniversitas Bina Sarana Informatika Margonda (BSI). <o:p></o:p></span></p>\r\n                    \">\r\n\r\n                    ', 'internal', 'disposisi', '                    tolol\r\n                    \r\n                    \r\n                    ', 'walikota administrasi jakarta selatan', '2024-12-10'),
-(76, 'fufufafa', 'Ahmad Zaini', 'Penting', '', 'samlekom', 'Komdigi', '', '2024-12-11', 'Dengan mengucapkan puji syukur kehadirat Allah SWT, yang telah melimpahkan rahmat, hidayat serta nikmat –Nya sehingga penyusunan masalah mata kuliah E-Business ini dapat di selesaikan dengan baik dan tetap waktu. Penulisan makalah ini mengambil tema dengan judul “ ANALISA SWOT PADA USAHA KAMI” Makalah ini disusun sebagai salah satu syarat untuk memenuhi Tugas Akhir Ujian Semester 5 di Universitas Bina Sarana Informatika Margonda (BSI). </span><br>\">\r\n\r\n                    ', 'external', 'disposisi', '                    ', 'walikota administrasi jakarta selatan', '2024-12-11');
+(76, 'fufufafa', 'Ahmad Zaini', 'Penting', '', 'samlekom', 'Komdigi', '', '2024-12-11', 'Dengan mengucapkan puji syukur kehadirat Allah SWT, yang telah melimpahkan rahmat, hidayat serta nikmat –Nya sehingga penyusunan masalah mata kuliah E-Business ini dapat di selesaikan dengan baik dan tetap waktu. Penulisan makalah ini mengambil tema dengan judul “ ANALISA SWOT PADA USAHA KAMI” Makalah ini disusun sebagai salah satu syarat untuk memenuhi Tugas Akhir Ujian Semester 5 di Universitas Bina Sarana Informatika Margonda (BSI). </span><br>\">\r\n\r\n                    ', 'external', 'disposisi', '                    ', 'walikota administrasi jakarta selatan', '2024-12-11'),
+(78, 'walikota Kota Administrasi Jakarta Selatan', 'Ahmad Zaini', 'Segera', '', 'surat Penangkapan Bandar Judol', 'tambisan', '', '2024-12-16', '<p><span style=\"font-size: 12pt;\">Bisnis yang sudah\r\nmaju sebelum era teknologi sudah mulai menggunakan internet yang merupakan\r\njaringan global yang menghubungkan satu komputer dengan komputer lainnya dan\r\nbersaing dengan pemiliki bisnis lainnya.</span></p>', 'external', 'disposisi', 'isi tidak rapih', 'walikota administrasi jakarta selatan', '2024-12-16'),
+(80, '', 'Ahmad Zaini', NULL, NULL, '', '', NULL, '0000-00-00', '\r\n                    ', 'internal', 'disposisi', NULL, '', '2024-12-23'),
+(81, '', 'Ahmad Zaini', NULL, NULL, '', '', NULL, '0000-00-00', '\r\n                    ', 'external', 'disposisi', NULL, '', '2024-12-23'),
+(82, 'walikota Kota Administrasi Jakarta Selatan', 'Ahmad Zaini', 'Rahasia', NULL, 'surat rekomendasi', '\"Lorem ipsum ', NULL, '2024-12-23', '<p class=\"MsoNormal\">\"Lorem ipsum dolor sit amet, consectetur adipiscing\r\nelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\nenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\r\nex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\nvelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\r\ncupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est\r\nlaborum.\"<o:p></o:p></p>\r\n                    ', 'internal', 'disposisi', NULL, 'walikota administrasi jakarta selatan', '2024-12-23'),
+(84, 'Kepala Suku Dinas Komunikasi', 'Ahmad Zaini', 'biasa', NULL, 'surat rekomendasi', '\"Lorem ipsum ', NULL, '2024-12-23', '<p class=\"MsoNormal\">\"Lorem ipsum dolor sit amet, consectetur adipiscing\r\nelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\nenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\r\nex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\nvelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\r\ncupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est\r\nlaborum.\"<o:p></o:p></p>\r\n                    ', 'internal', 'disetujui', '                    ', 'Didik Sidik', '2024-12-23'),
+(85, 'kepala Sudin Komunikasi', 'Ahmad Zaini', 'Segera', NULL, 'surat rekomendasi', '\"Lorem ipsum ', NULL, '2024-12-23', '<p class=\"MsoNormal\">\"Lorem ipsum dolor sit amet, consectetur adipiscing\r\nelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\nenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\r\nex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\nvelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\r\ncupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est\r\nlaborum.\"<o:p></o:p></p>\r\n                    ', 'internal', 'disposisi', NULL, 'walikota administrasi jakarta selatan', '2024-12-23'),
+(86, 'Kepala BUMN', 'Ahmad Zaini', 'Penting', NULL, 'surat rekomendasi', '\"Lorem ipsum ', NULL, '2024-12-23', '<p class=\"MsoNormal\">\"Lorem ipsum dolor sit amet, consectetur adipiscing\r\nelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\nenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\r\nex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\nvelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\r\ncupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est\r\nlaborum.\"<o:p></o:p></p>\r\n                    ', 'external', 'disposisi', NULL, 'walikota administrasi jakarta selatan', '2024-12-23'),
+(87, 'Kepala BUMN', 'Ahmad Zaini', 'Rahasia', 'R35GTR', 'surat rekomendasi', '\"Lorem ipsum ', NULL, '2024-12-18', '<p class=\"MsoNormal\">\"Lorem ipsum dolor sit amet, consectetur adipiscing\r\nelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\nenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\r\nex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\nvelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\r\ncupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est\r\nlaborum.\"<o:p></o:p></p>\r\n                    ', 'external', 'ditolak', '                   scsjsjn ', 'walikota administrasi jakarta Utara', '2024-12-23'),
+(88, 'Kepala BUMN', 'Ahmad Zaini', 'Rahasia', NULL, 'surat rekomendasi', '\"Lorem ipsum ', NULL, '2024-12-23', 'zaini', 'internal', 'disposisi', NULL, 'Didik Sidik', '2024-12-23');
 
 -- --------------------------------------------------------
 
@@ -107,7 +96,8 @@ INSERT INTO `tbl_user` (`id_user`, `nama_user`, `email`, `no_hp`, `password`, `l
 (14, 'young', 'young@gmail.com', '456789', '$2y$10$cljLC0GjkHstgrO7LkV/seZQCgljYmZiMYtSmzqFP8la.7GOoMnRO', 3, 'avatar.png'),
 (15, 'young', 'young@gmail.com', '456789', '$2y$10$xNdVovYYB97lNvG57GcogeKNZGvqycHxBs1f.Bz41I5vQrqDPwV92', 3, 'avatar.png'),
 (16, 'zen', 'zen@gmail.com', '998786', '$2y$10$Ky8yy2raA5zD23CNjBJHIe9U4s2TryOphAXjquplBlqw61us6Dh8a', 2, 'avatar.png'),
-(17, 'didik sidik', 'rayaraya88@gmail.com', '0823456788', '$2y$10$JSo11BpkbTyHEVj5trGAE.yvT6vOS5YjzRs8rvic6xNHb2fwSkEVe', 2, 'avatar.png');
+(17, 'didik sidik', 'rayaraya88@gmail.com', '0823456788', '$2y$10$JSo11BpkbTyHEVj5trGAE.yvT6vOS5YjzRs8rvic6xNHb2fwSkEVe', 2, 'avatar.png'),
+(18, 'DIdik Sidik', 'didiksidik95@gmail.com', '0888838883', '$2y$10$VHGOugLJAADJK6j5YTJXhuijpa19e75R4DEYu6cHBmugB5ei5VeAa', 3, 'avatar.png');
 
 --
 -- Indexes for dumped tables
@@ -133,13 +123,13 @@ ALTER TABLE `tbl_user`
 -- AUTO_INCREMENT untuk tabel `surat_db`
 --
 ALTER TABLE `surat_db`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
