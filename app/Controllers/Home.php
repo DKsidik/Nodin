@@ -61,7 +61,7 @@ class Home extends BaseController
 
 
         $data = [
-            'content' => 'surat/suratbuat',
+            'content' => 'surat/buat_internal',
             'nama' => session()->get('nama_user'),
             'user' => $user,
             'jumlah_surat' => $jumlahSurat,

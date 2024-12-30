@@ -2,14 +2,14 @@
      .sidebar {
          display: flex;
          flex-direction: column;
-         height: auto;
+         min-height: 100vh;
          /* background-color: rgba(0, 0, 33, 0.3) */
          /* Memenuhi tinggi layar */
      }
 
      .logout-item {
          margin-top: auto;
-         /* Memposisikan logout di bagian bawah */
+
      }
  </style>l
  <section>

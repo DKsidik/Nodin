@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Des 2024 pada 07.46
+-- Waktu pembuatan: 30 Des 2024 pada 08.42
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -51,17 +51,11 @@ CREATE TABLE `surat_db` (
 
 INSERT INTO `surat_db` (`id`, `kepada`, `pembuat`, `sifat`, `no_surat`, `hal`, `tembusan`, `lampiran`, `tanggal`, `isi`, `jenis_surat`, `status`, `catatan`, `pengaju`, `tgl_buat`) VALUES
 (62, 'kepala suku dinas Komunikasi dan informasi', 'rizal', 'diperlukan', '', 'surat penindakan', 'tembusan Kepada', '', '2024-11-29', NULL, 'external', 'ditolak', '                    \r\n                    ', '', NULL),
-(74, 'walikota Kota Administrasi Jakarta Selatan', 'Ahmad Zaini', 'diperlukan', 'NTR-348', 'haleluya', 'Komdigi', NULL, '2024-12-26', 'ASCACASASASS', 'external', 'disposisi', '                    ', 'walikota administrasi jakarta selatan', '0000-00-00'),
-(76, 'fufufafa', 'Ahmad Zaini', 'Penting', '', 'samlekom', 'Komdigi', '', '2024-12-11', 'Dengan mengucapkan puji syukur kehadirat Allah SWT, yang telah melimpahkan rahmat, hidayat serta nikmat –Nya sehingga penyusunan masalah mata kuliah E-Business ini dapat di selesaikan dengan baik dan tetap waktu. Penulisan makalah ini mengambil tema dengan judul “ ANALISA SWOT PADA USAHA KAMI” Makalah ini disusun sebagai salah satu syarat untuk memenuhi Tugas Akhir Ujian Semester 5 di Universitas Bina Sarana Informatika Margonda (BSI). </span><br>\">\r\n\r\n                    ', 'external', 'disposisi', '                    ', 'walikota administrasi jakarta selatan', '2024-12-11'),
-(78, 'walikota Kota Administrasi Jakarta Selatan', 'Ahmad Zaini', 'Segera', '', 'surat Penangkapan Bandar Judol', 'tambisan', '', '2024-12-16', '<p><span style=\"font-size: 12pt;\">Bisnis yang sudah\r\nmaju sebelum era teknologi sudah mulai menggunakan internet yang merupakan\r\njaringan global yang menghubungkan satu komputer dengan komputer lainnya dan\r\nbersaing dengan pemiliki bisnis lainnya.</span></p>', 'external', 'disposisi', 'isi tidak rapih', 'walikota administrasi jakarta selatan', '2024-12-16'),
-(80, '', 'Ahmad Zaini', NULL, NULL, '', '', NULL, '0000-00-00', '\r\n                    ', 'internal', 'disposisi', NULL, '', '2024-12-23'),
-(81, '', 'Ahmad Zaini', NULL, NULL, '', '', NULL, '0000-00-00', '\r\n                    ', 'external', 'disposisi', NULL, '', '2024-12-23'),
 (82, 'walikota Kota Administrasi Jakarta Selatan', 'Ahmad Zaini', 'Rahasia', NULL, 'surat rekomendasi', '\"Lorem ipsum ', NULL, '2024-12-23', '<p class=\"MsoNormal\">\"Lorem ipsum dolor sit amet, consectetur adipiscing\r\nelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\nenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\r\nex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\nvelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\r\ncupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est\r\nlaborum.\"<o:p></o:p></p>\r\n                    ', 'internal', 'disposisi', NULL, 'walikota administrasi jakarta selatan', '2024-12-23'),
 (84, 'Kepala Suku Dinas Komunikasi', 'Ahmad Zaini', 'biasa', NULL, 'surat rekomendasi', '\"Lorem ipsum ', NULL, '2024-12-23', '<p class=\"MsoNormal\">\"Lorem ipsum dolor sit amet, consectetur adipiscing\r\nelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\nenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\r\nex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\nvelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\r\ncupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est\r\nlaborum.\"<o:p></o:p></p>\r\n                    ', 'internal', 'disetujui', '                    ', 'Didik Sidik', '2024-12-23'),
 (85, 'kepala Sudin Komunikasi', 'Ahmad Zaini', 'Segera', NULL, 'surat rekomendasi', '\"Lorem ipsum ', NULL, '2024-12-23', '<p class=\"MsoNormal\">\"Lorem ipsum dolor sit amet, consectetur adipiscing\r\nelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\nenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\r\nex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\nvelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\r\ncupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est\r\nlaborum.\"<o:p></o:p></p>\r\n                    ', 'internal', 'disposisi', NULL, 'walikota administrasi jakarta selatan', '2024-12-23'),
 (86, 'Kepala BUMN', 'Ahmad Zaini', 'Penting', NULL, 'surat rekomendasi', '\"Lorem ipsum ', NULL, '2024-12-23', '<p class=\"MsoNormal\">\"Lorem ipsum dolor sit amet, consectetur adipiscing\r\nelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\nenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\r\nex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\nvelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\r\ncupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est\r\nlaborum.\"<o:p></o:p></p>\r\n                    ', 'external', 'disposisi', NULL, 'walikota administrasi jakarta selatan', '2024-12-23'),
-(87, 'Kepala BUMN', 'Ahmad Zaini', 'Rahasia', 'R35GTR', 'surat rekomendasi', '\"Lorem ipsum ', NULL, '2024-12-18', '<p class=\"MsoNormal\">\"Lorem ipsum dolor sit amet, consectetur adipiscing\r\nelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\nenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\r\nex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\nvelit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\r\ncupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est\r\nlaborum.\"<o:p></o:p></p>\r\n                    ', 'external', 'ditolak', '                   scsjsjn ', 'walikota administrasi jakarta Utara', '2024-12-23'),
-(88, 'Kepala BUMN', 'Ahmad Zaini', 'Rahasia', NULL, 'surat rekomendasi', '\"Lorem ipsum ', NULL, '2024-12-23', 'zaini', 'internal', 'disposisi', NULL, 'Didik Sidik', '2024-12-23');
+(88, 'Kepala BUMN', 'Ahmad Zaini', 'Rahasia', NULL, 'surat rekomendasi', '\"Lorem ipsum ', NULL, '2024-12-23', 'zaini', 'internal', 'disetujui', '                    ', 'Didik Sidik', '2024-12-23');
 
 -- --------------------------------------------------------
 
@@ -123,7 +117,7 @@ ALTER TABLE `tbl_user`
 -- AUTO_INCREMENT untuk tabel `surat_db`
 --
 ALTER TABLE `surat_db`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_user`

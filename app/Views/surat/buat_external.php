@@ -96,7 +96,7 @@
                 </div>
                 <div class="card-footer">
                     <div class="float-right">
-                        <button type="submit" class="btn btn-primary" formaction="<?= site_url('surat/cetak_surat') ?>">Buat</button>
+                        <button type="submit" class="btn btn-primary" formaction="<?= site_url('surat/surat_external') ?>">Buat</button>
                     </div>
                     <button type="reset" class="btn btn-default">Cancel</button>
                 </div>

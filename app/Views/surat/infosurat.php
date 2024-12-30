@@ -6,9 +6,9 @@
   }
 
   .card {
-    margin-left: 17em;
-    margin-top: 1em;
-    width: 80%;
+    margin-left: 20em;
+    margin-top: 3em;
+    width: 78%;
   }
 
   .alert {

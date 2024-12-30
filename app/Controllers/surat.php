@@ -47,7 +47,7 @@ class surat extends BaseController
         $user = $userModel->find();
         // print_r($surat);
         $data = [
-            'content' => 'surat/v_surat',
+            'content' => 'surat/infosurat',
             'nama' => session()->get('nama_user'),
             'surat' => $surat,
             'jumlah_surat' => $jumlahSurat,
